@@ -1206,7 +1206,7 @@ export default function SheenaPortfolio() {
       </nav>
 
       {/* ── RESUME MODAL ── */}
-      {showResume && RESUME_URL !== "https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing" && (
+      {showResume && (
         <ResumeModal url={RESUME_URL} onClose={() => setShowResume(false)} />
       )}
 
