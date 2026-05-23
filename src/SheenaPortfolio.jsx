@@ -513,10 +513,7 @@ function StatusBadge() {
 
 // ─── Resume Modal ─────────────────────────────────────────────────────────────
 function ResumeModal({ url, onClose }) {
-  // Convert Google Drive share URL to embeddable preview URL
-  const embedUrl = url.includes("drive.google.com")
-    ? url.replace("/view", "/preview").replace("?usp=sharing", "")
-    : url;
+  const embedUrl = "https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/preview";
 
   return (
     <>
@@ -583,10 +580,11 @@ function ResumeModal({ url, onClose }) {
         </div>
         {/* PDF iframe */}
         <iframe
-          src={embedUrl}
+          src="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/preview"
           style={{ flex: 1, border: "none", width: "100%", background: C.bg }}
           title="Sheena Lakshmi Resume"
           allow="autoplay"
+          allowFullScreen
         />
       </div>
     </>
@@ -753,7 +751,7 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
 // ═══════════════════════════════════════════════════════════════════
 // CLASSIC PORTFOLIO MODE
 // ═══════════════════════════════════════════════════════════════════
-function ClassicMode({ onAskAbout }) {
+function ClassicMode({ onAskAbout, onShowResume }) {
   const [drawer, setDrawer] = useState(null); // project object or null
 
   const ARTIFACT_ICONS = { pdf: "PDF", deck: "▤", screenshot: "⊡", video: "▶", notion: "N" };
@@ -978,7 +976,7 @@ function ClassicMode({ onAskAbout }) {
               <div style={{ display: "flex", gap: 12, marginTop: 24, flexWrap: "wrap", alignItems: "center" }}>
                 <button
                   className="sl-resume-btn"
-                  onClick={() => setShowResume(true)}
+                  onClick={() => onShowResume()}
                 >
                   ↓ View / Download Resume
                 </button>
@@ -1218,7 +1216,7 @@ export default function SheenaPortfolio() {
             input={input} setInput={setInput}
             onAsk={handleAskAbout}
           />
-        : <ClassicMode onAskAbout={handleAskAbout} />
+        : <ClassicMode onAskAbout={handleAskAbout} onShowResume={() => setShowResume(true)} />
       }
     </div>
   );
