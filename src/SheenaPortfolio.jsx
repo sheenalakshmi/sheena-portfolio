@@ -6,46 +6,88 @@ const SYSTEM = `You are Sheena Lakshmi — UX Design Manager (Content) at SAP La
 Speak in first person. Be warm, confident, and direct. Lead with measurable impact. Keep answers 2–4 sentences unless more detail is asked. If asked something outside your background, gracefully say so and invite them to email you.
 
 WHO I AM:
-16+ years in enterprise technical writing. 8+ years leading UX and content transformation at Fortune 500 companies.
-Currently: UX Design Manager (Content), SAP Labs, Bengaluru. Previously: Content Design Lead & Strategist, Intuit (QuickBooks).
-Contact: sheenalakshmi@gmail.com | +91 9845807918 | linkedin.com/in/sheena-lakshmi-232a425/
+20+ years of experience — 8+ years specialising in UX content design, 16+ years in technical documentation.
+Currently: UX Design Manager (Content), SAP Labs India, Bengaluru (2025–Present).
+Previously: Content Design Lead & Strategist at Intuit/QuickBooks (Sep 2022–2025), Senior User Assistance Developer & Content Design Strategist at SAP Analytics Cloud (Jan 2019–Aug 2022), Senior Technical Writer at McAfee (Jun 2017–Dec 2018), Documentation Product Lead at Dell Technologies (Jul 2008–Feb 2016), Senior Technical Writer at RSA Security (Aug 2007–Aug 2008), Senior Information Developer at Huawei Technologies (Jun 2004–Jul 2007).
+Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-lakshmi-232a425/
+
+IMPACT AT A GLANCE:
+$936M+ revenue impact (Payments + Payroll at Intuit)
+22% lift in first-time feature adoption
+CES improvement: 13% → 52% (FP&A) and 7% → 32% (Content Ops)
+4.8/5 Workshop NPS across all sessions
+100K GNS guided in 1.5 years with 88% 90-day retention
 
 CORE SKILLS:
-Content leadership & strategy · Data-informed design · User research & testing · Design thinking · Systems design · Prompt design · LLM training · Conversation design · Ethical AI · Accessibility · Digital adoption · Team mentorship
-Tools: Figma · Balsamiq · Writer.AI · Mural · Miro · WalkMe · Jira · UserTesting · GreatQuestion · Claude · ChatGPT · Gemini · Perplexity
+Strategy & Leadership: Content strategy & operations · Design thinking facilitation · Stakeholder management · Team mentorship & coaching · Performance management
+Design & Research: UX writing & content design · Conversational AI design · Information architecture · User research & testing · Data-informed design
+AI & Emerging: Content design for AI Agents · Prompt design & engineering · LLM content evaluation · Ethical AI & accessibility · Digital adoption (WalkMe)
+Tools: Figma · Balsamiq · Mural · Miro · Writer.AI · GenAI prompting · Jira · Airtable · Coda · UserTesting · Amplitude
+
+CURRENT ROLE — SAP Labs India (2025–Present):
+- Lead and mentor a team of 8 content designers across SAP enterprise products
+- Drive content design for AI Agents — crafting context-aware conversational experiences for SAP's AI portfolio
+- Lead content evaluation and prompt engineering for Concur, Ariba, and SuccessFactors
+- Define content strategy, voice and tone guidelines, and design system standards across product lines
+- Partner with product management, UX design, and engineering teams across global markets
+- Design and facilitate Design Thinking workshops; established ethical AI content guidelines organisation-wide
 
 PROJECTS:
 [1] FP&A Content Strategy — Intuit QuickBooks | Content Design Strategist
-Impact: 25% rise in budgets created; FP&A engagement ↑12.54% (QBO Adv) & ↑8.39% (QBO Plus); CES improved 13%→52%; AI forecast usage raised to 36%; FTU >13% budgeting; 75% custom forecast-to-budget.
+Impact: 37% YoY increase in budgeting companies; 25% rise in budgets created; FP&A engagement ↑12.54% (QBO Adv) & ↑8.39% (QBO Plus); CES improved 13%→52%; AI forecast usage raised to 36%; FTU >13% budgeting; 75% custom forecast-to-budget.
 Work: Led content design strategy for QuickBooks FP&A across global markets. Positioned FP&A in primary nav, built scalable frameworks, led 30+ user interviews, A/B tests, card sorting, usability studies.
 
 [2] Content Operations & Team Leadership — Intuit QuickBooks | Content Design Lead
-Impact: Guided 100K GNS in 1.5 years; 88% 90-day retention; CES 7%→32%; Payments $213M revenue; Payroll $723M revenue.
-Work: Managed content ops for complex product ecosystem. Mentored team, led 24+ peer reviews, weekly coaching.
+Impact: Guided 100K GNS in 1.5 years; 88% 90-day retention; CES 7%→32%; contributed to $213M Payments and $723M Payroll revenue.
+Work: Managed content ops across core, payments, mobile, payroll, and migration. Mentored contingent team; led 24+ peer-review sessions.
 
-[3] Product Feature Naming — SAP Analytics | Content Design Strategist
+[3] First-Time User Onboarding — Intuit QuickBooks | Content Designer & Strategist
+Impact: 22% lift in first-time feature adoption; reduced cognitive load; improved engagement and retention for SMB users.
+Work: Qual/quant research on SMB user motivations. Crafted benefit-driven onboarding copy using Intuit's FTU framework. Outcome-focused voice and tone — no jargon, no overpromising.
+
+[4] Product Feature Naming — SAP Analytics | Content Design Strategist
 Impact: 'Schedule Publication' adopted as feature name; reduced cognitive load; improved learnability and scalability.
-Work: Resolved naming conflict between on-prem and cloud versions. Ran user interviews, competitor analysis, card sorting, low-fi prototype testing.
+Work: Resolved naming conflict between on-prem and cloud versions. Ran user interviews, competitor analysis (Tableau, Adobe, Zoho), card sorting, low-fi prototype testing.
 
-[4] Content UX & Information Architecture — SAP Analytics | Content Design Strategist
+[5] Content UX & Information Architecture — SAP Analytics | Content Design Strategist
 Impact: Centralised ~750 topics; streamlined maintenance; improved onboarding/adoption across Banking, Insurance, Oil & Gas.
 Work: Audited 750 topics, defined personas across industries and LOBs, designed IA, migrated all content to unified XML authoring environment.
 
-[5] First-Time User Onboarding — Intuit QuickBooks | Content Designer & Strategist
-Impact: 22% increase in first-time feature adoption; reduced cognitive load; improved engagement and retention.
-Work: Qual/quant research on SMB user motivations. Crafted benefit-driven onboarding copy. Outcome-focused voice and tone.
+[6] Dell Technologies — Documentation Product Lead (Jul 2008–Feb 2016)
+Work: Documentation product lead for PowerEdge Servers — mentored and guided writers, planned and executed documentation requirements, drove process and product innovations. Conducted usability studies; served as cross-functional liaison across serviceability, usability, quality, marketing, and customer-facing teams.
 
-[6] Leadership & Thought Leadership — SAP Labs · Intuit | UX Design Manager
+[7] Leadership & Thought Leadership — SAP Labs · Intuit | UX Design Manager
 Impact: Intuit Superstar Award Q4 2023; top mentor on ADPList twice; workshop NPS 4.8+/5; doubled team capabilities.
-Work: Manage and mentor 8 content designers at SAP. Built Intuit content team for 3 years. Delivered workshops at UXIndia (120+ participants). Speaker at ADPList BeMore Conference and W-Summit.
+Work: Manage and mentor 8 content designers at SAP. Built Intuit content team for 3 years. Delivered workshops at UXIndia (120+ participants) and D4 Design. Speaker at ADPList BeMore Conference and W-Summit. Developed ethical AI content guidelines. Featured in Intuit NextGen Podcast.
 
-[7] Design Thinking Facilitation — SAP | DT Coach
+[8] Design Thinking Facilitation — SAP | Certified DT Coach
 Impact: Streamlined PM processes across business lines. Testimonial: "This was no easy topic… executed pretty well."
-Work: Mapped user journeys, identified tool/process overlaps, delivered virtual DT workshop.
+Work: Certified Design Thinking Coach with Virtual Facilitation (SAP Design Thinking Academy, 2021). Mapped user journeys, identified tool/process overlaps, delivered virtual DT workshop.
 
-AWARDS: Intuit Superstar Award for Customer Obsession (Q4 2023) · Top talent at SAP · Top mentor on ADPList (twice) · All workshops NPS 4.8+/5
+AWARDS & RECOGNITION:
+- Intuit India Superstar Award 2023 — Customer Obsession (highest company recognition)
+- Trajectory Changing Performance — highest merit rating at Intuit
+- Women in Leadership — Intuit 6-month intensive coaching for exceptional individual contributors
+- Featured in Intuit NextGen Podcast
+- Top Talent at SAP Labs
+- Top Mentor on ADPList — twice in a row
+- Workshop NPS 4.8+/5 across all sessions
+- Speaker: ADPList BeMore Conference, UX India Conference on Prompt Design, W-Summit
 
-AVAILABILITY: Open to senior UX leadership, content strategy, and design management opportunities. Based in Bengaluru; open to global/remote.`;
+EDUCATION & CERTIFICATIONS:
+- PG Diploma in Mass Communication & Journalism — Bhavan's College, 2003–2004
+- BSc Chemistry (Physics & Mathematics) — University of Calicut, 1994–1997
+- Design Thinking Coach with Virtual Facilitation — SAP Design Thinking Academy, 2021
+- User Research Methodology and Practice — SAP, 2019
+- SEO Writing — Dell International Services, 2013
+- Information Mapping — InfoMap Foundation, 2008
+
+ADDITIONAL:
+- Published poet — first poetry book in print
+- Certified Permaculture Consultant (regenerative farming)
+- Volunteer documentation support for NGOs in rural upliftment and sustainable living
+
+AVAILABILITY: Open to senior UX leadership, content strategy, and design management opportunities globally. Based in Bengaluru; open to global and remote roles.`;
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const PROJECTS = [
@@ -53,87 +95,173 @@ const PROJECTS = [
     id: "01", title: "FP&A Content Strategy", company: "Intuit QuickBooks",
     role: "Content Design Strategist", metric: "37%", metricLabel: "YoY growth in budgeting companies",
     tags: ["Content Strategy", "AI Adoption", "User Research", "Systems Design"],
-    description: "Led content design strategy for all QuickBooks Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — across global markets. Positioned FP&A in primary navigation, built scalable content frameworks, and led 30+ user interviews, A/B tests, and usability studies.",
+    description: "Led content design strategy for all QuickBooks Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — across global markets. Positioned FP&A in primary navigation, built scalable content frameworks, and championed ethical AI-led solutions.",
+    challenge: "Create a cohesive, discoverable, and scalable content experience within a rapidly evolving financial planning platform for small and medium businesses — while advocating for ethical AI-led solutions that help SMBs become profitable.",
+    keyActions: [
+      "Positioned FP&A in primary navigation of QuickBooks Online & Intuit Enterprise Suite, enhancing strategic visibility",
+      "Built scalable content framework with reusable libraries, standardised voice/tone, and guided technical/marketing/legal communication",
+      "Accelerated AI feature adoption through onboarding and interface messaging, raising AI forecast usage to 36%",
+      "Led 30+ user interviews, A/B tests, card sorting, usability studies, quantitative and qualitative surveys",
+      "Collaborated cross-functionally with product managers, engineering, XD partners, legal, and marketing",
+    ],
     results: [
-      { label: "FP&A Engagement", value: "+12.54% (QBO Adv)" },
-      { label: "Budgets Created", value: "+25% YoY" },
-      { label: "CES", value: "13% → 52%" },
-      { label: "AI Forecast Usage", value: "36%" },
+      { label: "YoY budgeting companies", value: "+37%" },
+      { label: "Budgets created", value: "+25%" },
+      { label: "CES (launch → now)", value: "13% → 52%" },
+      { label: "AI forecast usage", value: "36%" },
+      { label: "FP&A engagement (QBO Adv)", value: "+12.54%" },
+      { label: "Custom forecast to budget", value: "75%" },
     ],
-    samples: [
-      { label: "Content Design Framework (PDF)", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf" },
+    artifacts: [
+      { label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf", desc: "FP&A content design guidelines and reusable framework" },
+      { label: "Case Study Deck", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Full case study presentation with before/after" },
+      { label: "Research Synthesis", type: "notion", href: "ADD_NOTION_LINK", desc: "User interview findings and card sort results" },
+      { label: "Work Samples", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "UI screenshots and content in context" },
     ],
+    samples: [{ label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf" }],
     askPrompt: "Tell me more about your FP&A content strategy work at Intuit and the impact it had.",
   },
   {
     id: "02", title: "Team Leadership & Content Ops", company: "Intuit QuickBooks",
     role: "Content Design Lead", metric: "100K", metricLabel: "GNS guided in 1.5 years",
     tags: ["Team Leadership", "Content Ops", "Mentorship", "Coaching"],
-    description: "Managed content operations for a complex product ecosystem — core, payments, mobile, payroll, and migration tools. Mentored contingent workers, led 24+ peer-review sessions, and instituted content hygiene practices that elevated quality across the board.",
+    description: "Managed content operations for a complex product ecosystem — core, payments, mobile (Tango), payroll, and migration tools — while optimising team resources and maintaining high content standards.",
+    challenge: "Manage content operations for a complex product ecosystem while maintaining high content quality, guiding 100K GNS in 1.5 years, and elevating a contingent team of content designers through rigorous coaching and peer review.",
+    keyActions: [
+      "Influenced migration experience: advised on redesign for standalone/batch tools, shaped end-of-life upgrade strategy",
+      "Guided product naming: co-designed test plans, synthesised research, and validated user-centric naming",
+      "Mentored team: led 24+ peer-review sessions and weekly coaching for content design contingent workers",
+      "Elevated content standards: instituted rigorous content hygiene practices and resource allocation for critical business areas",
+      "Managed content ops across core, payments, mobile/Tango, payroll, and online migration tools simultaneously",
+    ],
     results: [
-      { label: "90-Day Retention", value: "88%" },
-      { label: "Payments Revenue", value: "$213M" },
-      { label: "Payroll Revenue", value: "$723M" },
-      { label: "CES", value: "7% → 32%" },
+      { label: "GNS guided", value: "100K" },
+      { label: "90-day retention", value: "88%" },
+      { label: "CES (launch → now)", value: "7% → 32%" },
+      { label: "Payments revenue", value: "$213M" },
+      { label: "Payroll revenue", value: "$723M" },
+      { label: "Peer reviews led", value: "24+" },
+    ],
+    artifacts: [
+      { label: "Content Ops Framework", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Team structure, workflows, and quality standards" },
+      { label: "Mentorship Programme Guide", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Peer review process and coaching structure" },
+      { label: "Work Samples", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Before/after content quality improvements" },
     ],
     samples: [],
     askPrompt: "Tell me about your content operations and team leadership work at Intuit.",
   },
   {
-    id: "03", title: "Feature Nomenclature Design", company: "SAP Analytics",
-    role: "Content Design Strategist", metric: "↓", metricLabel: "Cognitive load via naming clarity",
-    tags: ["Product Naming", "User Research", "Card Sorting", "Stakeholder Management"],
-    description: "Resolved a naming conflict between SAP's on-premises and cloud analytics versions. Ran user interviews, competitor analysis (Tableau, Adobe, Zoho), card sorting exercises, and low-fidelity prototype testing to align on a term that was both intuitive and scalable.",
-    results: [
-      { label: "Feature Name Adopted", value: "Schedule Publication" },
-      { label: "Scalability", value: "Future-proofed for artifacts" },
-      { label: "UX Alignment", value: "Heuristic compliant" },
-      { label: "Stakeholder Buy-in", value: "100%" },
-    ],
-    samples: [],
-    askPrompt: "Walk me through the product naming case study at SAP Analytics.",
-  },
-  {
-    id: "04", title: "Content UX & Information Architecture", company: "SAP Analytics",
-    role: "Content Design Strategist", metric: "750", metricLabel: "Topics centralised & restructured",
-    tags: ["Information Architecture", "Systems Thinking", "Content Audit", "XML Authoring"],
-    description: "Audited ~750 topics across scattered PDFs, defined personas across Banking, Insurance, and Oil & Gas, and redesigned the IA to centralise all business content in a unified, navigable help portal — dramatically cutting maintenance overhead.",
-    results: [
-      { label: "Topics Migrated", value: "~750" },
-      { label: "Industries Covered", value: "Banking, Insurance, O&G" },
-      { label: "Maintenance", value: "Streamlined" },
-      { label: "Customer Adoption", value: "↑" },
-    ],
-    samples: [],
-    askPrompt: "Tell me about the content UX consistency project at SAP Analytics.",
-  },
-  {
-    id: "05", title: "First-Time User Onboarding", company: "Intuit QuickBooks",
+    id: "03", title: "First-Time User Onboarding", company: "Intuit QuickBooks",
     role: "Content Designer & Strategist", metric: "22%", metricLabel: "Lift in first-time feature adoption",
     tags: ["Onboarding", "UX Writing", "SMB", "Cognitive Load"],
-    description: "Conducted qual and quant research to understand SMB user motivations and pain points around business planning. Crafted benefit-driven onboarding copy using Intuit's FTU framework — outcome-focused, no jargon, no overpromising.",
+    description: "Small and mid-market business owners faced frustration juggling multiple tools alongside QuickBooks. The onboarding experience needed to clearly convey value while reducing cognitive overload — without overwhelming or overpromising.",
+    challenge: "SMB users faced cognitive overload and stress from juggling multiple planning tools. Onboarding needed to clearly convey value and reduce user effort, supporting learnability without overwhelming or overpromising.",
+    keyActions: [
+      "Conducted quantitative and qualitative research to understand user motivations, pain points, and expectations",
+      "Identified the intersection between business objectives and user needs to prioritise budgeting features and benefits",
+      "Brainstormed user-centric keyword messaging reflecting common motivations around problem-solving",
+      "Followed Intuit's FTU content framework: clear headline, benefit-driven description, actionable CTAs",
+      "Applied benefit-driven but realistic tone focusing on user outcomes — avoiding jargon, overstatements, and complex feature details",
+    ],
     results: [
-      { label: "Feature Adoption", value: "+22% (FTU)" },
-      { label: "Cognitive Load", value: "Significantly reduced" },
-      { label: "Engagement", value: "Improved retention" },
-      { label: "User Clarity", value: "↑ from research" },
+      { label: "First-time adoption lift", value: "+22%" },
+      { label: "User confusion", value: "Reduced" },
+      { label: "Engagement & retention", value: "Improved" },
+      { label: "Cognitive load", value: "Lowered" },
+    ],
+    artifacts: [
+      { label: "Onboarding Copy Samples", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "FTU screens with headline, description, and CTAs" },
+      { label: "Research Synthesis", type: "notion", href: "ADD_NOTION_LINK", desc: "Qualitative findings driving content decisions" },
+      { label: "Case Study Deck", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Before/after and process walkthrough" },
     ],
     samples: [],
     askPrompt: "Tell me about the first-time user onboarding project and how you approached it.",
   },
   {
-    id: "06", title: "Leadership & Thought Leadership", company: "SAP Labs · Intuit",
-    role: "UX Design Manager", metric: "4.8", metricLabel: "NPS across all workshops",
-    tags: ["Mentorship", "Public Speaking", "Ethical AI", "Accessibility"],
-    description: "Manage and mentor 8 content designers at SAP. Built and coached the Intuit content team for 3 years. Delivered workshops at UXIndia (120+ participants) and D4 Design. Developed ethical AI content guidelines. Speaker at ADPList BeMore Conference and W-Summit.",
+    id: "04", title: "Feature Nomenclature Design", company: "SAP Analytics Cloud",
+    role: "Content Design Strategist", metric: "↓", metricLabel: "Cognitive load via naming clarity",
+    tags: ["Product Naming", "User Research", "Card Sorting", "Stakeholder Management"],
+    description: "The on-premises SAP Analytics version used 'Publication' as a verb/process; the cloud version treated it as an object/noun. Users transitioning between versions faced significant confusion — requiring a research-led naming solution scalable across future features.",
+    challenge: "The existing on-premises version used 'Publication' as a verb/process whereas the cloud version treated it as an object/noun. Users transitioning might find 'Scheduling a Publication' confusing — requiring terminology that was both intuitive and scalable.",
+    keyActions: [
+      "Engaged product managers, experts, and customer advocates to understand feature capabilities and audience differences",
+      "Studied naming conventions in Tableau, Adobe Analytics, and Zoho to identify best practices",
+      "Identified key personas: Business Analysts, CFOs, Marketing Executives, and BI Admins",
+      "Facilitated card sorting exercises testing 'Publication', 'Scheduling', 'Bursting', and 'Sharing'",
+      "Created low-fidelity prototypes for the critical user journey; advocated for user-centred communication approach",
+    ],
     results: [
-      { label: "Intuit Superstar Award", value: "Q4 2023" },
+      { label: "Feature name adopted", value: "Schedule Publication" },
+      { label: "Scalability", value: "Future-proofed" },
+      { label: "UX alignment", value: "Heuristic compliant" },
+      { label: "Stakeholder consensus", value: "100%" },
+    ],
+    artifacts: [
+      { label: "Research & Card Sort Findings", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Naming study methodology and synthesis" },
+      { label: "Low-Fi Prototypes", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Critical user journey screens tested" },
+      { label: "Competitive Analysis", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Tableau, Adobe, Zoho naming conventions" },
+      { label: "Work Samples", type: "notion", href: "ADD_NOTION_LINK", desc: "Final naming rationale and rollout" },
+    ],
+    samples: [],
+    askPrompt: "Walk me through the product naming case study at SAP Analytics.",
+  },
+  {
+    id: "05", title: "Content UX & Information Architecture", company: "SAP Analytics Cloud",
+    role: "Content Design Strategist", metric: "750", metricLabel: "Topics centralised & restructured",
+    tags: ["Information Architecture", "Systems Thinking", "Content Audit", "Enterprise"],
+    description: "Customers faced significant challenges accessing large, scattered, and outdated PDF help documents across Banking, Insurance, and Oil & Gas. Updating and maintaining was inefficient — making timely, relevant support for critical analytics offerings nearly impossible.",
+    challenge: "Customers struggled to access and navigate large, scattered, and outdated PDF help documents. Updating and maintaining these was inefficient, making it difficult to provide timely, relevant support for critical analytics offerings.",
+    keyActions: [
+      "Performed a detailed audit of around 750 topics across multiple sources — cataloguing all relevant business content",
+      "Defined and refined key personas spanning Banking, Insurance, and Oil & Gas across Finance, Operations, and Expense Management",
+      "Created and administered an information survey to identify content gaps and validate persona insights",
+      "Developed a comprehensive information architecture, centralising and categorising content for intuitive navigation",
+      "Migrated all business content into a unified XML-based authoring environment within the main product help portal",
+    ],
+    results: [
+      { label: "Topics centralised", value: "~750" },
+      { label: "Industries covered", value: "Banking, Insurance, O&G" },
+      { label: "Maintenance overhead", value: "Significantly reduced" },
+      { label: "Customer onboarding", value: "Improved" },
+    ],
+    artifacts: [
+      { label: "Information Architecture", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "IA design and content taxonomy" },
+      { label: "Content Audit Report", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "750-topic audit methodology and findings" },
+      { label: "Persona Framework", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Personas across industries and LOBs" },
+      { label: "Help Portal (live)", type: "notion", href: "ADD_NOTION_LINK", desc: "Unified help portal post-migration" },
+    ],
+    samples: [],
+    askPrompt: "Tell me about the content UX consistency project at SAP Analytics.",
+  },
+  {
+    id: "06", title: "Leadership & Thought Leadership", company: "SAP Labs · Intuit",
+    role: "UX Design Manager", metric: "4.8/5", metricLabel: "NPS across all workshops",
+    tags: ["Mentorship", "Public Speaking", "Ethical AI", "Accessibility"],
+    description: "Building content culture, developing talent, and establishing thought leadership while driving business results across multiple product lines — from workshop design to enterprise ethical AI guidelines.",
+    challenge: "Building a strong content design culture, developing talent at scale, and establishing thought leadership in the industry — while simultaneously driving business results across multiple product lines.",
+    keyActions: [
+      "Manage and mentor 8 content designers at SAP; built and coached Intuit content team for 3 years",
+      "Led 1:1 and group workshops on Content Design, Prompt Design, and Career Transition",
+      "Delivered keynote workshops at UXIndia (120+ participants) and D4 Design (NPS 4.8/5)",
+      "Recognised as Top Mentor on ADPList twice; speaker at ADPList BeMore Conference and W-Summit",
+      "Worked with leaders to set ARIA/Alt+text standards; ran accessibility audits organisation-wide",
+      "Developed enterprise frameworks for ethical AI content guidelines adopted by global teams",
+    ],
+    results: [
+      { label: "Intuit Superstar Award", value: "2023" },
       { label: "ADPList Top Mentor", value: "Twice" },
       { label: "Workshop NPS", value: "4.8+ / 5" },
-      { label: "Team Growth", value: "Doubled capabilities" },
+      { label: "Women in Leadership", value: "Intuit programme" },
+    ],
+    artifacts: [
+      { label: "Prompt Design Talk — UXIndia 2023", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Slides from UXIndia keynote on prompt design" },
+      { label: "NextGen Network Interview", type: "video", href: "https://www.youtube.com/watch?v=SQcGF5OinFs", desc: "Featured interview on content design career" },
+      { label: "ADPList BeMore Conference", type: "video", href: "https://drive.google.com/file/d/1td8NBDKhQpO3TRvM87p-mxb4nAs28i4L/view", desc: "Conference talk recording" },
+      { label: "W-Summit Career Talk", type: "video", href: "https://www.youtube.com/watch?v=i1EgVExCpj0", desc: "Career guidance session recording" },
+      { label: "Ethical AI Guidelines", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Enterprise ethical AI content framework" },
+      { label: "Accessibility Standards", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "ARIA and Alt-text guidelines document" },
     ],
     samples: [
-      { label: "Prompt Design — UXIndia 2023", type: "pdf", href: "#" },
       { label: "NextGen Network Interview", type: "video", href: "https://www.youtube.com/watch?v=SQcGF5OinFs" },
       { label: "ADPList BeMore Conference", type: "video", href: "https://drive.google.com/file/d/1td8NBDKhQpO3TRvM87p-mxb4nAs28i4L/view" },
       { label: "W-Summit Career Talk", type: "video", href: "https://www.youtube.com/watch?v=i1EgVExCpj0" },
@@ -142,14 +270,27 @@ const PROJECTS = [
   },
   {
     id: "07", title: "Design Thinking Facilitation", company: "SAP Labs",
-    role: "Design Thinking Coach", metric: "✦", metricLabel: "Virtual DT workshop, multiple business lines",
+    role: "Certified DT Coach", metric: "✦", metricLabel: "Virtual DT workshop across business lines",
     tags: ["Design Thinking", "Facilitation", "Process Optimisation", "Virtual Workshop"],
-    description: "As a newly inducted DT coach, mapped user journeys across business lines, identified overlapping tools and processes preventing synchronous communication, and delivered a one-of-a-kind virtual Design Thinking workshop.",
+    description: "As a newly inducted Certified Design Thinking Coach (SAP Design Thinking Academy, 2021), addressed multiple overlapping tools and processes within the India location and helped Project Management teams overcome communication and synchronisation challenges.",
+    challenge: "Multiple overlapping tools and processes within the India location prevented Project Management teams from communicating and synchronising effectively across business lines.",
+    keyActions: [
+      "Mapped user journeys of various lines of businesses from start to end across different teams and processes",
+      "Methodically helped teams identify problem areas and suggest scalable solutions for prioritised areas",
+      "Identified diverse number of tools, processes, and overlaps preventing synchronous communication",
+      "Delivered comprehensive virtual facilitation despite limited time and resources",
+      "Certified Design Thinking Coach with Virtual Facilitation — SAP Design Thinking Academy, 2021",
+    ],
     results: [
-      { label: "Process Optimised", value: "Multiple BUs" },
-      { label: "Tool Overlaps", value: "Identified & resolved" },
-      { label: "Stakeholder NPS", value: "Outstanding" },
+      { label: "Process optimised", value: "Multiple BUs" },
+      { label: "Tool overlaps", value: "Identified & resolved" },
+      { label: "Stakeholder feedback", value: "Outstanding" },
       { label: "Format", value: "Virtual-first" },
+    ],
+    artifacts: [
+      { label: "DT Workshop Summary", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Project Management DT session summary and outcomes" },
+      { label: "Facilitation Deck", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Workshop slides and exercises" },
+      { label: "Process Maps", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "User journey maps across business lines" },
     ],
     samples: [],
     askPrompt: "Tell me about the design thinking facilitation project at SAP.",
@@ -173,10 +314,10 @@ const CHIPS = [
 
 // ─── Design tokens ─────────────────────────────────────────────────────────────
 const C = {
-  bg:     "#0B0D12", surface: "#12151C", card: "#191C26", cardHov: "#1e2130",
-  border: "rgba(255,255,255,0.07)", accent: "#C4976A",
-  aLo:    "rgba(196,151,106,0.1)", aMid: "rgba(196,151,106,0.22)",
-  text:   "#E4DDD0", muted: "rgba(228,221,208,0.42)",
+  bg:     "#0B0D12", surface: "#161A23", card: "#191C26", cardHov: "#222638",
+  border: "rgba(255,255,255,0.07)", accent: "#7B9FBF",
+  aLo:    "rgba(196,151,106,0.1)", aMid: "rgba(123,159,191,0.2)",
+  text:   "#E4DDD0", muted: "rgba(200,208,224,0.52)",
   green:  "#4EC98A", gLo: "rgba(78,201,138,0.1)",
 };
 const SANS  = "'DM Sans', sans-serif";
@@ -191,10 +332,10 @@ const STYLES = `
   ::-webkit-scrollbar-track{background:transparent}
   ::-webkit-scrollbar-thumb{background:${C.aMid};border-radius:2px}
 
-  .sl-chip{background:${C.aLo};border:1px solid ${C.aMid};color:rgba(196,151,106,0.8);
+  .sl-chip{background:${C.aLo};border:1px solid ${C.aMid};color:rgba(123,159,191,0.85);
     padding:7px 13px;border-radius:20px;font-size:12px;font-family:${SANS};
     cursor:pointer;white-space:nowrap;transition:all 0.2s;line-height:1}
-  .sl-chip:hover{background:${C.aMid};border-color:rgba(196,151,106,0.5);color:${C.accent};transform:translateY(-1px)}
+  .sl-chip:hover{background:${C.aMid};border-color:rgba(123,159,191,0.5);color:${C.accent};transform:translateY(-1px)}
 
   .sl-send{background:${C.accent};border:none;width:38px;height:38px;border-radius:50%;
     cursor:pointer;display:flex;align-items:center;justify-content:center;
@@ -223,6 +364,13 @@ const STYLES = `
   .sl-nav-link{font-size:12px;color:${C.muted};text-decoration:none;letter-spacing:0.06em;transition:color 0.2s}
   .sl-nav-link:hover{color:${C.accent}}
 
+  .sl-resume-btn{display:inline-flex;align-items:center;gap:7px;
+    background:transparent;border:1px solid ${C.aMid};color:${C.accent};
+    padding:7px 16px;border-radius:8px;font-size:12px;font-family:${SANS};
+    letter-spacing:0.06em;cursor:pointer;transition:all 0.22s;
+    text-decoration:none;font-weight:500;white-space:nowrap}
+  .sl-resume-btn:hover{background:${C.aLo};border-color:${C.accent};transform:translateY(-1px)}
+
   .sl-proj-card{background:${C.card};border:1px solid ${C.border};border-radius:16px;
     overflow:hidden;transition:all 0.25s;cursor:pointer}
   .sl-proj-card:hover{border-color:${C.aMid};transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,0.35)}
@@ -236,7 +384,7 @@ const STYLES = `
     background:rgba(255,255,255,0.04);border:1px solid ${C.border};
     color:${C.muted};padding:6px 12px;border-radius:8px;font-size:12px;
     font-family:${SANS};text-decoration:none;transition:all 0.2s;margin-right:7px;margin-top:7px}
-  .sl-sample:hover{border-color:${C.aMid};color:${C.text};background:rgba(196,151,106,0.07)}
+  .sl-sample:hover{border-color:${C.aMid};color:${C.text};background:rgba(123,159,191,0.07)}
 
   .sl-skill-tag{background:${C.surface};border:1px solid ${C.border};
     color:${C.muted};padding:6px 13px;border-radius:8px;font-size:12px;
@@ -256,7 +404,7 @@ function Avatar({ size = 30 }) {
   return (
     <div style={{
       width: size, height: size, borderRadius: "50%", flexShrink: 0,
-      background: `linear-gradient(135deg, ${C.accent} 0%, #8B5534 100%)`,
+      background: `linear-gradient(135deg, ${C.accent} 0%, #4A6F8A 100%)`,
       display: "flex", alignItems: "center", justifyContent: "center",
       fontFamily: SERIF, fontWeight: 600, fontSize: size * 0.38, color: C.bg, marginTop: 2,
     }}>SL</div>
@@ -374,15 +522,15 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
         AI-Powered Portfolio · Ask Me Anything
       </p>
       <h1 style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: "clamp(28px,4.5vw,52px)", fontWeight: 400, lineHeight: 1.18, marginBottom: 14 }}>
-        16 years of turning complexity<br />into <span style={{ color: C.accent }}>clarity</span> &amp; <span style={{ color: C.accent }}>business impact.</span>
+        20 years of turning complexity<br />into <span style={{ color: C.accent }}>clarity</span> &amp; <span style={{ color: C.accent }}>business impact.</span>
       </h1>
       <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85, maxWidth: 480, marginBottom: 36 }}>
-        I lead content strategy and UX design at Fortune 500 companies — building teams, frameworks, and experiences that drive measurable adoption. Ask me anything below, or switch to Portfolio View to browse my work.
+        I bring 20+ years of experience across SAP, Intuit, Dell, and McAfee — leading content strategy and UX design that drives measurable business impact. Ask me anything below, or switch to Portfolio View to browse my work.
       </p>
 
       {/* Stats */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 10, marginBottom: 40 }}>
-        {[["16+","Years"], ["37%","YoY growth"], ["8+","Designers led"], ["4.8","Workshop NPS"]].map(([n, l]) => (
+        {[["$936M+","Revenue impact"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
           <div key={l} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "14px 10px", textAlign: "center" }}>
             <p style={{ fontFamily: SERIF, fontSize: 28, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{n}</p>
             <p style={{ fontSize: 9, color: C.muted, letterSpacing: "0.1em", textTransform: "uppercase", marginTop: 5, lineHeight: 1.4 }}>{l}</p>
@@ -414,7 +562,7 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
               <div style={{
                 maxWidth: "82%",
                 background: m.role === "user" ? C.accent : C.card,
-                color: m.role === "user" ? C.bg : C.text,
+                color: m.role === "user" ? "#0F1117" : C.text,
                 padding: "11px 14px",
                 borderRadius: m.role === "user" ? "16px 4px 16px 16px" : "4px 16px 16px 16px",
                 fontSize: 13, lineHeight: 1.75, whiteSpace: "pre-wrap", wordBreak: "break-word",
@@ -448,7 +596,7 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
         </div>
       </div>
 
-      <p style={{ fontSize: 11, color: "rgba(228,221,208,0.18)", marginTop: 12, letterSpacing: "0.08em", textAlign: "center" }}>
+      <p style={{ fontSize: 11, color: "rgba(200,208,224,0.2)", marginTop: 12, letterSpacing: "0.08em", textAlign: "center" }}>
         Powered by Claude · All answers reflect Sheena's real experience
       </p>
     </div>
@@ -459,229 +607,386 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
 // CLASSIC PORTFOLIO MODE
 // ═══════════════════════════════════════════════════════════════════
 function ClassicMode({ onAskAbout }) {
-  const [expanded, setExpanded] = useState(null);
+  const [drawer, setDrawer] = useState(null); // project object or null
 
-  const toggle = (id) => setExpanded(prev => prev === id ? null : id);
+  const ARTIFACT_ICONS = { pdf: "PDF", deck: "▤", screenshot: "⊡", video: "▶", notion: "N" };
+  const ARTIFACT_LABELS = { pdf: "PDF", deck: "Deck", screenshot: "Screenshots", video: "Video", notion: "Notion" };
+
+  const openDrawer  = (p) => setDrawer(p);
+  const closeDrawer = ()  => setDrawer(null);
 
   return (
-    <div className="sl-page-in" style={{ maxWidth: 900, margin: "0 auto", padding: "44px 24px 80px" }}>
+    <div style={{ position: "relative" }}>
 
-      {/* ── ABOUT ── */}
-      <section style={{ marginBottom: 72 }}>
-        <div style={{ display: "flex", gap: 32, alignItems: "flex-start" }}>
-          <div style={{ flex: 1 }}>
-            <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 14 }}>
-              About
-            </p>
-            <h1 style={{ fontFamily: SERIF, fontSize: "clamp(28px,4vw,48px)", fontWeight: 600, lineHeight: 1.18, marginBottom: 18 }}>
-              Sheena Lakshmi
-            </h1>
-            <p style={{ fontSize: 14, color: C.muted, lineHeight: 1.9, marginBottom: 16, maxWidth: 560 }}>
-              I help companies succeed by transforming complex software interactions into clear, user-focused experiences led by content — driving adoption and business impact.
-            </p>
-            <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.9, maxWidth: 560 }}>
-              With 16+ years in enterprise writing and 8+ years leading UX and content transformation at Fortune 500 companies, I've built and scaled high-performing teams, implemented enterprise-wide content strategy frameworks, and delivered measurable results across global markets. Expert in ethical AI, accessibility, digital adoption, and creating measurable user and business outcomes.
-            </p>
-            <div style={{ display: "flex", gap: 20, marginTop: 24, flexWrap: "wrap" }}>
-              <a href="mailto:sheenalakshmi@gmail.com" className="sl-nav-link" style={{ color: C.accent }}>sheenalakshmi@gmail.com ↗</a>
-              <a href="https://www.linkedin.com/in/sheena-lakshmi-232a425/" target="_blank" rel="noreferrer" className="sl-nav-link">LinkedIn ↗</a>
-              <a href="tel:+919845807918" className="sl-nav-link">+91 98458 07918</a>
-            </div>
-          </div>
+      {/* ── DRAWER OVERLAY ── */}
+      {drawer && (
+        <div
+          onClick={closeDrawer}
+          style={{
+            position: "fixed", inset: 0, background: "rgba(0,0,0,0.55)",
+            zIndex: 50, backdropFilter: "blur(4px)",
+          }}
+        />
+      )}
 
-          {/* Stats */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, flexShrink: 0 }}>
-            {[["16+","Years"], ["37%","YoY growth"], ["8+","Designers led"], ["4.8","Workshop NPS"]].map(([n, l]) => (
-              <div key={l} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 14, padding: "18px 14px", textAlign: "center", minWidth: 100 }}>
-                <p style={{ fontFamily: SERIF, fontSize: 30, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{n}</p>
-                <p style={{ fontSize: 9, color: C.muted, letterSpacing: "0.1em", textTransform: "uppercase", marginTop: 6, lineHeight: 1.4 }}>{l}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── EXPERIENCE ── */}
-      <section style={{ marginBottom: 72 }}>
-        <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Experience</p>
-        {[
-          { role: "UX Design Manager (Content)", co: "SAP Labs", period: "Current", loc: "Bengaluru, India" },
-          { role: "Content Design Lead & Strategist", co: "Intuit (QuickBooks)", period: "3 years", loc: "Remote / Global" },
-          { role: "Content Design Strategist", co: "SAP Analytics", period: "Earlier", loc: "Bengaluru, India" },
-          { role: "DT Coach & Senior Content Designer", co: "SAP Labs", period: "Earlier", loc: "Bengaluru, India" },
-        ].map((e, i) => (
-          <div key={i} className="sl-exp-row">
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      {/* ── DRAWER PANEL ── */}
+      <div style={{
+        position: "fixed", top: 0, right: 0, bottom: 0,
+        width: "min(560px, 92vw)",
+        background: C.surface,
+        borderLeft: `1px solid ${C.border}`,
+        zIndex: 60,
+        transform: drawer ? "translateX(0)" : "translateX(100%)",
+        transition: "transform 0.35s cubic-bezier(0.4,0,0.2,1)",
+        display: "flex", flexDirection: "column",
+        overflowY: "auto",
+        boxShadow: drawer ? "-20px 0 60px rgba(0,0,0,0.4)" : "none",
+      }}>
+        {drawer && (
+          <>
+            {/* Drawer header */}
+            <div style={{
+              padding: "20px 28px", borderBottom: `1px solid ${C.border}`,
+              display: "flex", justifyContent: "space-between", alignItems: "flex-start",
+              background: C.card, position: "sticky", top: 0, zIndex: 1,
+            }}>
               <div>
-                <p style={{ fontSize: 15, fontWeight: 500, color: C.text, marginBottom: 3 }}>{e.role}</p>
-                <p style={{ fontSize: 12, color: C.muted }}>{e.co} · {e.loc}</p>
+                <p style={{ fontSize: 10, color: C.muted, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: 4 }}>
+                  {drawer.id} · {drawer.company}
+                </p>
+                <h2 style={{ fontFamily: SERIF, fontSize: 22, fontWeight: 600, color: C.text, lineHeight: 1.2 }}>
+                  {drawer.title}
+                </h2>
+                <p style={{ fontSize: 12, color: C.muted, marginTop: 3 }}>{drawer.role}</p>
               </div>
-              <span style={{ fontSize: 11, color: C.muted, letterSpacing: "0.08em", flexShrink: 0, marginLeft: 16 }}>{e.period}</span>
+              <button
+                onClick={closeDrawer}
+                style={{
+                  background: "transparent", border: `1px solid ${C.border}`,
+                  color: C.muted, width: 32, height: 32, borderRadius: "50%",
+                  cursor: "pointer", fontSize: 18, lineHeight: 1,
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  flexShrink: 0, marginLeft: 16, marginTop: 2,
+                  transition: "all 0.2s",
+                }}
+              >×</button>
+            </div>
+
+            {/* Drawer body */}
+            <div style={{ padding: "28px", display: "flex", flexDirection: "column", gap: 28 }}>
+
+              {/* Tags */}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                {drawer.tags.map(t => <Tag key={t} label={t} />)}
+              </div>
+
+              {/* Key metric */}
+              <div style={{
+                background: C.card, border: `1px solid ${C.border}`,
+                borderRadius: 14, padding: "18px 22px",
+                display: "flex", gap: 20, alignItems: "center",
+              }}>
+                <div>
+                  <p style={{ fontFamily: SERIF, fontSize: 40, fontWeight: 600, color: C.accent, lineHeight: 1 }}>
+                    {drawer.metric}
+                  </p>
+                  <p style={{ fontSize: 11, color: C.muted, letterSpacing: "0.08em", marginTop: 4 }}>
+                    {drawer.metricLabel}
+                  </p>
+                </div>
+              </div>
+
+              {/* Challenge */}
+              <div>
+                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 10 }}>
+                  Challenge & Context
+                </p>
+                <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85 }}>{drawer.challenge}</p>
+              </div>
+
+              {/* Key Actions */}
+              <div>
+                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 12 }}>
+                  Key Actions
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  {drawer.keyActions.map((a, i) => (
+                    <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
+                      <span style={{
+                        fontFamily: SANS, fontSize: 11, color: C.accent,
+                        flexShrink: 0, marginTop: 2, opacity: 0.7,
+                      }}>
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.75 }}>{a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Results grid */}
+              <div>
+                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 12 }}>
+                  Results
+                </p>
+                <div style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
+                  gap: 10,
+                }}>
+                  {drawer.results.map(r => (
+                    <div key={r.label} style={{
+                      background: C.bg, border: `1px solid ${C.border}`,
+                      borderRadius: 12, padding: "14px 14px",
+                    }}>
+                      <p style={{ fontFamily: SERIF, fontSize: 20, fontWeight: 600, color: C.accent, lineHeight: 1, marginBottom: 5 }}>
+                        {r.value}
+                      </p>
+                      <p style={{ fontSize: 10, color: C.muted, letterSpacing: "0.05em", lineHeight: 1.4 }}>
+                        {r.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Artifacts */}
+              <div>
+                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 12 }}>
+                  Proof & Artifacts
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  {drawer.artifacts.map(a => {
+                    const isPlaceholder = a.href.startsWith("ADD_");
+                    return (
+                      <div key={a.label} style={{
+                        background: C.card,
+                        border: `1px solid ${isPlaceholder ? "rgba(255,255,255,0.04)" : C.border}`,
+                        borderRadius: 10, padding: "12px 16px",
+                        display: "flex", alignItems: "center", gap: 14,
+                        opacity: isPlaceholder ? 0.45 : 1,
+                        cursor: isPlaceholder ? "default" : "pointer",
+                      }}
+                        onClick={() => !isPlaceholder && window.open(a.href, "_blank")}
+                      >
+                        <div style={{
+                          width: 36, height: 36, borderRadius: 8, flexShrink: 0,
+                          background: isPlaceholder ? C.surface : C.aLo,
+                          border: `1px solid ${C.border}`,
+                          display: "flex", alignItems: "center", justifyContent: "center",
+                          fontSize: 11, fontWeight: 600,
+                          color: isPlaceholder ? C.muted : C.accent,
+                          fontFamily: SANS,
+                        }}>
+                          {ARTIFACT_ICONS[a.type] || "↗"}
+                        </div>
+                        <div style={{ flex: 1, minWidth: 0 }}>
+                          <p style={{ fontSize: 13, fontWeight: 500, color: isPlaceholder ? C.muted : C.text, marginBottom: 2 }}>
+                            {a.label}
+                            {isPlaceholder && <span style={{ fontSize: 11, marginLeft: 8, opacity: 0.6 }}>(link pending)</span>}
+                          </p>
+                          <p style={{ fontSize: 11, color: C.muted, lineHeight: 1.4 }}>{a.desc}</p>
+                        </div>
+                        {!isPlaceholder && (
+                          <span style={{ fontSize: 14, color: C.muted, flexShrink: 0 }}>↗</span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Ask AI button */}
+              <div style={{ paddingTop: 4, paddingBottom: 8 }}>
+                <button
+                  className="sl-ask"
+                  style={{ width: "100%", textAlign: "center", padding: "12px" }}
+                  onClick={() => { closeDrawer(); onAskAbout(drawer.askPrompt); }}
+                >
+                  ✦ Ask Sheena about this project in the AI chat
+                </button>
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+
+      {/* ── PAGE CONTENT ── */}
+      <div style={{ maxWidth: 900, margin: "0 auto", padding: "44px 24px 80px" }}>
+
+        {/* ── ABOUT ── */}
+        <section style={{ marginBottom: 72 }}>
+          <div style={{ display: "flex", gap: 32, alignItems: "flex-start", flexWrap: "wrap" }}>
+            <div style={{ flex: 1, minWidth: 280 }}>
+              <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 14 }}>About</p>
+              <h1 style={{ fontFamily: SERIF, fontSize: "clamp(28px,4vw,48px)", fontWeight: 600, lineHeight: 1.18, marginBottom: 18 }}>
+                Sheena Lakshmi
+              </h1>
+              <p style={{ fontSize: 14, color: C.muted, lineHeight: 1.9, marginBottom: 14, maxWidth: 560 }}>
+                UX Design Manager and Content Design Leader with 20+ years of experience — 8+ years specialising in UX content design and 16+ years in technical documentation.
+              </p>
+              <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.9, maxWidth: 560 }}>
+                Proven track record of building and scaling high-performing content teams at Fortune 500 companies (SAP, Intuit, Dell, McAfee). Deep expertise in AI content design for enterprise products, prompt engineering, conversation design, ethical AI, and data-informed UX research.
+              </p>
+              <div style={{ display: "flex", gap: 12, marginTop: 24, flexWrap: "wrap", alignItems: "center" }}>
+                <a
+                  href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="sl-resume-btn"
+                  download
+                >
+                  ↓ Download Resume
+                </a>
+                <a href="mailto:sheenalakshmi@gmail.com" className="sl-nav-link" style={{ color: C.accent }}>sheenalakshmi@gmail.com ↗</a>
+                <a href="https://www.linkedin.com/in/sheena-lakshmi-232a425/" target="_blank" rel="noreferrer" className="sl-nav-link">LinkedIn ↗</a>
+              </div>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, flexShrink: 0 }}>
+              {[["$936M+","Revenue impact"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
+                <div key={l} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 14, padding: "18px 14px", textAlign: "center", minWidth: 100 }}>
+                  <p style={{ fontFamily: SERIF, fontSize: 28, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{n}</p>
+                  <p style={{ fontSize: 9, color: C.muted, letterSpacing: "0.1em", textTransform: "uppercase", marginTop: 6, lineHeight: 1.4 }}>{l}</p>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
-      </section>
+        </section>
 
-      {/* ── CASE STUDIES ── */}
-      <section style={{ marginBottom: 72 }}>
-        <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 10 }}>
-          Case Studies
-        </p>
-        <p style={{ fontSize: 12, color: C.muted, marginBottom: 28, lineHeight: 1.7 }}>
-          Click any project to expand details and access work samples. Use <strong style={{ color: C.accent, fontWeight: 400 }}>Ask Sheena</strong> to dive deeper.
-        </p>
+        {/* ── EXPERIENCE ── */}
+        <section style={{ marginBottom: 72 }}>
+          <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Experience</p>
+          {[
+            { role: "UX Design Manager (Content)", co: "SAP Labs India", period: "2025 – Present" },
+            { role: "Content Design Lead & Strategist", co: "Intuit (QuickBooks)", period: "2022 – 2025" },
+            { role: "Senior User Assistance Developer / Content Design Strategist", co: "SAP Analytics Cloud", period: "2019 – 2022" },
+            { role: "Senior Technical Writer", co: "McAfee India", period: "2017 – 2018" },
+            { role: "Documentation Product Lead", co: "Dell Technologies", period: "2008 – 2016" },
+            { role: "Senior Technical Writer", co: "RSA Security India", period: "2007 – 2008" },
+            { role: "Senior Information Developer", co: "Huawei Technologies India", period: "2004 – 2007" },
+          ].map((e, i) => (
+            <div key={i} className="sl-exp-row">
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div>
+                  <p style={{ fontSize: 14, fontWeight: 500, color: C.text, marginBottom: 3 }}>{e.role}</p>
+                  <p style={{ fontSize: 12, color: C.muted }}>{e.co}</p>
+                </div>
+                <span style={{ fontSize: 11, color: C.muted, letterSpacing: "0.08em", flexShrink: 0, marginLeft: 16 }}>{e.period}</span>
+              </div>
+            </div>
+          ))}
+        </section>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          {PROJECTS.map(p => {
-            const isOpen = expanded === p.id;
-            return (
+        {/* ── CASE STUDIES ── */}
+        <section style={{ marginBottom: 72 }}>
+          <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 10 }}>
+            Case Studies
+          </p>
+          <p style={{ fontSize: 12, color: C.muted, marginBottom: 28, lineHeight: 1.7 }}>
+            Click <strong style={{ color: C.text, fontWeight: 500 }}>View case study</strong> on any project to see the full challenge, process, results, and artifacts.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {PROJECTS.map(p => (
               <div key={p.id} className="sl-proj-card">
-                {/* Card header — always visible */}
-                <div onClick={() => toggle(p.id)} style={{ padding: "18px 22px", display: "flex", alignItems: "center", gap: 16 }}>
+                <div style={{ padding: "18px 22px", display: "flex", alignItems: "center", gap: 16 }}>
                   <span style={{ fontFamily: SANS, fontSize: 11, color: C.muted, letterSpacing: "0.1em", flexShrink: 0 }}>{p.id}</span>
-                  <div style={{ flex: 1 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap" }}>
-                      <h3 style={{ fontFamily: SERIF, fontSize: 20, fontWeight: 600, color: C.text, lineHeight: 1.2 }}>{p.title}</h3>
-                      <span style={{ fontSize: 11, color: C.muted }}>{p.company}</span>
+                      <h3 style={{ fontFamily: SERIF, fontSize: 19, fontWeight: 600, color: C.text, lineHeight: 1.2 }}>{p.title}</h3>
+                      <span style={{ fontSize: 11, color: C.muted, flexShrink: 0 }}>{p.company}</span>
                     </div>
+                    <p style={{ fontSize: 12, color: C.muted, marginTop: 4, lineHeight: 1.6, maxWidth: 520 }}>{p.description}</p>
                     <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginTop: 8 }}>
                       {p.tags.map(t => <Tag key={t} label={t} />)}
                     </div>
                   </div>
                   <div style={{ textAlign: "right", flexShrink: 0, paddingLeft: 12 }}>
-                    <p style={{ fontFamily: SERIF, fontSize: 26, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{p.metric}</p>
-                    <p style={{ fontSize: 9, color: C.muted, maxWidth: 100, textAlign: "right", lineHeight: 1.4, marginTop: 3 }}>{p.metricLabel}</p>
+                    <p style={{ fontFamily: SERIF, fontSize: 24, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{p.metric}</p>
+                    <p style={{ fontSize: 9, color: C.muted, maxWidth: 90, textAlign: "right", lineHeight: 1.4, marginTop: 3 }}>{p.metricLabel}</p>
+                    <button
+                      className="sl-ask"
+                      style={{ marginTop: 10, fontSize: 11, padding: "6px 12px", display: "block", width: "100%", textAlign: "center" }}
+                      onClick={() => openDrawer(p)}
+                    >
+                      View case study →
+                    </button>
                   </div>
-                  <div style={{ flexShrink: 0, color: C.muted, fontSize: 18, marginLeft: 12, transition: "transform 0.25s", transform: isOpen ? "rotate(45deg)" : "rotate(0)" }}>+</div>
                 </div>
-
-                {/* Expanded details */}
-                {isOpen && (
-                  <div style={{ padding: "0 22px 22px", borderTop: `1px solid ${C.border}` }}>
-                    <div style={{ display: "grid", gridTemplateColumns: "1fr 220px", gap: 24, paddingTop: 20 }}>
-
-                      {/* Description */}
-                      <div>
-                        <p style={{ fontSize: 10, letterSpacing: "0.2em", textTransform: "uppercase", color: C.muted, marginBottom: 8 }}>Overview</p>
-                        <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85, marginBottom: 20 }}>{p.description}</p>
-
-                        {/* Work samples */}
-                        {p.samples.length > 0 && (
-                          <div>
-                            <p style={{ fontSize: 10, letterSpacing: "0.2em", textTransform: "uppercase", color: C.muted, marginBottom: 4 }}>Work Samples</p>
-                            <div style={{ display: "flex", flexWrap: "wrap" }}>
-                              {p.samples.map(s => (
-                                <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="sl-sample">
-                                  <span style={{ fontSize: 10 }}>{s.type === "video" ? "▶" : "PDF"}</span>
-                                  {s.label}
-                                </a>
-                              ))}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* Ask AI button */}
-                        <div style={{ marginTop: 18 }}>
-                          <button className="sl-ask" onClick={() => onAskAbout(p.askPrompt)}>
-                            ✦ Ask Sheena about this project
-                          </button>
-                        </div>
-                      </div>
-
-                      {/* Results */}
-                      <div>
-                        <p style={{ fontSize: 10, letterSpacing: "0.2em", textTransform: "uppercase", color: C.muted, marginBottom: 10 }}>Results</p>
-                        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                          {p.results.map(r => (
-                            <div key={r.label} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 10, padding: "12px 14px" }}>
-                              <p style={{ fontFamily: SERIF, fontSize: 18, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{r.value}</p>
-                              <p style={{ fontSize: 10, color: C.muted, letterSpacing: "0.06em", marginTop: 4, lineHeight: 1.4 }}>{r.label}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* ── SKILLS ── */}
-      <section style={{ marginBottom: 72 }}>
-        <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Skills & Tools</p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 24 }}>
-          {SKILLS_LIST.map(sg => (
-            <div key={sg.group}>
-              <p style={{ fontSize: 11, color: C.muted, letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: 10 }}>{sg.group}</p>
-              <div>
-                {sg.items.map(s => <span key={s} className="sl-skill-tag">{s}</span>)}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── RECOGNITION ── */}
-      <section style={{ marginBottom: 72 }}>
-        <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Recognition</p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 12 }}>
-          {[
-            { award: "Intuit Superstar Award", detail: "Customer Obsession · Q4 2023" },
-            { award: "Top Talent", detail: "SAP Labs recognition" },
-            { award: "Top Mentor on ADPList", detail: "Recognised twice in a row" },
-            { award: "Workshop NPS 4.8+ / 5", detail: "Across all trainings and workshops" },
-          ].map(a => (
-            <div key={a.award} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 14, padding: "18px 20px" }}>
-              <p style={{ fontFamily: SERIF, fontSize: 17, fontWeight: 600, color: C.text, marginBottom: 5 }}>{a.award}</p>
-              <p style={{ fontSize: 12, color: C.muted }}>{a.detail}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ── CONTACT ── */}
-      <section>
-        <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 20 }}>Get in Touch</p>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, alignItems: "start" }}>
-          <div>
-            <h2 style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: "clamp(26px,3.5vw,44px)", fontWeight: 400, lineHeight: 1.2, marginBottom: 16 }}>
-              Let's make something great together.
-            </h2>
-            <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85 }}>
-              Open to senior UX leadership, content strategy, and design management opportunities. Based in Bengaluru — open to global and remote roles.
-            </p>
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
-            {[
-              { label: "Email", value: "sheenalakshmi@gmail.com", href: "mailto:sheenalakshmi@gmail.com" },
-              { label: "LinkedIn", value: "/in/sheena-lakshmi-232a425", href: "https://www.linkedin.com/in/sheena-lakshmi-232a425/" },
-              { label: "Phone", value: "+91 98458 07918", href: "tel:+919845807918" },
-            ].map(c => (
-              <div key={c.label} style={{ padding: "16px 0", borderBottom: `1px solid ${C.border}`, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ fontSize: 10, color: C.muted, letterSpacing: "0.2em", textTransform: "uppercase" }}>{c.label}</span>
-                <a href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className="sl-nav-link" style={{ color: C.text }}>
-                  {c.value} →
-                </a>
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* ── SKILLS ── */}
+        <section style={{ marginBottom: 72 }}>
+          <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Skills & Tools</p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 24 }}>
+            {SKILLS_LIST.map(sg => (
+              <div key={sg.group}>
+                <p style={{ fontSize: 11, color: C.muted, letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: 10 }}>{sg.group}</p>
+                <div>{sg.items.map(s => <span key={s} className="sl-skill-tag">{s}</span>)}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── RECOGNITION ── */}
+        <section style={{ marginBottom: 72 }}>
+          <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Recognition</p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 12 }}>
+            {[
+              { award: "Intuit Superstar Award", detail: "Customer Obsession · 2023 — highest company recognition" },
+              { award: "Trajectory Changing Performance", detail: "Highest merit rating at Intuit" },
+              { award: "Women in Leadership", detail: "Intuit — 6-month intensive coaching programme" },
+              { award: "Top Mentor on ADPList", detail: "Recognised twice in a row" },
+              { award: "Top Talent", detail: "SAP Labs recognition" },
+              { award: "Workshop NPS 4.8+ / 5", detail: "Across all design thinking and content workshops" },
+            ].map(a => (
+              <div key={a.award} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 14, padding: "16px 20px" }}>
+                <p style={{ fontFamily: SERIF, fontSize: 16, fontWeight: 600, color: C.text, marginBottom: 4 }}>{a.award}</p>
+                <p style={{ fontSize: 12, color: C.muted }}>{a.detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── CONTACT ── */}
+        <section>
+          <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 20 }}>Get in Touch</p>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, alignItems: "start", flexWrap: "wrap" }}>
+            <div>
+              <h2 style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: "clamp(24px,3.5vw,42px)", fontWeight: 400, lineHeight: 1.2, marginBottom: 16 }}>
+                Let's make something great together.
+              </h2>
+              <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85 }}>
+                Open to senior UX leadership, content strategy, and design management opportunities. Based in Bengaluru — open to global and remote roles.
+              </p>
+            </div>
+            <div>
+              {[
+                { label: "Email", value: "sheenalakshmi@gmail.com", href: "mailto:sheenalakshmi@gmail.com" },
+                { label: "LinkedIn", value: "/in/sheena-lakshmi-232a425", href: "https://www.linkedin.com/in/sheena-lakshmi-232a425/" },
+                { label: "Phone", value: "+91 98458 07918", href: "tel:+919845807918" },
+              ].map(ct => (
+                <div key={ct.label} style={{ padding: "16px 0", borderBottom: `1px solid ${C.border}`, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ fontSize: 10, color: C.muted, letterSpacing: "0.2em", textTransform: "uppercase" }}>{ct.label}</span>
+                  <a href={ct.href} target={ct.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className="sl-nav-link" style={{ color: C.text }}>{ct.value} →</a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+      </div>
     </div>
   );
 }
 
-// ═══════════════════════════════════════════════════════════════════
-// ROOT
-// ═══════════════════════════════════════════════════════════════════
 export default function SheenaPortfolio() {
   const [mode, setMode]   = useState("ai"); // "ai" | "classic"
   const [msgs, setMsgs]   = useState([{
     role: "assistant",
-    content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP Labs with 16+ years of experience turning complex enterprise software into clear, human-centred experiences.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
+    content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP Labs with 24+ years of experience — 16 in technical writing and 8 in UX content design.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
   }]);
   const [busy, setBusy]   = useState(false);
   const [input, setInput] = useState("");
@@ -727,7 +1032,7 @@ export default function SheenaPortfolio() {
         width: "100%", padding: "14px 40px",
         display: "flex", justifyContent: "space-between", alignItems: "center",
         borderBottom: `1px solid ${C.border}`,
-        background: "rgba(11,13,18,0.95)", backdropFilter: "blur(16px)",
+        background: "rgba(15,17,23,0.96)", backdropFilter: "blur(16px)",
         position: "sticky", top: 0, zIndex: 30,
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
@@ -742,6 +1047,15 @@ export default function SheenaPortfolio() {
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <StatusBadge />
           <ModeToggle mode={mode} setMode={setMode} />
+          <a
+            href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="sl-resume-btn"
+            download
+          >
+            ↓ Resume
+          </a>
           <a href="mailto:sheenalakshmi@gmail.com" className="sl-nav-link">Contact ↗</a>
         </div>
       </nav>
