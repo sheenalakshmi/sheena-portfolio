@@ -13,17 +13,12 @@ Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-laks
 
 IMPACT AT A GLANCE:
 $936M+ revenue impact (Payments + Payroll at Intuit)
-37% YoY growth in budgeting adoption
+37% YoY increase in companies creating budgets
 22% lift in first-time feature adoption
-CES improvement: 13% → 52% (FP&A) and 7% → 32% (Content Ops)
-4.8/5 Workshop NPS across all sessions
+CES improvement: 13% → 52% (FP&A budgeting)
+4.8/5 Workshop NPS (D4 Design); 5/5 NPS (technical communicators training)
 100K GNS guided in 1.5 years with 88% 90-day retention
-
-CORE SKILLS:
-Strategy & Leadership: Content strategy & operations · Design thinking facilitation · Stakeholder management · Team mentorship & coaching · Performance management
-Design & Research: UX writing & content design · Conversational AI design · Information architecture · User research & testing · Data-informed design
-AI & Emerging: Content design for AI Agents · Prompt design & engineering · LLM content evaluation · Ethical AI & accessibility · Digital adoption (WalkMe)
-Tools: Figma · Balsamiq · Mural · Miro · Writer.AI · GenAI prompting · Jira · Airtable · Coda · UserTesting · Amplitude
+780K+ budgets created in QBO by 133K company files; 70K repeat monthly customers
 
 CURRENT ROLE — SAP Labs India (2025–Present):
 - Lead and mentor a team of 8 content designers across SAP enterprise products
@@ -33,37 +28,80 @@ CURRENT ROLE — SAP Labs India (2025–Present):
 - Partner with product management, UX design, and engineering teams across global markets
 - Design and facilitate Design Thinking workshops; established ethical AI content guidelines organisation-wide
 
-PROJECTS:
-[1] FP&A Content Strategy — Intuit QuickBooks | Content Design Strategist
-Impact: 37% YoY increase in budgeting companies; 25% rise in budgets created; FP&A engagement ↑12.54% (QBO Adv) & ↑8.39% (QBO Plus); CES improved 13%→52%; AI forecast usage raised to 36%; FTU >13% budgeting; 75% custom forecast-to-budget.
-Work: Led content design strategy for QuickBooks FP&A across global markets. Positioned FP&A in primary nav, built scalable frameworks, led 30+ user interviews, A/B tests, card sorting, usability studies.
+PROJECT 1 — FP&A Content Strategy · Intuit QuickBooks | Content Design Lead for FP&A
+I was the content design lead for all Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — spanning diverse global regions. FP&A is a strategic pillar for MM IES.
 
-[2] Content Operations & Team Leadership — Intuit QuickBooks | Content Design Lead
-Impact: Guided 100K GNS in 1.5 years; 88% 90-day retention; CES 7%→32%; contributed to $213M Payments and $723M Payroll revenue.
-Work: Managed content ops across core, payments, mobile, payroll, and migration. Mentored contingent team; led 24+ peer-review sessions.
+Precise metrics (sourced directly from internal promotion document):
+- Overall FP&A engagement: 12.54% in QBO Advanced, 8.39% in QBO Plus (against FY24 baseline of 10% and 3.5% respectively); 11.76% for Intuit Enterprise Suite
+- 37% increase in companies creating budgets in Feb YoY; 36% growth in overall companies during peak months (Nov, Dec, Jan, Feb)
+- 25% increase in number of budgets created in Feb YoY
+- 780K+ budgets created in QBO by 133K company files in one year; 70K repeat monthly customers
+- FTU conversion rate >13% for budgeting feature (hero state → create budget)
+- CES improved from 13% at launch to 52%
+- 75% conversion rate from custom forecast to budget; ~10% conversion rate from AI forecasts to budgets
+- AI forecasting engagement raised to 36%
 
-[3] First-Time User Onboarding — Intuit QuickBooks | Content Designer & Strategist
-Impact: 22% lift in first-time feature adoption; reduced cognitive load; improved engagement and retention for SMB users.
-Work: Qual/quant research on SMB user motivations. Crafted benefit-driven onboarding copy using Intuit's FTU framework. Outcome-focused voice and tone — no jargon, no overpromising.
+Tracks designed from ground zero: Budgeting (CA, UK, AU, ROW), P&L-based custom forecasting (100% QBO Adv US), Balance sheet budgeting (100% QBO Plus & Adv US), Subdivided budgeting (100% QBO Adv US), Custom Reports Builder for budgets, AI-based forecasting + collaborative budgeting + Goals for IES, multiple enhancements (autosave, prefill past actuals, import subdivided budgets, large payload budgeting), accessibility enhancements and audits.
 
-[4] Product Feature Naming — SAP Analytics | Content Design Strategist
-Impact: 'Schedule Publication' adopted as feature name; reduced cognitive load; improved learnability and scalability.
-Work: Resolved naming conflict between on-prem and cloud versions. Ran user interviews, competitor analysis (Tableau, Adobe, Zoho), card sorting, low-fi prototype testing.
+Key contributions:
+- Named and positioned 'Financial Planning and Analysis' within QBO left navigation — directly impacted discoverability, adoption and engagement
+- Led card sorting exercise to decide capability name from 'Budgets' to 'Financial Planning and Analysis'
+- Led A/B experiment with PM partner to improve AI forecasting engagement
+- Built scalable content framework and reusable content library across ~10 workstreams
+- Influenced ethical AI communication: collaborated with AI Governance Council, IntuitAssist teams, legal and marketing to deliver transparent AI messaging with explainability and legal disclaimers
+- Led seamless cashflow planner transition — rebranded, decommissioned AI forecasting within cashflow, coordinated with sales, marketing, and customer success in a two-week turnaround
+- Participated in 30+ follow-me-homes, contributed to 6 quantitative surveys, synthesised research for 6+ workstreams
+- Collaborated with accessibility leader Ted Drake to enforce ARIA labels, Alt+Text, and keyboard accessibility across FP&A
 
-[5] Content UX & Information Architecture — SAP Analytics | Content Design Strategist
-Impact: Centralised ~750 topics; streamlined maintenance; improved onboarding/adoption across Banking, Insurance, Oil & Gas.
-Work: Audited 750 topics, defined personas across industries and LOBs, designed IA, migrated all content to unified XML authoring environment.
+PROJECT 2 — QuickBooks Desktop Content & Team Leadership · Intuit QuickBooks | Content Design Lead
+Content lead for the full QBDT ecosystem, overseeing 1 FTE and 2–3 contingent workers.
 
-[6] Dell Technologies — Documentation Product Lead (Jul 2008–Feb 2016)
-Work: Documentation product lead for PowerEdge Servers — mentored and guided writers, planned and executed documentation requirements, drove process and product innovations. Conducted usability studies; served as cross-functional liaison across serviceability, usability, quality, marketing, and customer-facing teams.
+Products and scale:
+- QuickBooks Desktop Core & Enterprise: 235K customer base in FY24, projected 254K in FY25, projected revenue $868M
+- Payments: ~90K customers, ~$213M revenue
+- Tango (QBO mobile app): 360K+ downloads, 134K 90-day active base, 88 pts vs 85 pts 90-day retention (3 pts higher for QBO Adv cohort)
+- DT Payroll: 617K users, $723M revenue
+- Online migration tool (DTM): targeted 480K vintage Desktop customers → 100K GNS in 1.5 years, 380K GNS on QBO from DTM in FY24, 88% 90-day retention
 
-[7] Leadership & Thought Leadership — SAP Labs · Intuit | UX Design Manager
-Impact: Intuit Superstar Award Q4 2023; top mentor on ADPList twice; workshop NPS 4.8+/5; doubled team capabilities.
-Work: Manage and mentor 8 content designers at SAP. Built Intuit content team for 3 years. Delivered workshops at UXIndia (120+ participants) and D4 Design. Speaker at ADPList BeMore Conference and W-Summit. Developed ethical AI content guidelines. Featured in Intuit NextGen Podcast.
+Key contributions:
+- Influenced DTM redesign for standalone and batch migration tools; shaped end-of-life upgrade/update experience
+- Co-designed naming test plan for Tango app; synthesised follow-me-home research using Writer.AI
+- Led 24+ peer review sessions in FY23–FY24 across QBDT and FP&A
+- Maintained content quality across 8 workstreams via contingent worker coaching and weekly check-ins
+- Evangelised content design process: introduced content coaching office hours twice a week for product designers on QBDT
 
-[8] Design Thinking Facilitation — SAP | Certified DT Coach
-Impact: Streamlined PM processes across business lines. Testimonial: "This was no easy topic… executed pretty well."
-Work: Certified Design Thinking Coach with Virtual Facilitation (SAP Design Thinking Academy, 2021). Mapped user journeys, identified tool/process overlaps, delivered virtual DT workshop.
+PROJECT 3 — Leadership & Brand Building · Intuit | Content Design Lead
+Led a team of 4 content designers (1 FTE + 3 CWs) across two top revenue-generating product lines: QBDT and FP&A.
+
+Key contributions & recognition:
+- Conceptualised and delivered workshop on content design and prompt design at UXIndia Global Conference Q4 2023 — ~120 participants
+- Led prompt design workshop at D4 Design (Intuit-hosted event) — NPS 4.8/5
+- Trained 10-member batch of technical communicators on content design fundamentals — NPS 5/5
+- Co-hosted panel at ADPList BeMore Conference with 200+ content designers, designers, and researchers globally
+- Represented Intuit at 4+ design conferences and summits in India and globally
+- Completed 6-month Women in Leadership coaching cohort (fearless leadership programme)
+- Intuit India Superstar Award Q4 2023 — Customer Obsession (highest company recognition)
+- Completed benchmarking study to assess team expertise on Intuit Voice and Tone
+- Conducted Writer.AI training for product designers on QBDT and FP&A
+- Collaborated with accessibility leaders to enforce ARIA, Alt+Text, keyboard accessibility as developer checklist items
+
+PROJECT 4 — Feature Nomenclature Design · SAP Analytics Cloud | Content Design Strategist
+Resolved naming conflict between on-premises ('Publication' as verb) and cloud ('Publication' as noun) versions. Research-led solution: user interviews, competitor analysis (Tableau, Adobe, Zoho), card sorting, low-fi prototype testing. Outcome: 'Schedule Publication' adopted — intuitive, scalable, heuristic-compliant.
+
+PROJECT 5 — Content UX & Information Architecture · SAP Analytics Cloud | Content Design Strategist
+Audited ~750 topics across scattered PDF documents for Banking, Insurance, and Oil & Gas. Defined personas across industries and LOBs (Finance, Operations, Expense Management). Designed and implemented comprehensive IA; migrated all content to unified XML-based help portal. Outcome: streamlined maintenance, improved customer onboarding and adoption.
+
+PROJECT 6 — Design Thinking Facilitation · SAP Labs | Certified DT Coach
+Certified Design Thinking Coach with Virtual Facilitation (SAP Design Thinking Academy, 2021). Mapped user journeys across business lines, identified overlapping tools and processes, delivered virtual DT workshop. Outcome: streamlined PM processes across multiple BUs. Stakeholder testimonial: "This was no easy topic… executed pretty well."
+
+PROJECT 7 — Dell Technologies · Documentation Product Lead (Jul 2008–Feb 2016)
+Documentation product lead for PowerEdge Servers — mentored writers, planned documentation requirements, drove process and product innovations. Conducted usability studies; served as cross-functional liaison across serviceability, usability, quality, marketing, and customer-facing teams.
+
+CORE SKILLS:
+Strategy & Leadership: Content strategy & operations · Design thinking facilitation · Stakeholder management · Team mentorship & coaching · Performance management
+Design & Research: UX writing & content design · Conversational AI design · Information architecture · User research & testing · Data-informed design
+AI & Emerging: Content design for AI Agents · Prompt design & engineering · LLM content evaluation · Ethical AI & accessibility · Digital adoption (WalkMe)
+Tools: Figma · Balsamiq · Mural · Miro · Writer.AI · GenAI prompting · Jira · Airtable · Coda · UserTesting · Amplitude
 
 AWARDS & RECOGNITION:
 - Intuit India Superstar Award 2023 — Customer Obsession (highest company recognition)
@@ -72,7 +110,7 @@ AWARDS & RECOGNITION:
 - Featured in Intuit NextGen Podcast
 - Top Talent at SAP Labs
 - Top Mentor on ADPList — twice in a row
-- Workshop NPS 4.8+/5 across all sessions
+- Workshop NPS: 4.8/5 (D4 Design), 5/5 (technical communicators training)
 - Speaker: ADPList BeMore Conference, UX India Conference on Prompt Design, W-Summit
 
 EDUCATION & CERTIFICATIONS:
@@ -88,7 +126,7 @@ ADDITIONAL:
 - Certified Permaculture Consultant (regenerative farming)
 - Volunteer documentation support for NGOs in rural upliftment and sustainable living
 
-AVAILABILITY: Open to senior UX leadership, content strategy, and design management opportunities globally. Based in Bengaluru; open to global and remote roles.`;
+AVAILABILITY: Open to senior UX leadership, content strategy, and design management opportunities globally. Based in Bengaluru; open to global and remote roles.`
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const PROJECTS = [
