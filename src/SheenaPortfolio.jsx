@@ -8,12 +8,12 @@ Speak in first person. Be warm, confident, and direct. Lead with measurable impa
 WHO I AM:
 20+ years of experience — 8+ years specialising in UX content design, 16+ years in technical documentation.
 Currently: UX Design Manager (Content), SAP Labs India, Bengaluru (2025–Present).
-Previously: Content Design Lead & Strategist at Intuit/QuickBooks (Sep 2022–2025), Senior User Assistance Developer & Content Design Strategist at SAP Analytics Cloud (Jan 2019–Aug 2022), Senior Technical Writer at McAfee (Jun 2017–Dec 2018), Documentation Product Lead at Dell Technologies (Jul 2008–Feb 2016), Senior Technical Writer at RSA Security (Aug 2007–Aug 2008), Senior Information Developer at Huawei Technologies (Jun 2004–Jul 2007).
+Previously: Content Design Lead & Strategist at Intuit/QuickBooks (Sep 2022–2025), Senior User Assistance Developer & Content Design Strategist at SAP Analytics Cloud (Jan 2019–Aug 2022), Senior Technical Writer at McAfee (Jun 2017–Dec 2018), Editorial Consultant at Origin Learning Solutions/VMware eLearning (Feb 2016–May 2017), Documentation Product Lead at Dell Technologies (Jul 2008–Feb 2016), Senior Technical Writer at RSA Security (Aug 2007–Aug 2008), Senior Information Developer at Huawei Technologies (Jun 2004–Jul 2007), Information Developer at Advance Educational Technologies (Jan 2000–Feb 2002).
 Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-lakshmi-232a425/
 
 IMPACT AT A GLANCE:
 $936M+ revenue impact (Payments + Payroll at Intuit)
-37% YoY increase in companies creating budgets
+37% YoY growth in budgets created by companies
 22% lift in first-time feature adoption
 CES improvement: 13% → 52% (FP&A budgeting)
 4.8/5 Workshop NPS (D4 Design); 5/5 NPS (technical communicators training)
@@ -33,7 +33,7 @@ I was the content design lead for all Financial Planning & Analysis capabilities
 
 Precise metrics (sourced directly from internal promotion document):
 - Overall FP&A engagement: 12.54% in QBO Advanced, 8.39% in QBO Plus (against FY24 baseline of 10% and 3.5% respectively); 11.76% for Intuit Enterprise Suite
-- 37% increase in companies creating budgets in Feb YoY; 36% growth in overall companies during peak months (Nov, Dec, Jan, Feb)
+- 37% YoY growth in budgets created by companies in Feb; 36% growth in overall companies during peak months (Nov, Dec, Jan, Feb)
 - 25% increase in number of budgets created in Feb YoY
 - 780K+ budgets created in QBO by 133K company files in one year; 70K repeat monthly customers
 - FTU conversion rate >13% for budgeting feature (hero state → create budget)
@@ -115,6 +115,7 @@ AWARDS & RECOGNITION:
 
 EDUCATION & CERTIFICATIONS:
 - PG Diploma in Mass Communication & Journalism — Bhavan's College, 2003–2004
+- Professional Diplomas in Java, Advanced Java & Web Design — SSI Ltd., New Delhi, 2000–2001
 - BSc Chemistry (Physics & Mathematics) — University of Calicut, 1994–1997
 - Design Thinking Coach with Virtual Facilitation — SAP Design Thinking Academy, 2021
 - User Research Methodology and Practice — SAP, 2019
@@ -132,7 +133,7 @@ AVAILABILITY: Open to senior UX leadership, content strategy, and design managem
 const PROJECTS = [
   {
     id: "01", title: "FP&A Content Strategy", company: "Intuit QuickBooks",
-    role: "Content Design Strategist", metric: "37%", metricLabel: "YoY growth in budgeting companies",
+    role: "Content Design Strategist", metric: "37%", metricLabel: "YoY growth in budgets created by companies",
     tags: ["Content Strategy", "AI Adoption", "User Research", "Systems Design"],
     description: "Led content design strategy for all QuickBooks Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — across global markets. Positioned FP&A in primary navigation, built scalable content frameworks, and championed ethical AI-led solutions.",
     challenge: "Create a cohesive, discoverable, and scalable content experience within a rapidly evolving financial planning platform for small and medium businesses — while advocating for ethical AI-led solutions that help SMBs become profitable.",
@@ -144,7 +145,7 @@ const PROJECTS = [
       "Collaborated cross-functionally with product managers, engineering, XD partners, legal, and marketing",
     ],
     results: [
-      { label: "YoY budgeting companies", value: "+37%" },
+      { label: "YoY growth in budgets created", value: "+37%" },
       { label: "Budgets created", value: "+25%" },
       { label: "CES (launch → now)", value: "13% → 52%" },
       { label: "AI forecast usage", value: "36%" },
@@ -436,6 +437,9 @@ const STYLES = `
 
   .sl-exp-row{padding:20px 0;border-bottom:1px solid ${C.border};transition:background 0.2s}
   .sl-exp-row:first-child{border-top:1px solid ${C.border}}
+
+  @keyframes sl-modal-in{from{opacity:0;transform:scale(0.97)}to{opacity:1;transform:scale(1)}}
+  .sl-modal{animation:sl-modal-in 0.25s ease forwards}
 `;
 
 // ─── Shared sub-components ─────────────────────────────────────────────────────
@@ -482,6 +486,88 @@ function StatusBadge() {
         Open to opportunities
       </span>
     </div>
+  );
+}
+
+// ─── Resume Modal ─────────────────────────────────────────────────────────────
+function ResumeModal({ url, onClose }) {
+  // Convert Google Drive share URL to embeddable preview URL
+  const embedUrl = url.includes("drive.google.com")
+    ? url.replace("/view", "/preview").replace("?usp=sharing", "")
+    : url;
+
+  return (
+    <>
+      {/* Backdrop */}
+      <div
+        onClick={onClose}
+        style={{
+          position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)",
+          zIndex: 200, backdropFilter: "blur(6px)",
+        }}
+      />
+      {/* Modal */}
+      <div className="sl-modal" style={{
+        position: "fixed",
+        top: "50%", left: "50%",
+        transform: "translate(-50%, -50%)",
+        width: "min(860px, 94vw)",
+        height: "min(90vh, 1000px)",
+        background: C.surface,
+        border: `1px solid ${C.border}`,
+        borderRadius: 18,
+        zIndex: 201,
+        display: "flex", flexDirection: "column",
+        overflow: "hidden",
+        boxShadow: "0 32px 80px rgba(0,0,0,0.6)",
+      }}>
+        {/* Modal header */}
+        <div style={{
+          padding: "14px 20px",
+          borderBottom: `1px solid ${C.border}`,
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          background: C.card, flexShrink: 0,
+        }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span style={{ fontSize: 13, fontWeight: 500, color: C.text }}>
+              Sheena Lakshmi — Resume 2026
+            </span>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <a
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                fontSize: 11, color: C.accent, textDecoration: "none",
+                fontFamily: SANS, letterSpacing: "0.06em",
+                border: `1px solid ${C.aMid}`, padding: "5px 12px",
+                borderRadius: 7, transition: "all 0.2s",
+              }}
+            >
+              ↓ Download
+            </a>
+            <button
+              onClick={onClose}
+              style={{
+                background: "transparent", border: `1px solid ${C.border}`,
+                color: C.muted, width: 30, height: 30, borderRadius: "50%",
+                cursor: "pointer", fontSize: 18,
+                display: "flex", alignItems: "center", justifyContent: "center",
+                transition: "all 0.2s",
+              }}
+            >×</button>
+          </div>
+        </div>
+        {/* PDF iframe */}
+        <iframe
+          src={embedUrl}
+          style={{ flex: 1, border: "none", width: "100%", background: C.bg }}
+          title="Sheena Lakshmi Resume"
+          allow="autoplay"
+        />
+      </div>
+    </>
   );
 }
 
@@ -868,15 +954,12 @@ function ClassicMode({ onAskAbout }) {
                 Proven track record of building and scaling high-performing content teams at Fortune 500 companies (SAP, Intuit, Dell, McAfee). Deep expertise in AI content design for enterprise products, prompt engineering, conversation design, ethical AI, and data-informed UX research.
               </p>
               <div style={{ display: "flex", gap: 12, marginTop: 24, flexWrap: "wrap", alignItems: "center" }}>
-                <a
-                  href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
-                  target="_blank"
-                  rel="noreferrer"
+                <button
                   className="sl-resume-btn"
-                  download
+                  onClick={() => setShowResume(true)}
                 >
-                  ↓ Download Resume
-                </a>
+                  ↓ View / Download Resume
+                </button>
                 <a href="mailto:sheenalakshmi@gmail.com" className="sl-nav-link" style={{ color: C.accent }}>sheenalakshmi@gmail.com ↗</a>
                 <a href="https://www.linkedin.com/in/sheena-lakshmi-232a425/" target="_blank" rel="noreferrer" className="sl-nav-link">LinkedIn ↗</a>
               </div>
@@ -897,12 +980,14 @@ function ClassicMode({ onAskAbout }) {
           <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Experience</p>
           {[
             { role: "UX Design Manager (Content)", co: "SAP Labs India", period: "2025 – Present" },
-            { role: "Content Design Lead & Strategist", co: "Intuit (QuickBooks)", period: "2022 – 2025" },
-            { role: "Senior User Assistance Developer / Content Design Strategist", co: "SAP Analytics Cloud", period: "2019 – 2022" },
-            { role: "Senior Technical Writer", co: "McAfee India", period: "2017 – 2018" },
-            { role: "Documentation Product Lead", co: "Dell Technologies", period: "2008 – 2016" },
-            { role: "Senior Technical Writer", co: "RSA Security India", period: "2007 – 2008" },
-            { role: "Senior Information Developer", co: "Huawei Technologies India", period: "2004 – 2007" },
+            { role: "Content Design Lead & Strategist", co: "Intuit (QuickBooks)", period: "Sep 2022 – 2025" },
+            { role: "Senior User Assistance Developer / Content Design Strategist", co: "SAP Analytics Cloud", period: "Jan 2019 – Aug 2022" },
+            { role: "Senior Technical Writer", co: "McAfee India", period: "Jun 2017 – Dec 2018" },
+            { role: "Editorial Consultant", co: "Origin Learning Solutions (VMware eLearning)", period: "Feb 2016 – May 2017" },
+            { role: "Documentation Product Lead", co: "Dell Technologies", period: "Jul 2008 – Feb 2016" },
+            { role: "Senior Technical Writer", co: "RSA Security India", period: "Aug 2007 – Aug 2008" },
+            { role: "Senior Information Developer", co: "Huawei Technologies India", period: "Jun 2004 – Jul 2007" },
+            { role: "Information Developer", co: "Advance Educational Technologies India", period: "Jan 2000 – Feb 2002" },
           ].map((e, i) => (
             <div key={i} className="sl-exp-row">
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -1023,6 +1108,8 @@ function ClassicMode({ onAskAbout }) {
 
 export default function SheenaPortfolio() {
   const [mode, setMode]   = useState("ai"); // "ai" | "classic"
+  const [showResume, setShowResume] = useState(false);
+  const RESUME_URL = "RESUME_GOOGLE_DRIVE_LINK";
   const [msgs, setMsgs]   = useState([{
     role: "assistant",
     content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP Labs with 24+ years of experience — 16 in technical writing and 8 in UX content design.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
@@ -1086,18 +1173,20 @@ export default function SheenaPortfolio() {
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <StatusBadge />
           <ModeToggle mode={mode} setMode={setMode} />
-          <a
-            href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
+          <button
             className="sl-resume-btn"
-            download
+            onClick={() => setShowResume(true)}
           >
             ↓ Resume
-          </a>
+          </button>
           <a href="mailto:sheenalakshmi@gmail.com" className="sl-nav-link">Contact ↗</a>
         </div>
       </nav>
+
+      {/* ── RESUME MODAL ── */}
+      {showResume && RESUME_URL !== "RESUME_GOOGLE_DRIVE_LINK" && (
+        <ResumeModal url={RESUME_URL} onClose={() => setShowResume(false)} />
+      )}
 
       {/* ── PAGE CONTENT ── */}
       {mode === "ai"
