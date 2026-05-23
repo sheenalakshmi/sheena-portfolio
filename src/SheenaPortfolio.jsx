@@ -1131,7 +1131,7 @@ function ClassicMode({ onAskAbout }) {
 export default function SheenaPortfolio() {
   const [mode, setMode]   = useState("ai"); // "ai" | "classic"
   const [showResume, setShowResume] = useState(false);
-  const RESUME_URL = "RESUME_GOOGLE_DRIVE_LINK";
+  const RESUME_URL = "https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing";
   const [msgs, setMsgs]   = useState([{
     role: "assistant",
     content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP Labs with 24+ years of experience — 16 in technical writing and 8 in UX content design.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
@@ -1206,7 +1206,7 @@ export default function SheenaPortfolio() {
       </nav>
 
       {/* ── RESUME MODAL ── */}
-      {showResume && RESUME_URL !== "RESUME_GOOGLE_DRIVE_LINK" && (
+      {showResume && RESUME_URL !== "https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing" && (
         <ResumeModal url={RESUME_URL} onClose={() => setShowResume(false)} />
       )}
 
