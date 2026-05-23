@@ -12,7 +12,7 @@ Previously: Content Design Lead & Strategist at Intuit/QuickBooks (Sep 2022–20
 Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-lakshmi-232a425/
 
 IMPACT AT A GLANCE:
-$936M+ revenue impact (Payments + Payroll at Intuit)
+$936M+ combined revenue across Payments ($213M) and Payroll ($723M) — product lines within the QuickBooks Desktop portfolio
 37% YoY growth in budgets created by companies
 22% lift in first-time feature adoption
 CES improvement: 13% → 52% (FP&A budgeting)
@@ -28,7 +28,7 @@ CURRENT ROLE — SAP Labs India (2025–Present):
 - Partner with product management, UX design, and engineering teams across global markets
 - Design and facilitate Design Thinking workshops; established ethical AI content guidelines organisation-wide
 
-PROJECT 1 — FP&A Content Strategy · Intuit QuickBooks | Content Design Lead for FP&A
+PORTFOLIO 1 — Financial Planning & Analysis · Intuit Enterprise Suite & QuickBooks Online | Content Design Lead
 I was the content design lead for all Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — spanning diverse global regions. FP&A is a strategic pillar for MM IES.
 
 Precise metrics (sourced directly from internal promotion document):
@@ -53,7 +53,7 @@ Key contributions:
 - Participated in 30+ follow-me-homes, contributed to 6 quantitative surveys, synthesised research for 6+ workstreams
 - Collaborated with accessibility leader Ted Drake to enforce ARIA labels, Alt+Text, and keyboard accessibility across FP&A
 
-PROJECT 2 — QuickBooks Desktop Content & Team Leadership · Intuit QuickBooks | Content Design Lead
+PORTFOLIO 2 — QuickBooks Desktop Migration · Intuit QuickBooks | Content Design Lead
 Content lead for the full QBDT ecosystem, overseeing 1 FTE and 2–3 contingent workers.
 
 Products and scale:
@@ -132,63 +132,85 @@ AVAILABILITY: Open to senior UX leadership, content strategy, and design managem
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const PROJECTS = [
   {
-    id: "01", title: "FP&A Content Strategy", company: "Intuit QuickBooks",
-    role: "Content Design Strategist", metric: "37%", metricLabel: "YoY growth in budgets created by companies",
+    id: "01",
+    title: "Financial Planning & Analysis",
+    company: "Intuit Enterprise Suite · QuickBooks Online",
+    role: "Content Design Lead — FP&A Portfolio",
+    metric: "37%",
+    metricLabel: "YoY growth in budgets created by companies",
     tags: ["Content Strategy", "AI Adoption", "User Research", "Systems Design"],
-    description: "Led content design strategy for all QuickBooks Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — across global markets. Positioned FP&A in primary navigation, built scalable content frameworks, and championed ethical AI-led solutions.",
-    challenge: "Create a cohesive, discoverable, and scalable content experience within a rapidly evolving financial planning platform for small and medium businesses — while advocating for ethical AI-led solutions that help SMBs become profitable.",
+    description: "Content design lead for the full FP&A portfolio within Intuit Enterprise Suite and QuickBooks Online — budgeting, forecasting, cash flow — across global markets. FP&A is a strategic pillar for MM IES.",
+    challenge: "Create a cohesive, discoverable, and scalable content experience for a rapidly evolving financial planning platform serving small and mid-market businesses globally — while advocating for ethical, AI-led solutions that help SMBs become profitable.",
     keyActions: [
-      "Positioned FP&A in primary navigation of QuickBooks Online & Intuit Enterprise Suite, enhancing strategic visibility",
-      "Built scalable content framework with reusable libraries, standardised voice/tone, and guided technical/marketing/legal communication",
-      "Accelerated AI feature adoption through onboarding and interface messaging, raising AI forecast usage to 36%",
-      "Led 30+ user interviews, A/B tests, card sorting, usability studies, quantitative and qualitative surveys",
-      "Collaborated cross-functionally with product managers, engineering, XD partners, legal, and marketing",
+      "Named and positioned 'Financial Planning and Analysis' within QBO left navigation — led card sorting to move from 'Budgets' to FP&A, directly impacting discoverability and engagement",
+      "Built scalable content framework and reusable library across ~10 workstreams spanning budgeting, forecasting, cash flow, and reporting",
+      "Accelerated AI forecast adoption to 36% through onboarding messaging and clear CTAs — partnered with PM and XD on A/B experiment",
+      "Influenced ethical AI communication: collaborated with AI Governance Council, IntuitAssist teams, legal, and marketing to set a precedent for transparent AI messaging",
+      "Led cashflow planner transition — rebranded feature, decommissioned AI forecasting within cashflow, coordinated with sales, marketing, and customer success in a two-week turnaround",
+      "Participated in 30+ follow-me-homes, contributed to 6 quantitative surveys, synthesised research for 6+ workstreams",
+      "Collaborated with accessibility leader Ted Drake to enforce ARIA labels, Alt+Text, and keyboard accessibility across the FP&A suite",
     ],
     results: [
       { label: "YoY growth in budgets created", value: "+37%" },
-      { label: "Budgets created", value: "+25%" },
+      { label: "Budgets created (Feb YoY)", value: "+25%" },
+      { label: "Budgets created in QBO (1 year)", value: "780K+" },
+      { label: "Company files creating budgets", value: "133K" },
+      { label: "Repeat monthly customers", value: "70K" },
       { label: "CES (launch → now)", value: "13% → 52%" },
       { label: "AI forecast usage", value: "36%" },
-      { label: "FP&A engagement (QBO Adv)", value: "+12.54%" },
-      { label: "Custom forecast to budget", value: "75%" },
+      { label: "FP&A engagement (QBO Adv)", value: "12.54%" },
+      { label: "FP&A engagement (QBO Plus)", value: "8.39%" },
+      { label: "FP&A engagement (IES)", value: "11.76%" },
+      { label: "FTU conversion (budgeting)", value: ">13%" },
+      { label: "Custom forecast → budget", value: "75%" },
     ],
     artifacts: [
       { label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf", desc: "FP&A content design guidelines and reusable framework" },
-      { label: "Case Study Deck", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Full case study presentation with before/after" },
+      { label: "Case Study Deck", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Full case study with before/after" },
       { label: "Research Synthesis", type: "notion", href: "ADD_NOTION_LINK", desc: "User interview findings and card sort results" },
       { label: "Work Samples", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "UI screenshots and content in context" },
     ],
     samples: [{ label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf" }],
-    askPrompt: "Tell me more about your FP&A content strategy work at Intuit and the impact it had.",
+    askPrompt: "Tell me about your FP&A content design work within Intuit Enterprise Suite and QuickBooks Online.",
   },
   {
-    id: "02", title: "Team Leadership & Content Ops", company: "Intuit QuickBooks",
-    role: "Content Design Lead", metric: "100K", metricLabel: "GNS guided in 1.5 years",
-    tags: ["Team Leadership", "Content Ops", "Mentorship", "Coaching"],
-    description: "Managed content operations for a complex product ecosystem — core, payments, mobile (Tango), payroll, and migration tools — while optimising team resources and maintaining high content standards.",
-    challenge: "Manage content operations for a complex product ecosystem while maintaining high content quality, guiding 100K GNS in 1.5 years, and elevating a contingent team of content designers through rigorous coaching and peer review.",
+    id: "02",
+    title: "QuickBooks Desktop Migration",
+    company: "Intuit QuickBooks Desktop",
+    role: "Content Design Lead — QBDT Portfolio",
+    metric: "100K",
+    metricLabel: "GNS guided in 1.5 years via migration",
+    tags: ["Migration", "Content Ops", "Team Leadership", "Desktop to Cloud"],
+    description: "Content lead for the QuickBooks Desktop ecosystem — migration tool (DTM), Payments, Payroll, and Tango mobile app. Guided 480K vintage Desktop customers toward QBO migration while maintaining content quality across product lines generating $936M+ in combined revenue.",
+    challenge: "Guide hundreds of thousands of long-standing QuickBooks Desktop customers through a complex migration to QuickBooks Online, while managing content quality across Payments, Payroll, and mobile — simultaneously mentoring a contingent team and maintaining Intuit's voice and tone standards.",
     keyActions: [
-      "Influenced migration experience: advised on redesign for standalone/batch tools, shaped end-of-life upgrade strategy",
-      "Guided product naming: co-designed test plans, synthesised research, and validated user-centric naming",
-      "Mentored team: led 24+ peer-review sessions and weekly coaching for content design contingent workers",
-      "Elevated content standards: instituted rigorous content hygiene practices and resource allocation for critical business areas",
-      "Managed content ops across core, payments, mobile/Tango, payroll, and online migration tools simultaneously",
+      "Owned content for the Desktop migration tool (DTM) — targeted 480K vintage Desktop customers; achieved 100K GNS in 1.5 years and 380K GNS on QBO from DTM in FY24",
+      "Influenced DTM product experience: advised on redesign of standalone and batch migration tools; shaped the end-of-life upgrade strategy",
+      "Guided Tango app naming: co-designed test plan, synthesised follow-me-home research using Writer.AI",
+      "Maintained content quality across 8 workstreams — Payments (~90K customers, ~$213M), Payroll (617K users, $723M), Tango (360K+ downloads, 134K active), Desktop Core (235K customers)",
+      "Led 24+ peer-review sessions in FY23–FY24; weekly coaching for contingent workers",
+      "Introduced content coaching office hours twice a week for product designers on QBDT",
+      "Evangelised early engagement of content designers in the design process across QBDT teams",
     ],
     results: [
-      { label: "GNS guided", value: "100K" },
+      { label: "GNS via migration (1.5 yrs)", value: "100K" },
+      { label: "GNS on QBO from DTM (FY24)", value: "380K" },
       { label: "90-day retention", value: "88%" },
-      { label: "CES (launch → now)", value: "7% → 32%" },
-      { label: "Payments revenue", value: "$213M" },
-      { label: "Payroll revenue", value: "$723M" },
+      { label: "Vintage Desktop customers targeted", value: "480K" },
+      { label: "Payments product line", value: "~$213M" },
+      { label: "Payroll product line", value: "$723M" },
+      { label: "Tango downloads", value: "360K+" },
+      { label: "Desktop Core customers", value: "235K" },
+      { label: "CES (content ops)", value: "7% → 32%" },
       { label: "Peer reviews led", value: "24+" },
     ],
     artifacts: [
       { label: "Content Ops Framework", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Team structure, workflows, and quality standards" },
-      { label: "Mentorship Programme Guide", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Peer review process and coaching structure" },
-      { label: "Work Samples", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Before/after content quality improvements" },
+      { label: "Tango Naming Research", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Naming test plan and synthesis" },
+      { label: "Work Samples", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Before/after content quality examples" },
     ],
     samples: [],
-    askPrompt: "Tell me about your content operations and team leadership work at Intuit.",
+    askPrompt: "Tell me about your QuickBooks Desktop migration content work and the scale of what you supported.",
   },
   {
     id: "03", title: "First-Time User Onboarding", company: "Intuit QuickBooks",
@@ -655,7 +677,7 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
 
       {/* Stats */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 10, marginBottom: 40 }}>
-        {[["$936M+","Revenue impact"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
+        {[["$936M+","Product lines supported"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
           <div key={l} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "14px 10px", textAlign: "center" }}>
             <p style={{ fontFamily: SERIF, fontSize: 28, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{n}</p>
             <p style={{ fontSize: 9, color: C.muted, letterSpacing: "0.1em", textTransform: "uppercase", marginTop: 5, lineHeight: 1.4 }}>{l}</p>
@@ -965,7 +987,7 @@ function ClassicMode({ onAskAbout }) {
               </div>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, flexShrink: 0 }}>
-              {[["$936M+","Revenue impact"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
+              {[["$936M+","Product lines supported"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
                 <div key={l} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 14, padding: "18px 14px", textAlign: "center", minWidth: 100 }}>
                   <p style={{ fontFamily: SERIF, fontSize: 28, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{n}</p>
                   <p style={{ fontSize: 9, color: C.muted, letterSpacing: "0.1em", textTransform: "uppercase", marginTop: 6, lineHeight: 1.4 }}>{l}</p>
