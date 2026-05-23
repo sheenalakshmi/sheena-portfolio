@@ -13,6 +13,7 @@ Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-laks
 
 IMPACT AT A GLANCE:
 $936M+ revenue impact (Payments + Payroll at Intuit)
+37% YoY growth in budgeting adoption
 22% lift in first-time feature adoption
 CES improvement: 13% → 52% (FP&A) and 7% → 32% (Content Ops)
 4.8/5 Workshop NPS across all sessions
@@ -498,7 +499,7 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
       const res  = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ model: "claude-sonnet-4-20250514", max_tokens: 1000, system: SYSTEM, messages: history }),
+        body: JSON.stringify({ model: "claude-haiku-4-5-20251001", max_tokens: 1000, system: SYSTEM, messages: history }),
       });
       const data = await res.json();
       const reply = data.content?.find(b => b.type === "text")?.text
@@ -830,7 +831,7 @@ function ClassicMode({ onAskAbout }) {
               </p>
               <div style={{ display: "flex", gap: 12, marginTop: 24, flexWrap: "wrap", alignItems: "center" }}>
                 <a
-                  href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
+                  href="RESUME_GOOGLE_DRIVE_LINK"
                   target="_blank"
                   rel="noreferrer"
                   className="sl-resume-btn"
@@ -1010,7 +1011,7 @@ export default function SheenaPortfolio() {
       fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ model: "claude-sonnet-4-20250514", max_tokens: 1000, system: SYSTEM, messages: history }),
+        body: JSON.stringify({ model: "claude-haiku-4-5-20251001", max_tokens: 1000, system: SYSTEM, messages: history }),
       })
         .then(r => r.json())
         .then(data => {
@@ -1048,7 +1049,7 @@ export default function SheenaPortfolio() {
           <StatusBadge />
           <ModeToggle mode={mode} setMode={setMode} />
           <a
-            href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
+            href="RESUME_GOOGLE_DRIVE_LINK"
             target="_blank"
             rel="noreferrer"
             className="sl-resume-btn"
