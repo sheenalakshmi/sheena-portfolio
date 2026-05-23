@@ -869,7 +869,7 @@ function ClassicMode({ onAskAbout }) {
               </p>
               <div style={{ display: "flex", gap: 12, marginTop: 24, flexWrap: "wrap", alignItems: "center" }}>
                 <a
-                  href="RESUME_GOOGLE_DRIVE_LINK"
+                  href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="sl-resume-btn"
@@ -1087,7 +1087,7 @@ export default function SheenaPortfolio() {
           <StatusBadge />
           <ModeToggle mode={mode} setMode={setMode} />
           <a
-            href="RESUME_GOOGLE_DRIVE_LINK"
+            href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="sl-resume-btn"
