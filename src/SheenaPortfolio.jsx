@@ -511,86 +511,6 @@ function StatusBadge() {
   );
 }
 
-// ─── Resume Modal ─────────────────────────────────────────────────────────────
-function ResumeModal({ url, onClose }) {
-  const embedUrl = "https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/preview";
-
-  return (
-    <>
-      {/* Backdrop */}
-      <div
-        onClick={onClose}
-        style={{
-          position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)",
-          zIndex: 200, backdropFilter: "blur(6px)",
-        }}
-      />
-      {/* Modal */}
-      <div className="sl-modal" style={{
-        position: "fixed",
-        top: "50%", left: "50%",
-        transform: "translate(-50%, -50%)",
-        width: "min(860px, 94vw)",
-        height: "min(90vh, 1000px)",
-        background: C.surface,
-        border: `1px solid ${C.border}`,
-        borderRadius: 18,
-        zIndex: 201,
-        display: "flex", flexDirection: "column",
-        overflow: "hidden",
-        boxShadow: "0 32px 80px rgba(0,0,0,0.6)",
-      }}>
-        {/* Modal header */}
-        <div style={{
-          padding: "14px 20px",
-          borderBottom: `1px solid ${C.border}`,
-          display: "flex", alignItems: "center", justifyContent: "space-between",
-          background: C.card, flexShrink: 0,
-        }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ fontSize: 13, fontWeight: 500, color: C.text }}>
-              Sheena Lakshmi — Resume 2026
-            </span>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <a
-              href={url}
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                fontSize: 11, color: C.accent, textDecoration: "none",
-                fontFamily: SANS, letterSpacing: "0.06em",
-                border: `1px solid ${C.aMid}`, padding: "5px 12px",
-                borderRadius: 7, transition: "all 0.2s",
-              }}
-            >
-              ↓ Download
-            </a>
-            <button
-              onClick={onClose}
-              style={{
-                background: "transparent", border: `1px solid ${C.border}`,
-                color: C.muted, width: 30, height: 30, borderRadius: "50%",
-                cursor: "pointer", fontSize: 18,
-                display: "flex", alignItems: "center", justifyContent: "center",
-                transition: "all 0.2s",
-              }}
-            >×</button>
-          </div>
-        </div>
-        {/* PDF iframe */}
-        <iframe
-          src="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/preview"
-          style={{ flex: 1, border: "none", width: "100%", background: C.bg }}
-          title="Sheena Lakshmi Resume"
-          allow="autoplay"
-          allowFullScreen
-        />
-      </div>
-    </>
-  );
-}
-
 // ─── Mode toggle ──────────────────────────────────────────────────────────────
 function ModeToggle({ mode, setMode }) {
   return (
@@ -751,7 +671,7 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
 // ═══════════════════════════════════════════════════════════════════
 // CLASSIC PORTFOLIO MODE
 // ═══════════════════════════════════════════════════════════════════
-function ClassicMode({ onAskAbout, onShowResume }) {
+function ClassicMode({ onAskAbout }) {
   const [drawer, setDrawer] = useState(null); // project object or null
 
   const ARTIFACT_ICONS = { pdf: "PDF", deck: "▤", screenshot: "⊡", video: "▶", notion: "N" };
@@ -974,12 +894,14 @@ function ClassicMode({ onAskAbout, onShowResume }) {
                 Proven track record of building and scaling high-performing content teams at Fortune 500 companies (SAP, Intuit, Dell, McAfee). Deep expertise in AI content design for enterprise products, prompt engineering, conversation design, ethical AI, and data-informed UX research.
               </p>
               <div style={{ display: "flex", gap: 12, marginTop: 24, flexWrap: "wrap", alignItems: "center" }}>
-                <button
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1hO3DGojjYWth37mQvykE7tdnO8XaoHLo"
+                  target="_blank"
+                  rel="noreferrer"
                   className="sl-resume-btn"
-                  onClick={() => onShowResume()}
                 >
-                  ↓ View / Download Resume
-                </button>
+                  ↓ Download Resume
+                </a>
                 <a href="mailto:sheenalakshmi@gmail.com" className="sl-nav-link" style={{ color: C.accent }}>sheenalakshmi@gmail.com ↗</a>
                 <a href="https://www.linkedin.com/in/sheena-lakshmi-232a425/" target="_blank" rel="noreferrer" className="sl-nav-link">LinkedIn ↗</a>
               </div>
@@ -1128,8 +1050,6 @@ function ClassicMode({ onAskAbout, onShowResume }) {
 
 export default function SheenaPortfolio() {
   const [mode, setMode]   = useState("ai"); // "ai" | "classic"
-  const [showResume, setShowResume] = useState(false);
-  const RESUME_URL = "https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing";
   const [msgs, setMsgs]   = useState([{
     role: "assistant",
     content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP Labs with 24+ years of experience — 16 in technical writing and 8 in UX content design.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
@@ -1193,20 +1113,17 @@ export default function SheenaPortfolio() {
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <StatusBadge />
           <ModeToggle mode={mode} setMode={setMode} />
-          <button
+          <a
+            href="https://drive.google.com/uc?export=download&id=1hO3DGojjYWth37mQvykE7tdnO8XaoHLo"
+            target="_blank"
+            rel="noreferrer"
             className="sl-resume-btn"
-            onClick={() => setShowResume(true)}
           >
             ↓ Resume
-          </button>
+          </a>
           <a href="mailto:sheenalakshmi@gmail.com" className="sl-nav-link">Contact ↗</a>
         </div>
       </nav>
-
-      {/* ── RESUME MODAL ── */}
-      {showResume && (
-        <ResumeModal url={RESUME_URL} onClose={() => setShowResume(false)} />
-      )}
 
       {/* ── PAGE CONTENT ── */}
       {mode === "ai"
@@ -1216,7 +1133,7 @@ export default function SheenaPortfolio() {
             input={input} setInput={setInput}
             onAsk={handleAskAbout}
           />
-        : <ClassicMode onAskAbout={handleAskAbout} onShowResume={() => setShowResume(true)} />
+        : <ClassicMode onAskAbout={handleAskAbout} />
       }
     </div>
   );
