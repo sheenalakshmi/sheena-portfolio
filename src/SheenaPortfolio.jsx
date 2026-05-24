@@ -53,37 +53,8 @@ Key contributions:
 - Participated in 30+ follow-me-homes, contributed to 6 quantitative surveys, synthesised research for 6+ workstreams
 - Collaborated with accessibility leader Ted Drake to enforce ARIA labels, Alt+Text, and keyboard accessibility across FP&A
 
-PORTFOLIO 2 — QuickBooks Desktop Migration · Intuit QuickBooks | Content Design Lead
-Content lead for the full QBDT ecosystem, overseeing 1 FTE and 2–3 contingent workers.
-
-Products and scale:
-- QuickBooks Desktop Core & Enterprise: 235K customer base in FY24, projected 254K in FY25, projected revenue $868M
-- Payments: ~90K customers, ~$213M revenue
-- Tango (QBO mobile app): 360K+ downloads, 134K 90-day active base, 88 pts vs 85 pts 90-day retention (3 pts higher for QBO Adv cohort)
-- DT Payroll: 617K users, $723M revenue
-- Online migration tool (DTM): targeted 480K vintage Desktop customers → 100K GNS in 1.5 years, 380K GNS on QBO from DTM in FY24, 88% 90-day retention
-
-Key contributions:
-- Influenced DTM redesign for standalone and batch migration tools; shaped end-of-life upgrade/update experience
-- Co-designed naming test plan for Tango app; synthesised follow-me-home research using Writer.AI
-- Led 24+ peer review sessions in FY23–FY24 across QBDT and FP&A
-- Maintained content quality across 8 workstreams via contingent worker coaching and weekly check-ins
-- Evangelised content design process: introduced content coaching office hours twice a week for product designers on QBDT
-
-PROJECT 3 — Leadership & Brand Building · Intuit | Content Design Lead
-Led a team of 4 content designers (1 FTE + 3 CWs) across two top revenue-generating product lines: QBDT and FP&A.
-
-Key contributions & recognition:
-- Conceptualised and delivered workshop on content design and prompt design at UXIndia Global Conference Q4 2023 — ~120 participants
-- Led prompt design workshop at D4 Design (Intuit-hosted event) — NPS 4.8/5
-- Trained 10-member batch of technical communicators on content design fundamentals — NPS 5/5
-- Co-hosted panel at ADPList BeMore Conference with 200+ content designers, designers, and researchers globally
-- Represented Intuit at 4+ design conferences and summits in India and globally
-- Completed 6-month Women in Leadership coaching cohort (fearless leadership programme)
-- Intuit India Superstar Award Q4 2023 — Customer Obsession (highest company recognition)
-- Completed benchmarking study to assess team expertise on Intuit Voice and Tone
-- Conducted Writer.AI training for product designers on QBDT and FP&A
-- Collaborated with accessibility leaders to enforce ARIA, Alt+Text, keyboard accessibility as developer checklist items
+PROJECT 3 — First-Time User Onboarding · Intuit QuickBooks | Content Designer & Strategist
+Small and mid-market business owners faced frustration juggling multiple tools alongside QuickBooks. The onboarding experience needed to clearly convey value while reducing cognitive overload.
 
 PROJECT 4 — Feature Nomenclature Design · SAP Analytics Cloud | Content Design Strategist
 Resolved naming conflict between on-premises ('Publication' as verb) and cloud ('Publication' as noun) versions. Research-led solution: user interviews, competitor analysis (Tableau, Adobe, Zoho), card sorting, low-fi prototype testing. Outcome: 'Schedule Publication' adopted — intuitive, scalable, heuristic-compliant.
@@ -174,45 +145,6 @@ const PROJECTS = [
     askPrompt: "Tell me about your FP&A content design work within Intuit Enterprise Suite and QuickBooks Online.",
   },
   {
-    id: "02",
-    title: "QuickBooks Desktop Migration",
-    company: "Intuit QuickBooks Desktop",
-    role: "Content Design Lead — QBDT Portfolio",
-    metric: "100K",
-    metricLabel: "GNS guided in 1.5 years via migration",
-    tags: ["Migration", "Content Ops", "Team Leadership", "Desktop to Cloud"],
-    description: "Content lead for the QuickBooks Desktop ecosystem — migration tool (DTM), Payments, Payroll, and Tango mobile app. Guided 480K vintage Desktop customers toward QBO migration while maintaining content quality across product lines generating $936M+ in combined revenue.",
-    challenge: "Guide hundreds of thousands of long-standing QuickBooks Desktop customers through a complex migration to QuickBooks Online, while managing content quality across Payments, Payroll, and mobile — simultaneously mentoring a contingent team and maintaining Intuit's voice and tone standards.",
-    keyActions: [
-      "Owned content for the Desktop migration tool (DTM) — targeted 480K vintage Desktop customers; achieved 100K GNS in 1.5 years and 380K GNS on QBO from DTM in FY24",
-      "Influenced DTM product experience: advised on redesign of standalone and batch migration tools; shaped the end-of-life upgrade strategy",
-      "Guided Tango app naming: co-designed test plan, synthesised follow-me-home research using Writer.AI",
-      "Maintained content quality across 8 workstreams — Payments (~90K customers, ~$213M), Payroll (617K users, $723M), Tango (360K+ downloads, 134K active), Desktop Core (235K customers)",
-      "Led 24+ peer-review sessions in FY23–FY24; weekly coaching for contingent workers",
-      "Introduced content coaching office hours twice a week for product designers on QBDT",
-      "Evangelised early engagement of content designers in the design process across QBDT teams",
-    ],
-    results: [
-      { label: "GNS via migration (1.5 yrs)", value: "100K" },
-      { label: "GNS on QBO from DTM (FY24)", value: "380K" },
-      { label: "90-day retention", value: "88%" },
-      { label: "Vintage Desktop customers targeted", value: "480K" },
-      { label: "Payments product line", value: "~$213M" },
-      { label: "Payroll product line", value: "$723M" },
-      { label: "Tango downloads", value: "360K+" },
-      { label: "Desktop Core customers", value: "235K" },
-      { label: "CES (content ops)", value: "7% → 32%" },
-      { label: "Peer reviews led", value: "24+" },
-    ],
-    artifacts: [
-      { label: "Content Ops Framework", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Team structure, workflows, and quality standards" },
-      { label: "Tango Naming Research", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Naming test plan and synthesis" },
-      { label: "Work Samples", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Before/after content quality examples" },
-    ],
-    samples: [],
-    askPrompt: "Tell me about your QuickBooks Desktop migration content work and the scale of what you supported.",
-  },
-  {
     id: "03", title: "First-Time User Onboarding", company: "Intuit QuickBooks",
     role: "Content Designer & Strategist", metric: "22%", metricLabel: "Lift in first-time feature adoption",
     tags: ["Onboarding", "UX Writing", "SMB", "Cognitive Load"],
@@ -259,10 +191,7 @@ const PROJECTS = [
       { label: "Stakeholder consensus", value: "100%" },
     ],
     artifacts: [
-      { label: "Research & Card Sort Findings", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Naming study methodology and synthesis" },
-      { label: "Low-Fi Prototypes", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Critical user journey screens tested" },
-      { label: "Competitive Analysis", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Tableau, Adobe, Zoho naming conventions" },
-      { label: "Work Samples", type: "notion", href: "ADD_NOTION_LINK", desc: "Final naming rationale and rollout" },
+      { label: "Research & Card Sort Findings", type: "deck", href: "https://docs.google.com/presentation/d/1rvoEgkoJhLP3cqEhBnNs0CKo-__slYio/edit?usp=sharing&ouid=114238183564892136776&rtpof=true&sd=true", desc: "Naming study methodology, card sort results, competitive analysis, and final rationale" },
     ],
     samples: [],
     askPrompt: "Walk me through the product naming case study at SAP Analytics.",
