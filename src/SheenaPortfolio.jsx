@@ -222,10 +222,7 @@ const PROJECTS = [
       { label: "Custom forecast → budget", value: "75%" },
     ],
     artifacts: [
-      { label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf", desc: "FP&A content design guidelines and reusable framework" },
-      { label: "Case Study Deck", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Full case study with before/after" },
-      { label: "Research Synthesis", type: "notion", href: "ADD_NOTION_LINK", desc: "User interview findings and card sort results" },
-      { label: "Work Samples", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "UI screenshots and content in context" },
+      { label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf", desc: "FP&A content design guidelines and reusable framework" }
     ],
     samples: [{ label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf" }],
     askPrompt: "Tell me about your FP&A content design work within Intuit Enterprise Suite and QuickBooks Online.",
@@ -250,9 +247,8 @@ const PROJECTS = [
       { label: "Cognitive load", value: "Lowered" },
     ],
     artifacts: [
-      { label: "Onboarding Copy Samples", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "FTU screens with headline, description, and CTAs" },
-      { label: "Research Synthesis", type: "notion", href: "ADD_NOTION_LINK", desc: "Qualitative findings driving content decisions" },
-      { label: "Case Study Deck", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Before/after and process walkthrough" },
+      
+      { label: "Case Study Deck", type: "deck", href: "https://docs.google.com/presentation/d/1py5p_2uNFhNfJ1jyNUemT--qGS5W3Cc0/edit?usp=sharing&ouid=114238183564892136776&rtpof=true&sd=true", desc: "Before/after and process walkthrough" },
     ],
     samples: [],
     askPrompt: "Tell me about the first-time user onboarding project and how you approached it.",
