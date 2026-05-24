@@ -12,6 +12,7 @@ Previously: Content Design Lead & Strategist at Intuit/QuickBooks (Sep 2022–20
 Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-lakshmi-232a425/
 
 IMPACT AT A GLANCE:
+$936M+ combined revenue across Payments ($213M) and Payroll ($723M) — product lines within the QuickBooks Desktop portfolio
 37% YoY growth in budgets created by companies
 22% lift in first-time feature adoption
 CES improvement: 13% → 52% (FP&A budgeting)
@@ -20,14 +21,14 @@ CES improvement: 13% → 52% (FP&A budgeting)
 780K+ budgets created in QBO by 133K company files; 70K repeat monthly customers
 
 CURRENT ROLE — SAP Labs India (2025–Present):
-- Manage the content design team working on enterprise onboarding workflow designs 
+- Lead and mentor a team of 8 content designers across SAP enterprise products
 - Drive content design for AI Agents — crafting context-aware conversational experiences for SAP's AI portfolio
-- Perform content evaluation and prompt engineering for Concur, Ariba, and SuccessFactors
+- Lead content evaluation and prompt engineering for Concur, Ariba, and SuccessFactors
 - Define content strategy, voice and tone guidelines, and design system standards across product lines
 - Partner with product management, UX design, and engineering teams across global markets
-- Design and facilitate Design Thinking workshops
+- Design and facilitate Design Thinking workshops; established ethical AI content guidelines organisation-wide
 
-Project 1 — Financial Planning & Analysis · Intuit Enterprise Suite & QuickBooks Online | Content Design Lead
+PORTFOLIO 1 — Financial Planning & Analysis · Intuit Enterprise Suite & QuickBooks Online | Content Design Lead
 I was the content design lead for all Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — spanning diverse global regions. FP&A is a strategic pillar for MM IES.
 
 Precise metrics (sourced directly from internal promotion document):
@@ -52,20 +53,106 @@ Key contributions:
 - Participated in 30+ follow-me-homes, contributed to 6 quantitative surveys, synthesised research for 6+ workstreams
 - Collaborated with accessibility leader Ted Drake to enforce ARIA labels, Alt+Text, and keyboard accessibility across FP&A
 
-PROJECT 2 — First-Time User Onboarding · Intuit QuickBooks | Content Designer & Strategist
-Small and mid-market business owners faced frustration juggling multiple tools alongside QuickBooks. The onboarding experience needed to clearly convey value while reducing cognitive overload.
+PROJECT 3 — First-Time User Onboarding · Intuit QuickBooks | Content Designer & Strategist
+Small and mid-market business owners faced cognitive overload from juggling multiple planning tools alongside QuickBooks. The onboarding experience needed to clearly convey value, reduce user effort, and support learnability — without overwhelming or overpromising.
 
-PROJECT 3 — Feature Nomenclature Design · SAP Analytics Cloud | Content Design Strategist
-Resolved naming conflict between on-premises ('Publication' as verb) and cloud ('Publication' as noun) versions. Research-led solution: user interviews, competitor analysis (Tableau, Adobe, Zoho), card sorting, low-fi prototype testing. Outcome: 'Schedule Publication' adopted — intuitive, scalable, heuristic-compliant.
+Challenge: SMB users were stressed and confused navigating a new financial planning feature. Onboarding needed to meet them where they were — goal-oriented, jargon-free, and benefit-driven.
 
-PROJECT 4 — Content UX & Information Architecture · SAP Analytics Cloud | Content Design Strategist
-Audited ~750 topics across scattered PDF documents for Banking, Insurance, and Oil & Gas. Defined personas across industries and LOBs (Finance, Operations, Expense Management). Designed and implemented comprehensive IA; migrated all content to unified XML-based help portal. Outcome: streamlined maintenance, improved customer onboarding and adoption.
+Key contributions:
+- Conducted quantitative and qualitative research to understand user motivations, pain points, and first-time expectations
+- Identified the intersection between business objectives and user needs to prioritise budgeting features and benefits in the FTU flow
+- Brainstormed user-centric keyword messaging reflecting common SMB motivations around problem-solving and financial clarity
+- Followed Intuit's FTU content framework: clear headline, benefit-driven description, actionable CTAs with no cognitive overload
+- Applied benefit-driven but realistic tone — avoiding jargon, overstatements, and complex feature details that raised anxiety
 
-PROJECT 5 — Design Thinking Facilitation · SAP Labs | Certified DT Coach
-Certified Design Thinking Coach with Virtual Facilitation (SAP Design Thinking Academy, 2021). Mapped user journeys across business lines, identified overlapping tools and processes, delivered virtual DT workshop. Outcome: streamlined PM processes across multiple BUs. Stakeholder testimonial: "This was no easy topic… executed pretty well."
+Outcomes:
+- 22% lift in first-time feature adoption
+- Measurable reduction in user confusion post-launch
+- Improved engagement and retention through clearer value communication
+- Cognitive load reduced — users completed setup faster with fewer support contacts
 
-PROJECT 6 — Dell Technologies · Documentation Product Lead (Jul 2008–Feb 2016)
-Documentation product lead for PowerEdge Servers — mentored writers, planned documentation requirements, drove process and product innovations. Conducted usability studies; served as cross-functional liaison across serviceability, usability, quality, marketing, and customer-facing teams.
+PROJECT 4 — Feature Nomenclature Design · SAP Analytics Cloud | Content Design Strategist
+The on-premises SAP Analytics version used 'Publication' as a verb/process; the cloud version treated it as an object/noun. Users transitioning between versions faced significant confusion — requiring a research-led naming solution that was intuitive, scalable, and heuristic-compliant.
+
+Challenge: Product teams were anchored to legacy terminology ('Publication') from BusinessObjects. The new cloud context fundamentally changed the word's meaning. I had to counter stakeholder bias with user evidence and propose a term that would work across present and future feature scope.
+
+Key contributions:
+- Engaged product managers, customer advocates, and product experts to map capabilities, audience differences, and on-premises vs. cloud contexts
+- Conducted competitor analysis across Tableau, Adobe Analytics, and Zoho to benchmark naming conventions, UX microcopy, and user workflows
+- Identified and recruited key personas for research: Business Analysts, CFOs, Marketing Executives, BI Admins, and cloud-native users
+- Facilitated card sorting exercises testing candidate terms: 'Publication', 'Scheduling', 'Bursting', 'Sharing', 'Automatic Sharing', 'Schedule Publication'
+- Created low-fidelity prototypes for the critical user journey and validated naming in context
+- Managed multiple rounds of stakeholder discussions with Terminology, Product, and Design teams — backed by research findings and Nielsen's Recognition over Recall heuristic
+- Deliberately omitted the article 'a' and avoided plural form to ensure the label was grammatically neutral and scalable
+
+Outcomes:
+- 'Schedule Publication' adopted as the final UI label — immediate release
+- 87% participant agreement rate in card sort (highest of all terms tested)
+- Term is artifact-agnostic and future-proofed for platform expansion beyond Stories/Reports
+- Independently validated by SAP's Terminology Team
+- 100% stakeholder consensus achieved after multi-round advocacy
+
+PROJECT 5 — Content UX & Information Architecture · SAP Analytics Cloud | Content Design Strategist
+Customers struggled to access large, scattered, and outdated PDF help documents across SAP's industry-specific analytics offerings for Banking, Insurance, and Oil & Gas. Updating and maintaining these documents was inefficient — making timely, relevant support nearly impossible.
+
+Challenge: There was no unified content structure or discoverability strategy. Business content was spread across multiple sources, maintained by different owners, with no consistent taxonomy or persona-led design. Customers faced friction at every stage of onboarding and ongoing use.
+
+Key contributions:
+- Performed a detailed audit of approximately 750 topics across multiple document sources — cataloguing, categorising, and assessing all relevant business content
+- Defined and refined key personas spanning Banking, Insurance, and Oil & Gas industries across Finance, Operations, and Expense Management lines of business
+- Created and administered an information survey to identify content gaps, validate persona assumptions, and surface unmet user needs
+- Developed a comprehensive information architecture — centralising and categorising content for intuitive navigation across all three industries
+- Migrated all business content into a unified XML-based authoring environment within the main SAP product help portal
+- Established taxonomy standards and content templates to streamline ongoing maintenance
+
+Outcomes:
+- ~750 topics centralised across Banking, Insurance, and Oil & Gas
+- Maintenance overhead significantly reduced — single source of truth for all business content
+- Improved customer onboarding and feature adoption through discoverable, persona-led IA
+- Scalable content structure ready for future industry expansion
+
+PROJECT 6 — Leadership & Thought Leadership · SAP Labs · Intuit | UX Design Manager
+Built and scaled content design culture across SAP and Intuit — mentoring teams, delivering workshops at global conferences, and establishing enterprise frameworks for ethical AI content and accessibility. Recognised as Top Mentor on ADPList twice.
+
+Challenge: Building a strong content design culture from within — developing talent at scale, establishing industry thought leadership, and embedding ethical AI and accessibility standards across global product organisations simultaneously.
+
+Key contributions:
+- Manage and mentor a team of 8 content designers at SAP Labs; built and led Intuit's content design team for 3 years (1 FTE + 3 CWs)
+- Led 1:1 and group workshops on Content Design, Prompt Design, and Career Transition for designers and technical communicators
+- Delivered keynote workshop on content design and prompt design at UXIndia Global Conference Q4 2023 — ~120 participants
+- Led prompt design workshop at D4 Design (Intuit-hosted event) — NPS 4.8/5
+- Trained 10-member batch of technical communicators on content design fundamentals — NPS 5/5
+- Co-hosted panel at ADPList BeMore Conference with 200+ content designers, designers, and researchers globally
+- Represented Intuit and SAP at 4+ design conferences and summits in India and globally
+- Completed 6-month Women in Leadership coaching cohort (fearless leadership programme) at Intuit
+- Completed benchmarking study to assess team expertise on Intuit Voice and Tone
+- Conducted Writer.AI training for product designers across QBDT and FP&A
+- Collaborated with accessibility leaders Ted Drake and others to enforce ARIA, Alt+Text, and keyboard accessibility as developer checklist items
+
+Outcomes:
+- Intuit India Superstar Award Q4 2023 — Customer Obsession (highest company recognition)
+- Trajectory Changing Performance — highest merit rating at Intuit
+- Top Mentor on ADPList — recognised twice in a row
+- Workshop NPS: 4.8/5 (D4 Design), 5/5 (technical communicators training)
+- Featured in Intuit NextGen Podcast; speaker at ADPList BeMore, UXIndia, W-Summit
+
+PROJECT 7 — Design Thinking Facilitation · SAP Labs | Certified DT Coach
+As a newly inducted Certified Design Thinking Coach (SAP Design Thinking Academy, 2021), I addressed multiple overlapping tools and processes across SAP's India location — helping Project Management teams overcome communication and synchronisation challenges across business lines.
+
+Challenge: Multiple overlapping tools and fragmented processes prevented Project Management teams from communicating and synchronising effectively. The workshop had to be delivered virtually, with limited time and resources, across teams with different working styles.
+
+Key contributions:
+- Mapped user journeys of various lines of business from start to end across different teams, roles, and processes
+- Methodically helped teams identify root problem areas and brainstorm scalable solutions for prioritised pain points
+- Identified a diverse range of tools, process redundancies, and communication gaps preventing synchronous collaboration
+- Designed and delivered a comprehensive virtual DT workshop despite significant logistical and time constraints
+- Certified Design Thinking Coach with Virtual Facilitation — SAP Design Thinking Academy, 2021
+
+Outcomes:
+- PM processes streamlined across multiple business units
+- Tool overlaps identified and resolved
+- Outstanding stakeholder feedback: "This was no easy topic… executed pretty well"
+- Established a repeatable DT facilitation model for future workshops at SAP Labs
 
 CORE SKILLS:
 Strategy & Leadership: Content strategy & operations · Design thinking facilitation · Stakeholder management · Team mentorship & coaching · Performance management
@@ -424,20 +511,7 @@ function Tag({ label }) {
   );
 }
 
-function StatusBadge() {
-  return (
-    <div style={{
-      display: "flex", alignItems: "center", gap: 6,
-      background: C.gLo, border: "1px solid rgba(78,201,138,0.2)",
-      padding: "5px 12px", borderRadius: 18,
-    }}>
-      <div className="sl-pulse" style={{ width: 6, height: 6, borderRadius: "50%", background: C.green }} />
-      <span style={{ fontSize: 10, color: "rgba(78,201,138,0.85)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
-        Open to opportunities
-      </span>
-    </div>
-  );
-}
+
 
 // ─── Mode toggle ──────────────────────────────────────────────────────────────
 function ModeToggle({ mode, setMode }) {
@@ -1039,7 +1113,6 @@ export default function SheenaPortfolio() {
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <StatusBadge />
           <ModeToggle mode={mode} setMode={setMode} />
           <a
             href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
