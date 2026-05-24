@@ -12,7 +12,6 @@ Previously: Content Design Lead & Strategist at Intuit/QuickBooks (Sep 2022–20
 Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-lakshmi-232a425/
 
 IMPACT AT A GLANCE:
-$936M+ combined revenue across Payments ($213M) and Payroll ($723M) — product lines within the QuickBooks Desktop portfolio
 37% YoY growth in budgets created by companies
 22% lift in first-time feature adoption
 CES improvement: 13% → 52% (FP&A budgeting)
@@ -21,14 +20,14 @@ CES improvement: 13% → 52% (FP&A budgeting)
 780K+ budgets created in QBO by 133K company files; 70K repeat monthly customers
 
 CURRENT ROLE — SAP Labs India (2025–Present):
-- Lead and mentor a team of 8 content designers across SAP enterprise products
+- Manage the content design team working on enterprise onboarding workflow designs 
 - Drive content design for AI Agents — crafting context-aware conversational experiences for SAP's AI portfolio
-- Lead content evaluation and prompt engineering for Concur, Ariba, and SuccessFactors
+- Perform content evaluation and prompt engineering for Concur, Ariba, and SuccessFactors
 - Define content strategy, voice and tone guidelines, and design system standards across product lines
 - Partner with product management, UX design, and engineering teams across global markets
-- Design and facilitate Design Thinking workshops; established ethical AI content guidelines organisation-wide
+- Design and facilitate Design Thinking workshops
 
-PORTFOLIO 1 — Financial Planning & Analysis · Intuit Enterprise Suite & QuickBooks Online | Content Design Lead
+Project 1 — Financial Planning & Analysis · Intuit Enterprise Suite & QuickBooks Online | Content Design Lead
 I was the content design lead for all Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — spanning diverse global regions. FP&A is a strategic pillar for MM IES.
 
 Precise metrics (sourced directly from internal promotion document):
@@ -53,19 +52,19 @@ Key contributions:
 - Participated in 30+ follow-me-homes, contributed to 6 quantitative surveys, synthesised research for 6+ workstreams
 - Collaborated with accessibility leader Ted Drake to enforce ARIA labels, Alt+Text, and keyboard accessibility across FP&A
 
-PROJECT 3 — First-Time User Onboarding · Intuit QuickBooks | Content Designer & Strategist
+PROJECT 2 — First-Time User Onboarding · Intuit QuickBooks | Content Designer & Strategist
 Small and mid-market business owners faced frustration juggling multiple tools alongside QuickBooks. The onboarding experience needed to clearly convey value while reducing cognitive overload.
 
-PROJECT 4 — Feature Nomenclature Design · SAP Analytics Cloud | Content Design Strategist
+PROJECT 3 — Feature Nomenclature Design · SAP Analytics Cloud | Content Design Strategist
 Resolved naming conflict between on-premises ('Publication' as verb) and cloud ('Publication' as noun) versions. Research-led solution: user interviews, competitor analysis (Tableau, Adobe, Zoho), card sorting, low-fi prototype testing. Outcome: 'Schedule Publication' adopted — intuitive, scalable, heuristic-compliant.
 
-PROJECT 5 — Content UX & Information Architecture · SAP Analytics Cloud | Content Design Strategist
+PROJECT 4 — Content UX & Information Architecture · SAP Analytics Cloud | Content Design Strategist
 Audited ~750 topics across scattered PDF documents for Banking, Insurance, and Oil & Gas. Defined personas across industries and LOBs (Finance, Operations, Expense Management). Designed and implemented comprehensive IA; migrated all content to unified XML-based help portal. Outcome: streamlined maintenance, improved customer onboarding and adoption.
 
-PROJECT 6 — Design Thinking Facilitation · SAP Labs | Certified DT Coach
+PROJECT 5 — Design Thinking Facilitation · SAP Labs | Certified DT Coach
 Certified Design Thinking Coach with Virtual Facilitation (SAP Design Thinking Academy, 2021). Mapped user journeys across business lines, identified overlapping tools and processes, delivered virtual DT workshop. Outcome: streamlined PM processes across multiple BUs. Stakeholder testimonial: "This was no easy topic… executed pretty well."
 
-PROJECT 7 — Dell Technologies · Documentation Product Lead (Jul 2008–Feb 2016)
+PROJECT 6 — Dell Technologies · Documentation Product Lead (Jul 2008–Feb 2016)
 Documentation product lead for PowerEdge Servers — mentored writers, planned documentation requirements, drove process and product innovations. Conducted usability studies; served as cross-functional liaison across serviceability, usability, quality, marketing, and customer-facing teams.
 
 CORE SKILLS:
