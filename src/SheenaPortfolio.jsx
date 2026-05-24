@@ -589,7 +589,7 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
         AI-Powered Portfolio · Ask Me Anything
       </p>
       <h1 style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: "clamp(28px,4.5vw,52px)", fontWeight: 400, lineHeight: 1.18, marginBottom: 14 }}>
-        20 years of turning complexity<br />into <span style={{ color: C.accent }}>clarity</span> &amp; <span style={{ color: C.accent }}>business impact.</span>
+        20+ years of turning complexity<br />into <span style={{ color: C.accent }}>clarity</span> &amp; <span style={{ color: C.accent }}>business impact.</span>
       </h1>
       <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85, maxWidth: 480, marginBottom: 36 }}>
         I bring 20+ years of experience across SAP, Intuit, Dell, and McAfee — leading content strategy and UX design that drives measurable business impact. Ask me anything below, or switch to Portfolio View to browse my work.
@@ -870,7 +870,7 @@ function ClassicMode({ onAskAbout }) {
                   style={{ width: "100%", textAlign: "center", padding: "12px" }}
                   onClick={() => { closeDrawer(); onAskAbout(drawer.askPrompt); }}
                 >
-                  ✦ Ask Sheena about this project in the AI chat
+                  ✦ Ask me about this project in the AI chat
                 </button>
               </div>
             </div>
@@ -1066,7 +1066,7 @@ export default function SheenaPortfolio() {
     return () => document.head.removeChild(s);
   }, []);
 
-  // When user clicks "Ask Sheena" from classic mode — switch to AI, fire question
+  // When user clicks "Ask me" from classic mode — switch to AI, fire question
   const handleAskAbout = (prompt) => {
     setMode("ai");
     setTimeout(() => {
