@@ -338,7 +338,8 @@ const PROJECTS = [
   },
   {
     id: "07", title: "Design Thinking Facilitation", company: "SAP Labs",
-    role: "Certified DT Coach", metric: "✦", metricLabel: "Virtual DT workshop across business lines",
+    role: "Certified DT Coach", metric: "", metricLabel: "Virtual DT workshop across business lines",
+    metricSvg: true,
     tags: ["Design Thinking", "Facilitation", "Process Optimisation", "Virtual Workshop"],
     description: "As a newly inducted Certified Design Thinking Coach (SAP Design Thinking Academy, 2021), addressed multiple overlapping tools and processes within the India location and helped Project Management teams overcome communication and synchronisation challenges.",
     challenge: "Multiple overlapping tools and processes within the India location prevented Project Management teams from communicating and synchronising effectively across business lines.",
@@ -499,6 +500,38 @@ function Tag({ label }) {
       border: `1px solid ${C.border}`, padding: "3px 8px", borderRadius: 4,
       color: C.muted, fontFamily: SANS, display: "inline-block",
     }}>{label}</span>
+  );
+}
+
+function DTIcon({ size = 52 }) {
+  const cx = size / 2, cy = size / 2, R = size * 0.37;
+  const nodes = ["EMP","DEF","IDE","PRO","IMP"];
+  const pts = nodes.map((_, i) => {
+    const angle = (i / nodes.length) * 2 * Math.PI - Math.PI / 2;
+    return [cx + R * Math.cos(angle), cy + R * Math.sin(angle)];
+  });
+  return (
+    <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size} xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="dtarr" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+          <path d="M0,0 L4,2 L0,4 Z" fill={C.accent} opacity="0.7"/>
+        </marker>
+      </defs>
+      <circle cx={cx} cy={cy} r={R + 4} fill="none" stroke={C.accent} strokeWidth="1" strokeDasharray="3 3" opacity="0.25"/>
+      {pts.map(([x1,y1], i) => {
+        const [x2,y2] = pts[(i+1) % pts.length];
+        const mx=(x1+x2)/2, my=(y1+y2)/2;
+        const dx=x2-x1, dy=y2-y1, len=Math.sqrt(dx*dx+dy*dy);
+        const nx=-dy/len*6, ny=dx/len*6;
+        return <path key={i} d={`M${x1},${y1} Q${mx+nx},${my+ny} ${x2},${y2}`} fill="none" stroke={C.accent} strokeWidth="1" opacity="0.5" markerEnd="url(#dtarr)"/>;
+      })}
+      {pts.map(([x,y], i) => (
+        <g key={i}>
+          <circle cx={x} cy={y} r={size * 0.1} fill={C.accent} opacity={0.45 + i * 0.1}/>
+          <text x={x} y={y + size*0.045} textAnchor="middle" fontFamily="Helvetica" fontSize={size*0.075} fill="#0B0D12" fontWeight="700">{nodes[i]}</text>
+        </g>
+      ))}
+    </svg>
   );
 }
 
@@ -745,9 +778,10 @@ function ClassicMode({ onAskAbout }) {
                 display: "flex", gap: 20, alignItems: "center",
               }}>
                 <div>
-                  <p style={{ fontFamily: SERIF, fontSize: 40, fontWeight: 600, color: C.accent, lineHeight: 1 }}>
-                    {drawer.metric}
-                  </p>
+                  {drawer.metricSvg
+                    ? <DTIcon size={64}/>
+                    : <p style={{ fontFamily: SERIF, fontSize: 40, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{drawer.metric}</p>
+                  }
                   <p style={{ fontSize: 11, color: C.muted, letterSpacing: "0.08em", marginTop: 4 }}>
                     {drawer.metricLabel}
                   </p>
@@ -970,7 +1004,10 @@ function ClassicMode({ onAskAbout }) {
                     </div>
                   </div>
                   <div style={{ textAlign: "right", flexShrink: 0, paddingLeft: 12 }}>
-                    <p style={{ fontFamily: SERIF, fontSize: 24, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{p.metric}</p>
+                    {p.metricSvg
+                      ? <div style={{ display: "flex", justifyContent: "flex-end" }}><DTIcon size={48}/></div>
+                      : <p style={{ fontFamily: SERIF, fontSize: 24, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{p.metric}</p>
+                    }
                     <p style={{ fontSize: 9, color: C.muted, maxWidth: 90, textAlign: "right", lineHeight: 1.4, marginTop: 3 }}>{p.metricLabel}</p>
                     <button
                       className="sl-ask"
