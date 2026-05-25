@@ -648,15 +648,15 @@ function AssistantMessage({ content, idx, expanded, onToggle }) {
           </div>
           <p style={{
             fontSize: 13, lineHeight: 1.75, color: C.text,
-            whiteSpace: "pre-wrap", wordBreak: "break-word",
-          }}>{front}</p>
+            wordBreak: "break-word",
+          }}>{renderMarkdown(front)}</p>
         </div>
       ) : (
         <div style={{ padding: "11px 14px" }}>
           <p style={{
             fontSize: 13, lineHeight: 1.75, color: C.text,
-            whiteSpace: "pre-wrap", wordBreak: "break-word", margin: 0,
-          }}>{content}</p>
+            wordBreak: "break-word", margin: 0,
+          }}>{renderMarkdown(content)}</p>
         </div>
       )}
 
@@ -665,8 +665,8 @@ function AssistantMessage({ content, idx, expanded, onToggle }) {
         <div style={{ padding: "12px 16px 10px" }}>
           <p style={{
             fontSize: 13, lineHeight: 1.75, color: C.text,
-            whiteSpace: "pre-wrap", wordBreak: "break-word", margin: 0,
-          }}>{detail}</p>
+            wordBreak: "break-word", margin: 0,
+          }}>{renderMarkdown(detail)}</p>
         </div>
       )}
 
@@ -696,7 +696,28 @@ function AssistantMessage({ content, idx, expanded, onToggle }) {
   );
 }
 
-function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
+// ── Lightweight markdown renderer ────────────────────────────────────────────
+// Converts **bold**, *italic*, and line breaks into JSX — no asterisks shown
+function renderMarkdown(text) {
+  if (!text) return null;
+  return text.split("\n").map((line, li) => {
+    // Split on **bold** and *italic* tokens
+    const tokens = line.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
+    const nodes = tokens.map((tok, ti) => {
+      if (tok.startsWith("**") && tok.endsWith("**"))
+        return <strong key={ti} style={{ fontWeight: 600, color: "inherit" }}>{tok.slice(2, -2)}</strong>;
+      if (tok.startsWith("*") && tok.endsWith("*"))
+        return <em key={ti} style={{ fontStyle: "italic", color: "inherit" }}>{tok.slice(1, -1)}</em>;
+      return tok;
+    });
+    return (
+      <span key={li}>
+        {nodes}
+        {li < text.split("\n").length - 1 && <br />}
+      </span>
+    );
+  });
+}
   const endRef   = useRef(null);
   const inputRef = useRef(null);
   const [expandedMsgs, setExpandedMsgs] = useState(new Set());
