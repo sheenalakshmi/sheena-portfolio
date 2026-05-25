@@ -12,7 +12,6 @@ Previously: Content Design Lead & Strategist at Intuit/QuickBooks (Sep 2022–20
 Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-lakshmi-232a425/
 
 IMPACT AT A GLANCE:
-$936M+ combined revenue across Payments ($213M) and Payroll ($723M) — product lines within the QuickBooks Desktop portfolio
 37% YoY growth in budgets created by companies
 22% lift in first-time feature adoption
 CES improvement: 13% → 52% (FP&A budgeting)
@@ -23,13 +22,13 @@ CES improvement: 13% → 52% (FP&A budgeting)
 CURRENT ROLE — SAP Labs India (2025–Present):
 - Lead and mentor a team of 8 content designers across SAP enterprise products
 - Drive content design for AI Agents — crafting context-aware conversational experiences for SAP's AI portfolio
-- Lead content evaluation and prompt engineering for Concur, Ariba, and SuccessFactors
+- Lead content evaluation and prompt engineering for B2B products
 - Define content strategy, voice and tone guidelines, and design system standards across product lines
 - Partner with product management, UX design, and engineering teams across global markets
-- Design and facilitate Design Thinking workshops; established ethical AI content guidelines organisation-wide
+- Design and facilitate Design Thinking workshops; contribute to the creation of AI content guidelines 
 
-PORTFOLIO 1 — Financial Planning & Analysis · Intuit Enterprise Suite & QuickBooks Online | Content Design Lead
-I was the content design lead for all Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — spanning diverse global regions. FP&A is a strategic pillar for MM IES.
+PORTFOLIO 1 — Content Design and Systems · Intuit Enterprise Suite & QuickBooks Online | Content Design Lead
+Led all content design efforts for the Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — spanning diverse global regions. Created scalable systems and frameworks while mentoring content designers.
 
 Precise metrics (sourced directly from internal promotion document):
 - Overall FP&A engagement: 12.54% in QBO Advanced, 8.39% in QBO Plus (against FY24 baseline of 10% and 3.5% respectively); 11.76% for Intuit Enterprise Suite
@@ -51,7 +50,7 @@ Key contributions:
 - Influenced ethical AI communication: collaborated with AI Governance Council, IntuitAssist teams, legal and marketing to deliver transparent AI messaging with explainability and legal disclaimers
 - Led seamless cashflow planner transition — rebranded, decommissioned AI forecasting within cashflow, coordinated with sales, marketing, and customer success in a two-week turnaround
 - Participated in 30+ follow-me-homes, contributed to 6 quantitative surveys, synthesised research for 6+ workstreams
-- Collaborated with accessibility leader Ted Drake to enforce ARIA labels, Alt+Text, and keyboard accessibility across FP&A
+- Collaborated with accessibility leaders to enforce ARIA labels, Alt+Text, and keyboard accessibility across FP&A
 
 PROJECT 3 — First-Time User Onboarding · Intuit QuickBooks | Content Designer & Strategist
 Small and mid-market business owners faced cognitive overload from juggling multiple planning tools alongside QuickBooks. The onboarding experience needed to clearly convey value, reduce user effort, and support learnability — without overwhelming or overpromising.
@@ -119,15 +118,15 @@ Challenge: Building a strong content design culture from within — developing t
 Key contributions:
 - Manage and mentor a team of 8 content designers at SAP Labs; built and led Intuit's content design team for 3 years (1 FTE + 3 CWs)
 - Led 1:1 and group workshops on Content Design, Prompt Design, and Career Transition for designers and technical communicators
-- Delivered keynote workshop on content design and prompt design at UXIndia Global Conference Q4 2023 — ~120 participants
+- Delivered a workshop on content design and prompt design at UXIndia Global Conference Q4 2023 — ~120 participants
 - Led prompt design workshop at D4 Design (Intuit-hosted event) — NPS 4.8/5
 - Trained 10-member batch of technical communicators on content design fundamentals — NPS 5/5
 - Co-hosted panel at ADPList BeMore Conference with 200+ content designers, designers, and researchers globally
 - Represented Intuit and SAP at 4+ design conferences and summits in India and globally
 - Completed 6-month Women in Leadership coaching cohort (fearless leadership programme) at Intuit
-- Completed benchmarking study to assess team expertise on Intuit Voice and Tone
+- Completed benchmarking study to assess team expertise on SAP Voice and Tone
 - Conducted Writer.AI training for product designers across QBDT and FP&A
-- Collaborated with accessibility leaders Ted Drake and others to enforce ARIA, Alt+Text, and keyboard accessibility as developer checklist items
+- Collaborated with accessibility leaders and others to enforce ARIA, Alt+Text, and keyboard accessibility as developer checklist items
 
 Outcomes:
 - Intuit India Superstar Award Q4 2023 — Customer Obsession (highest company recognition)
@@ -137,7 +136,7 @@ Outcomes:
 - Featured in Intuit NextGen Podcast; speaker at ADPList BeMore, UXIndia, W-Summit
 
 PROJECT 7 — Design Thinking Facilitation · SAP Labs | Certified DT Coach
-As a newly inducted Certified Design Thinking Coach (SAP Design Thinking Academy, 2021), I addressed multiple overlapping tools and processes across SAP's India location — helping Project Management teams overcome communication and synchronisation challenges across business lines.
+Facilitated Discovery sessions for product development. Helped product teams streamline the usage of overlapping tools and processes across SAP's India location — helping Project Management teams overcome communication and synchronisation challenges across business lines.
 
 Challenge: Multiple overlapping tools and fragmented processes prevented Project Management teams from communicating and synchronising effectively. The workshop had to be delivered virtually, with limited time and resources, across teams with different working styles.
 
@@ -298,10 +297,7 @@ const PROJECTS = [
       { label: "Customer onboarding", value: "Improved" },
     ],
     artifacts: [
-      { label: "Information Architecture", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "IA design and content taxonomy" },
-      { label: "Content Audit Report", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "750-topic audit methodology and findings" },
-      { label: "Persona Framework", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Personas across industries and LOBs" },
-      { label: "Help Portal (live)", type: "notion", href: "ADD_NOTION_LINK", desc: "Unified help portal post-migration" },
+      { label: "Design Process", type: "deck", href: "https://drive.google.com/file/d/1pN2cLA5hFaMk6VCmk_7mJDDByoFFK1io/view?usp=sharing", desc: "IA design and content taxonomy" },
     ],
     samples: [],
     askPrompt: "Tell me about the content UX consistency project at SAP Analytics.",
@@ -327,12 +323,11 @@ const PROJECTS = [
       { label: "Women in Leadership", value: "Intuit programme" },
     ],
     artifacts: [
-      { label: "Prompt Design Talk — UXIndia 2023", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Slides from UXIndia keynote on prompt design" },
+      { label: "Prompt Design Talk — UXIndia 2023", type: "pdf", href: "https://drive.google.com/file/d/13jmLxMgV4uvIEV4X7yiJrx_PUXJz4eQJ/view?usp=sharing", desc: "Slides from UXIndia on prompt design" },
       { label: "NextGen Network Interview", type: "video", href: "https://www.youtube.com/watch?v=SQcGF5OinFs", desc: "Featured interview on content design career" },
       { label: "ADPList BeMore Conference", type: "video", href: "https://drive.google.com/file/d/1td8NBDKhQpO3TRvM87p-mxb4nAs28i4L/view", desc: "Conference talk recording" },
       { label: "W-Summit Career Talk", type: "video", href: "https://www.youtube.com/watch?v=i1EgVExCpj0", desc: "Career guidance session recording" },
-      { label: "Ethical AI Guidelines", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Enterprise ethical AI content framework" },
-      { label: "Accessibility Standards", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "ARIA and Alt-text guidelines document" },
+      { label: "Accessibility Standards", type: "pdf", href: "https://drive.google.com/file/d/1Ta3WAxtTtBClyt-8gcHAjrgS0Gi34lfF/view?usp=sharing", desc: "ARIA and Alt-text guidelines document" },
     ],
     samples: [
       { label: "NextGen Network Interview", type: "video", href: "https://www.youtube.com/watch?v=SQcGF5OinFs" },
@@ -361,9 +356,7 @@ const PROJECTS = [
       { label: "Format", value: "Virtual-first" },
     ],
     artifacts: [
-      { label: "DT Workshop Summary", type: "pdf", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Project Management DT session summary and outcomes" },
-      { label: "Facilitation Deck", type: "deck", href: "ADD_GOOGLE_DRIVE_LINK", desc: "Workshop slides and exercises" },
-      { label: "Process Maps", type: "screenshot", href: "ADD_GOOGLE_DRIVE_LINK", desc: "User journey maps across business lines" },
+      { label: Contact me for more information},
     ],
     samples: [],
     askPrompt: "Tell me about the design thinking facilitation project at SAP.",
