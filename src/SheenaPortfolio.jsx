@@ -222,9 +222,9 @@ const PROJECTS = [
       { label: "Custom forecast → budget", value: "75%" },
     ],
     artifacts: [
-      { label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf", desc: "FP&A content design guidelines and reusable framework" },
+      { label: "Content Design for FP&A", type: "pdf", href: "https://drive.google.com/file/d/1LBO2ZH22ocsOP2950ATB-qzxrHUdmySe/view?usp=sharing", desc: "Process, framework, and systems" },
     ],
-    samples: [{ label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf" }],
+    samples: [{ label: "Content Design for FP&A", type: "pdf", href: "https://drive.google.com/file/d/1LBO2ZH22ocsOP2950ATB-qzxrHUdmySe/view?usp=sharing" }],
     askPrompt: "Tell me about your FP&A content design work within Intuit Enterprise Suite and QuickBooks Online.",
   },
   {
@@ -382,34 +382,48 @@ const CHIPS = [
 ];
 
 // ─── Design tokens ─────────────────────────────────────────────────────────────
-const C = {
+const DARK_C = {
   bg:     "#0B0D12", surface: "#161A23", card: "#191C26", cardHov: "#222638",
   border: "rgba(255,255,255,0.07)", accent: "#7B9FBF",
-  aLo:    "rgba(196,151,106,0.1)", aMid: "rgba(123,159,191,0.2)",
-  text:   "#E4DDD0", muted: "rgba(200,208,224,0.52)",
+  aLo:    "rgba(123,159,191,0.12)", aMid: "rgba(123,159,191,0.25)",
+  text:   "#E4DDD0", muted: "#A0AEC0",
   green:  "#4EC98A", gLo: "rgba(78,201,138,0.1)",
+  navBg:  "rgba(11,13,18,0.96)", shadow: "rgba(0,0,0,0.4)",
 };
+
+// WCAG AA compliant light theme — all text/bg pairs ≥ 4.5:1
+const LIGHT_C = {
+  bg:     "#FAFAF8", surface: "#F0EDE6", card: "#FFFFFF", cardHov: "#F5F2EC",
+  border: "rgba(0,0,0,0.1)", accent: "#1A4B8C",
+  aLo:    "rgba(26,75,140,0.08)", aMid: "rgba(26,75,140,0.18)",
+  text:   "#1A1A2E", muted: "#4A5568",
+  green:  "#166534", gLo: "rgba(22,101,52,0.1)",
+  navBg:  "rgba(26,43,78,0.97)", shadow: "rgba(0,0,0,0.15)",
+};
+
+let C = DARK_C; // mutable — reassigned in SheenaPortfolio before each render
+
 const SANS  = "'DM Sans', sans-serif";
 const SERIF = "'Cormorant Garant', serif";
 
-// ─── Global styles ─────────────────────────────────────────────────────────────
-const STYLES = `
+// ─── Global styles (function so it rebuilds when theme changes) ────────────────
+const getStyles = (C) => `
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:${C.bg}}
+  html,body{background:${C.bg};transition:background 0.3s ease,color 0.3s ease}
   ::-webkit-scrollbar{width:4px}
   ::-webkit-scrollbar-track{background:transparent}
   ::-webkit-scrollbar-thumb{background:${C.aMid};border-radius:2px}
 
-  .sl-chip{background:${C.aLo};border:1px solid ${C.aMid};color:rgba(123,159,191,0.85);
+  .sl-chip{background:${C.aLo};border:1px solid ${C.aMid};color:${C.accent};
     padding:7px 13px;border-radius:20px;font-size:12px;font-family:${SANS};
     cursor:pointer;white-space:nowrap;transition:all 0.2s;line-height:1}
-  .sl-chip:hover{background:${C.aMid};border-color:rgba(123,159,191,0.5);color:${C.accent};transform:translateY(-1px)}
+  .sl-chip:hover{background:${C.aMid};border-color:${C.accent};color:${C.accent};transform:translateY(-1px)}
 
   .sl-send{background:${C.accent};border:none;width:38px;height:38px;border-radius:50%;
     cursor:pointer;display:flex;align-items:center;justify-content:center;
-    flex-shrink:0;transition:all 0.2s;color:${C.bg};font-size:17px;font-weight:700}
-  .sl-send:hover:not(:disabled){background:#d4a87a;transform:scale(1.06)}
+    flex-shrink:0;transition:all 0.2s;color:#fff;font-size:17px;font-weight:700}
+  .sl-send:hover:not(:disabled){opacity:0.85;transform:scale(1.06)}
   .sl-send:disabled{opacity:0.35;cursor:not-allowed}
 
   .sl-ta{flex:1;background:transparent;border:none;outline:none;color:${C.text};
@@ -430,19 +444,25 @@ const STYLES = `
   @keyframes sl-fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
   .sl-page-in{animation:sl-fade 0.4s ease forwards}
 
-  .sl-nav-link{font-size:12px;color:${C.muted};text-decoration:none;letter-spacing:0.06em;transition:color 0.2s}
-  .sl-nav-link:hover{color:${C.accent}}
+  .sl-nav-link{font-size:12px;color:rgba(200,208,224,0.7);text-decoration:none;letter-spacing:0.06em;transition:color 0.2s}
+  .sl-nav-link:hover{color:#fff}
 
   .sl-resume-btn{display:inline-flex;align-items:center;gap:7px;
-    background:transparent;border:1px solid ${C.aMid};color:${C.accent};
+    background:transparent;border:1px solid rgba(123,159,191,0.4);color:#A8C4E0;
     padding:7px 16px;border-radius:8px;font-size:12px;font-family:${SANS};
     letter-spacing:0.06em;cursor:pointer;transition:all 0.22s;
     text-decoration:none;font-weight:500;white-space:nowrap}
-  .sl-resume-btn:hover{background:${C.aLo};border-color:${C.accent};transform:translateY(-1px)}
+  .sl-resume-btn:hover{background:rgba(123,159,191,0.15);border-color:#A8C4E0;transform:translateY(-1px)}
 
   .sl-proj-card{background:${C.card};border:1px solid ${C.border};border-radius:16px;
-    overflow:hidden;transition:all 0.25s;cursor:pointer}
-  .sl-proj-card:hover{border-color:${C.aMid};transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,0.35)}
+    overflow:hidden;transition:all 0.25s;cursor:default}
+  .sl-proj-card:hover{border-color:${C.aMid};box-shadow:0 12px 40px ${C.shadow}}
+
+  .sl-cta-btn{background:${C.accent};border:none;color:#fff;
+    padding:7px 13px;border-radius:8px;font-size:11px;font-family:${SANS};
+    letter-spacing:0.04em;cursor:pointer;transition:all 0.2s;display:block;
+    width:100%;text-align:center;font-weight:500}
+  .sl-cta-btn:hover{opacity:0.85;transform:translateY(-1px);box-shadow:0 4px 12px ${C.shadow}}
 
   .sl-ask{background:${C.aLo};border:1px solid ${C.aMid};color:${C.accent};
     padding:8px 14px;border-radius:8px;font-size:12px;font-family:${SANS};
@@ -450,10 +470,10 @@ const STYLES = `
   .sl-ask:hover{background:${C.aMid}}
 
   .sl-sample{display:inline-flex;align-items:center;gap:5px;
-    background:rgba(255,255,255,0.04);border:1px solid ${C.border};
+    background:${C.aLo};border:1px solid ${C.border};
     color:${C.muted};padding:6px 12px;border-radius:8px;font-size:12px;
     font-family:${SANS};text-decoration:none;transition:all 0.2s;margin-right:7px;margin-top:7px}
-  .sl-sample:hover{border-color:${C.aMid};color:${C.text};background:rgba(123,159,191,0.07)}
+  .sl-sample:hover{border-color:${C.aMid};color:${C.text};background:${C.aMid}}
 
   .sl-skill-tag{background:${C.surface};border:1px solid ${C.border};
     color:${C.muted};padding:6px 13px;border-radius:8px;font-size:12px;
@@ -461,7 +481,7 @@ const STYLES = `
   .sl-skill-tag:hover{border-color:${C.aMid};color:${C.text}}
 
   .sl-mode-btn{display:flex;align-items:center;gap:8px;padding:8px 16px;
-    border-radius:10px;border:1px solid ${C.border};font-family:${SANS};
+    border-radius:10px;border:1px solid rgba(255,255,255,0.12);font-family:${SANS};
     font-size:12px;letter-spacing:0.06em;cursor:pointer;transition:all 0.22s;font-weight:500}
 
   .sl-exp-row{padding:20px 0;border-bottom:1px solid ${C.border};transition:background 0.2s}
@@ -469,6 +489,12 @@ const STYLES = `
 
   @keyframes sl-modal-in{from{opacity:0;transform:scale(0.97)}to{opacity:1;transform:scale(1)}}
   .sl-modal{animation:sl-modal-in 0.25s ease forwards}
+
+  .sl-theme-btn{background:transparent;border:1px solid rgba(255,255,255,0.15);
+    color:rgba(200,208,224,0.8);width:34px;height:34px;border-radius:8px;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;
+    font-size:15px;transition:all 0.22s;flex-shrink:0}
+  .sl-theme-btn:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.3)}
 `;
 
 // ─── Shared sub-components ─────────────────────────────────────────────────────
@@ -1010,8 +1036,8 @@ function ClassicMode({ onAskAbout }) {
                     }
                     <p style={{ fontSize: 9, color: C.muted, maxWidth: 90, textAlign: "right", lineHeight: 1.4, marginTop: 3 }}>{p.metricLabel}</p>
                     <button
-                      className="sl-ask"
-                      style={{ marginTop: 10, fontSize: 11, padding: "6px 12px", display: "block", width: "100%", textAlign: "center" }}
+                      className="sl-cta-btn"
+                      style={{ marginTop: 10 }}
                       onClick={() => openDrawer(p)}
                     >
                       View case study →
@@ -1090,6 +1116,7 @@ function ClassicMode({ onAskAbout }) {
 
 export default function SheenaPortfolio() {
   const [mode, setMode]   = useState("ai"); // "ai" | "classic"
+  const [theme, setTheme] = useState("dark");
   const [msgs, setMsgs]   = useState([{
     role: "assistant",
     content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP Labs with 24+ years of experience — 16 in technical writing and 8 in UX content design.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
@@ -1097,14 +1124,20 @@ export default function SheenaPortfolio() {
   const [busy, setBusy]   = useState(false);
   const [input, setInput] = useState("");
 
+  // Keep C in sync with theme before every render
+  C = theme === "dark" ? DARK_C : LIGHT_C;
+
   useEffect(() => {
     const s = document.createElement("style");
-    s.textContent = STYLES;
+    s.id = "sl-theme-styles";
+    s.textContent = getStyles(C);
+    const existing = document.getElementById("sl-theme-styles");
+    if (existing) existing.remove();
     document.head.appendChild(s);
-    return () => document.head.removeChild(s);
-  }, []);
+    return () => { const el = document.getElementById("sl-theme-styles"); if (el) el.remove(); };
+  }, [theme]);
 
-  // When user clicks "Ask Sheena" from classic mode — switch to AI, fire question
+  // When user clicks "Ask me" from classic mode — switch to AI, fire question
   const handleAskAbout = (prompt) => {
     setMode("ai");
     setTimeout(() => {
@@ -1131,27 +1164,36 @@ export default function SheenaPortfolio() {
   };
 
   return (
-    <div style={{ background: C.bg, color: C.text, minHeight: "100vh", fontFamily: SANS }}>
+    <div style={{ background: C.bg, color: C.text, minHeight: "100vh", fontFamily: SANS, transition: "background 0.3s ease, color 0.3s ease" }}>
 
       {/* ── NAV ── */}
       <nav style={{
         width: "100%", padding: "14px 40px",
         display: "flex", justifyContent: "space-between", alignItems: "center",
-        borderBottom: `1px solid ${C.border}`,
-        background: "rgba(15,17,23,0.96)", backdropFilter: "blur(16px)",
+        borderBottom: "1px solid rgba(255,255,255,0.08)",
+        background: C.navBg, backdropFilter: "blur(16px)",
         position: "sticky", top: 0, zIndex: 30,
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <span style={{ fontFamily: SERIF, fontSize: 20, fontWeight: 600, letterSpacing: "0.01em" }}>
+          <span style={{ fontFamily: SERIF, fontSize: 20, fontWeight: 600, letterSpacing: "0.01em", color: "#fff" }}>
             Sheena Lakshmi
           </span>
-          <span style={{ fontSize: 11, color: C.muted, letterSpacing: "0.08em", display: "none" }}>
+          <span style={{ fontSize: 11, color: "rgba(200,208,224,0.5)", letterSpacing: "0.08em", display: "none" }}>
             UX Design Manager · Content
           </span>
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <ModeToggle mode={mode} setMode={setMode} />
+          {/* Theme toggle */}
+          <button
+            className="sl-theme-btn"
+            onClick={() => setTheme(t => t === "dark" ? "light" : "dark")}
+            title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {theme === "dark" ? "☀️" : "🌙"}
+          </button>
           <a
             href="https://drive.google.com/file/d/1hO3DGojjYWth37mQvykE7tdnO8XaoHLo/view?usp=sharing"
             target="_blank"
