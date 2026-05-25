@@ -768,7 +768,7 @@ function renderMarkdown(text) {
 // ═══════════════════════════════════════════════════════════════════
 // AI CHAT MODE
 // ═══════════════════════════════════════════════════════════════════
-function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
+function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput, setMode }) {
   const endRef   = useRef(null);
   const inputRef = useRef(null);
   const [expandedMsgs, setExpandedMsgs] = useState(new Set());
@@ -823,7 +823,19 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
         20+ years of turning complexity<br />into <span style={{ color: C.accent }}>clarity</span> &amp; <span style={{ color: C.accent }}>business impact.</span>
       </h1>
       <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85, maxWidth: 480, marginBottom: 36 }}>
-        I bring 20+ years of experience across SAP, Intuit, Dell, and McAfee — leading content strategy and UX design that drives measurable business impact. Ask me anything below, or switch to Portfolio View to browse my work.
+        I bring 20+ years of experience across SAP, Intuit, Dell, and McAfee — leading content strategy and UX design that drives measurable business impact. Ask me anything below, or{" "}
+        <button
+          onClick={() => setMode("classic")}
+          style={{
+            background: "none", border: "none", padding: 0,
+            color: C.accent, fontFamily: SANS, fontSize: 13,
+            fontWeight: 500, cursor: "pointer", textDecoration: "underline",
+            textDecorationStyle: "dotted", textUnderlineOffset: 3,
+            transition: "opacity 0.2s",
+          }}
+          onMouseEnter={e => e.currentTarget.style.opacity = "0.75"}
+          onMouseLeave={e => e.currentTarget.style.opacity = "1"}
+        >switch to Portfolio View</button>{" "}to browse my work.
       </p>
 
       {/* Stats */}
@@ -1406,6 +1418,7 @@ export default function SheenaPortfolio() {
             busy={busy} setBusy={setBusy}
             input={input} setInput={setInput}
             onAsk={handleAskAbout}
+            setMode={setMode}
           />
         : <ClassicMode onAskAbout={handleAskAbout} />
       }
