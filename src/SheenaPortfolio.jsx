@@ -718,6 +718,11 @@ function renderMarkdown(text) {
     );
   });
 }
+
+// ═══════════════════════════════════════════════════════════════════
+// AI CHAT MODE
+// ═══════════════════════════════════════════════════════════════════
+function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
   const endRef   = useRef(null);
   const inputRef = useRef(null);
   const [expandedMsgs, setExpandedMsgs] = useState(new Set());
