@@ -414,7 +414,7 @@ const PROJECTS = [
 const SKILLS_LIST = [
   { group: "Strategy & Leadership", items: ["Content Leadership & Operations", "Content Strategy", "Design Thinking", "Stakeholder Management", "Team Mentorship"] },
   { group: "Design & Research", items: ["UX Writing & Content Design", "Information Architecture", "User Research & Testing", "Data-Informed Design", "Systems Design"] },
-  { group: "Emerging Specialisms", items: ["Prompt Design", "LLM Training", "Conversation Design", "Ethical AI", "Digital Adoption (WalkMe)"] },
+  { group: "Emerging Specialisms", items: ["Prompt Design", "Conversation Design", "Ethical AI", "Digital Adoption (WalkMe)"] },
   { group: "Tools", items: ["Figma", "Balsamiq", "Jira", "Mural · Miro", "UserTesting · GreatQuestion", "Writer.AI"] },
 ];
 
