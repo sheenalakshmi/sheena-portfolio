@@ -905,7 +905,7 @@ function ClassicMode({ onAskAbout }) {
                   style={{ width: "100%", textAlign: "center", padding: "12px" }}
                   onClick={() => { closeDrawer(); onAskAbout(drawer.askPrompt); }}
                 >
-                  ✦ Ask Sheena about this project in the AI chat
+                  ✦ Ask me about this project in the AI chat
                 </button>
               </div>
             </div>
