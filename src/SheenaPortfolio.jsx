@@ -12,6 +12,7 @@ Previously: Content Design Lead & Strategist at Intuit/QuickBooks (Sep 2022–20
 Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-lakshmi-232a425/
 
 IMPACT AT A GLANCE:
+$936M+ combined revenue contributed to across Payments ($213M) and Payroll ($723M) — by way of migration
 37% YoY growth in budgets created by companies
 22% lift in first-time feature adoption
 CES improvement: 13% → 52% (FP&A budgeting)
@@ -22,13 +23,13 @@ CES improvement: 13% → 52% (FP&A budgeting)
 CURRENT ROLE — SAP Labs India (2025–Present):
 - Lead and mentor a team of 8 content designers across SAP enterprise products
 - Drive content design for AI Agents — crafting context-aware conversational experiences for SAP's AI portfolio
-- Lead content evaluation and prompt engineering for B2B products
+- Lead content evaluation and prompt engineering for Concur, Ariba, and SuccessFactors
 - Define content strategy, voice and tone guidelines, and design system standards across product lines
 - Partner with product management, UX design, and engineering teams across global markets
-- Design and facilitate Design Thinking workshops; contribute to the creation of AI content guidelines 
+- Design and facilitate Design Thinking workshops; established ethical AI content guidelines organisation-wide
 
-PORTFOLIO 1 — Content Design and Systems · Intuit Enterprise Suite & QuickBooks Online | Content Design Lead
-Led all content design efforts for the Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — spanning diverse global regions. Created scalable systems and frameworks while mentoring content designers.
+PORTFOLIO 1 — Financial Planning & Analysis · Intuit Enterprise Suite & QuickBooks Online | Content Design Lead
+I was the content design lead for all Financial Planning & Analysis capabilities — budgeting, forecasting, cash flow — spanning diverse global regions. FP&A is a strategic pillar for MM IES.
 
 Precise metrics (sourced directly from internal promotion document):
 - Overall FP&A engagement: 12.54% in QBO Advanced, 8.39% in QBO Plus (against FY24 baseline of 10% and 3.5% respectively); 11.76% for Intuit Enterprise Suite
@@ -50,7 +51,7 @@ Key contributions:
 - Influenced ethical AI communication: collaborated with AI Governance Council, IntuitAssist teams, legal and marketing to deliver transparent AI messaging with explainability and legal disclaimers
 - Led seamless cashflow planner transition — rebranded, decommissioned AI forecasting within cashflow, coordinated with sales, marketing, and customer success in a two-week turnaround
 - Participated in 30+ follow-me-homes, contributed to 6 quantitative surveys, synthesised research for 6+ workstreams
-- Collaborated with accessibility leaders to enforce ARIA labels, Alt+Text, and keyboard accessibility across FP&A
+- Collaborated with accessibility leader Ted Drake to enforce ARIA labels, Alt+Text, and keyboard accessibility across FP&A
 
 PROJECT 3 — First-Time User Onboarding · Intuit QuickBooks | Content Designer & Strategist
 Small and mid-market business owners faced cognitive overload from juggling multiple planning tools alongside QuickBooks. The onboarding experience needed to clearly convey value, reduce user effort, and support learnability — without overwhelming or overpromising.
@@ -118,15 +119,15 @@ Challenge: Building a strong content design culture from within — developing t
 Key contributions:
 - Manage and mentor a team of 8 content designers at SAP Labs; built and led Intuit's content design team for 3 years (1 FTE + 3 CWs)
 - Led 1:1 and group workshops on Content Design, Prompt Design, and Career Transition for designers and technical communicators
-- Delivered a workshop on content design and prompt design at UXIndia Global Conference Q4 2023 — ~120 participants
+- Delivered keynote workshop on content design and prompt design at UXIndia Global Conference Q4 2023 — ~120 participants
 - Led prompt design workshop at D4 Design (Intuit-hosted event) — NPS 4.8/5
 - Trained 10-member batch of technical communicators on content design fundamentals — NPS 5/5
 - Co-hosted panel at ADPList BeMore Conference with 200+ content designers, designers, and researchers globally
 - Represented Intuit and SAP at 4+ design conferences and summits in India and globally
 - Completed 6-month Women in Leadership coaching cohort (fearless leadership programme) at Intuit
-- Completed benchmarking study to assess team expertise on SAP Voice and Tone
+- Completed benchmarking study to assess team expertise on Intuit Voice and Tone
 - Conducted Writer.AI training for product designers across QBDT and FP&A
-- Collaborated with accessibility leaders and others to enforce ARIA, Alt+Text, and keyboard accessibility as developer checklist items
+- Collaborated with accessibility leaders Ted Drake and others to enforce ARIA, Alt+Text, and keyboard accessibility as developer checklist items
 
 Outcomes:
 - Intuit India Superstar Award Q4 2023 — Customer Obsession (highest company recognition)
@@ -136,7 +137,7 @@ Outcomes:
 - Featured in Intuit NextGen Podcast; speaker at ADPList BeMore, UXIndia, W-Summit
 
 PROJECT 7 — Design Thinking Facilitation · SAP Labs | Certified DT Coach
-Facilitated Discovery sessions for product development. Helped product teams streamline the usage of overlapping tools and processes across SAP's India location — helping Project Management teams overcome communication and synchronisation challenges across business lines.
+As a newly inducted Certified Design Thinking Coach (SAP Design Thinking Academy, 2021), I addressed multiple overlapping tools and processes across SAP's India location — helping Project Management teams overcome communication and synchronisation challenges across business lines.
 
 Challenge: Multiple overlapping tools and fragmented processes prevented Project Management teams from communicating and synchronising effectively. The workshop had to be delivered virtually, with limited time and resources, across teams with different working styles.
 
@@ -221,7 +222,7 @@ const PROJECTS = [
       { label: "Custom forecast → budget", value: "75%" },
     ],
     artifacts: [
-      { label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf", desc: "FP&A content design guidelines and reusable framework" }
+      { label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf", desc: "FP&A content design guidelines and reusable framework" },
     ],
     samples: [{ label: "Content Design Framework", type: "pdf", href: "https://file.notion.so/f/f/26585f19-10d2-4c21-b3ff-e89641172fe6/643f22f5-ded4-4d6d-8036-12dd04697c98/Content_Design__FPA.pdf?table=block&id=258dfd46-6d0a-804b-8f1a-f6d9a97452f8&spaceId=26585f19-10d2-4c21-b3ff-e89641172fe6&expirationTimestamp=1779530400000&signature=w9xv9Q2PR2Tph-9tnTCPxyoFIhKtnOP466wRgBKhKbY&downloadName=Content+Design_+FP%26A.pdf" }],
     askPrompt: "Tell me about your FP&A content design work within Intuit Enterprise Suite and QuickBooks Online.",
@@ -246,8 +247,7 @@ const PROJECTS = [
       { label: "Cognitive load", value: "Lowered" },
     ],
     artifacts: [
-      
-      { label: "Case Study Deck", type: "deck", href: "https://docs.google.com/presentation/d/1py5p_2uNFhNfJ1jyNUemT--qGS5W3Cc0/edit?usp=sharing&ouid=114238183564892136776&rtpof=true&sd=true", desc: "Before/after and process walkthrough" },
+      { label: "NDA Project", type: "nda", href: "", desc: "This is an NDA project. Get in touch for more info." },
     ],
     samples: [],
     askPrompt: "Tell me about the first-time user onboarding project and how you approached it.",
@@ -297,7 +297,7 @@ const PROJECTS = [
       { label: "Customer onboarding", value: "Improved" },
     ],
     artifacts: [
-      { label: "Design Process", type: "deck", href: "https://drive.google.com/file/d/1pN2cLA5hFaMk6VCmk_7mJDDByoFFK1io/view?usp=sharing", desc: "IA design and content taxonomy" },
+      { label: "Information Architecture", type: "deck", href: "https://drive.google.com/file/d/1pN2cLA5hFaMk6VCmk_7mJDDByoFFK1io/view?usp=drive_link", desc: "IA design and content taxonomy" },
     ],
     samples: [],
     askPrompt: "Tell me about the content UX consistency project at SAP Analytics.",
@@ -323,11 +323,11 @@ const PROJECTS = [
       { label: "Women in Leadership", value: "Intuit programme" },
     ],
     artifacts: [
-      { label: "Prompt Design Talk — UXIndia 2023", type: "pdf", href: "https://drive.google.com/file/d/13jmLxMgV4uvIEV4X7yiJrx_PUXJz4eQJ/view?usp=sharing", desc: "Slides from UXIndia on prompt design" },
+      { label: "Prompt Design Talk — UXIndia 2023", type: "pdf", href: "https://drive.google.com/file/d/13jmLxMgV4uvIEV4X7yiJrx_PUXJz4eQJ/view?usp=drive_link", desc: "Slides from UXIndia keynote on prompt design" },
       { label: "NextGen Network Interview", type: "video", href: "https://www.youtube.com/watch?v=SQcGF5OinFs", desc: "Featured interview on content design career" },
       { label: "ADPList BeMore Conference", type: "video", href: "https://drive.google.com/file/d/1td8NBDKhQpO3TRvM87p-mxb4nAs28i4L/view", desc: "Conference talk recording" },
       { label: "W-Summit Career Talk", type: "video", href: "https://www.youtube.com/watch?v=i1EgVExCpj0", desc: "Career guidance session recording" },
-      { label: "Accessibility Standards", type: "pdf", href: "https://drive.google.com/file/d/1Ta3WAxtTtBClyt-8gcHAjrgS0Gi34lfF/view?usp=sharing", desc: "ARIA and Alt-text guidelines document" },
+      { label: "Accessibility and content design", type: "pdf", href: "https://drive.google.com/file/d/1Ta3WAxtTtBClyt-8gcHAjrgS0Gi34lfF/view?usp=drive_link", desc: "ARIA and Alt-text guidelines document" },
     ],
     samples: [
       { label: "NextGen Network Interview", type: "video", href: "https://www.youtube.com/watch?v=SQcGF5OinFs" },
@@ -356,7 +356,9 @@ const PROJECTS = [
       { label: "Format", value: "Virtual-first" },
     ],
     artifacts: [
-      { label: Contact me for more information},
+      { label: "DT Workshop Summary", type: "pdf", href: "https://drive.google.com/file/d/1A8KvWoRUVi_gqtNi_H90KnzsMkQYEHQ_/view?usp=sharing", desc: "Password protected — email sheenalakshmi@gmail.com to request access." },
+      { label: "Facilitation Deck", type: "deck", href: "https://drive.google.com/file/d/1L3QZCszZJ3Y-vnk9UBcvK5i3eVZ2bnHZ/view?usp=sharing", desc: "Password protected — email sheenalakshmi@gmail.com to request access." },
+      { label: "Process Maps", type: "screenshot", href: "https://drive.google.com/file/d/1rK2-ov-SJtiTmCPxTBGVhVtdk25uYXiQ/view?usp=sharing", desc: "Password protected — email sheenalakshmi@gmail.com to request access." },
     ],
     samples: [],
     askPrompt: "Tell me about the design thinking facilitation project at SAP.",
@@ -578,7 +580,7 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
         AI-Powered Portfolio · Ask Me Anything
       </p>
       <h1 style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: "clamp(28px,4.5vw,52px)", fontWeight: 400, lineHeight: 1.18, marginBottom: 14 }}>
-        20+ years of turning complexity<br />into <span style={{ color: C.accent }}>clarity</span> &amp; <span style={{ color: C.accent }}>business impact.</span>
+        20 years of turning complexity<br />into <span style={{ color: C.accent }}>clarity</span> &amp; <span style={{ color: C.accent }}>business impact.</span>
       </h1>
       <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85, maxWidth: 480, marginBottom: 36 }}>
         I bring 20+ years of experience across SAP, Intuit, Dell, and McAfee — leading content strategy and UX design that drives measurable business impact. Ask me anything below, or switch to Portfolio View to browse my work.
@@ -586,7 +588,7 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
 
       {/* Stats */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 10, marginBottom: 40 }}>
-        {[["$936M+","Product lines supported"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
+        {[["$936M+","Contributed to revenue by way of migration"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
           <div key={l} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: "14px 10px", textAlign: "center" }}>
             <p style={{ fontFamily: SERIF, fontSize: 28, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{n}</p>
             <p style={{ fontSize: 9, color: C.muted, letterSpacing: "0.1em", textTransform: "uppercase", marginTop: 5, lineHeight: 1.4 }}>{l}</p>
@@ -813,6 +815,16 @@ function ClassicMode({ onAskAbout }) {
                 </p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   {drawer.artifacts.map(a => {
+                    if (a.type === "nda") {
+                      return (
+                        <div key={a.label} style={{
+                          background: C.card, border: `1px solid ${C.border}`,
+                          borderRadius: 10, padding: "16px 20px",
+                        }}>
+                          <p style={{ fontSize: 13, color: C.muted, fontStyle: "italic", lineHeight: 1.6 }}>{a.desc}</p>
+                        </div>
+                      );
+                    }
                     const isPlaceholder = a.href.startsWith("ADD_");
                     return (
                       <div key={a.label} style={{
@@ -859,7 +871,7 @@ function ClassicMode({ onAskAbout }) {
                   style={{ width: "100%", textAlign: "center", padding: "12px" }}
                   onClick={() => { closeDrawer(); onAskAbout(drawer.askPrompt); }}
                 >
-                  ✦ Ask me about this project in the AI chat
+                  ✦ Ask Sheena about this project in the AI chat
                 </button>
               </div>
             </div>
@@ -898,7 +910,7 @@ function ClassicMode({ onAskAbout }) {
               </div>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, flexShrink: 0 }}>
-              {[["$936M+","Product lines supported"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
+              {[["$936M+","Contributed to revenue by way of migration"], ["20+","Years experience"], ["22%","Feature adoption lift"], ["4.8/5","Workshop NPS"]].map(([n, l]) => (
                 <div key={l} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 14, padding: "18px 14px", textAlign: "center", minWidth: 100 }}>
                   <p style={{ fontFamily: SERIF, fontSize: 28, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{n}</p>
                   <p style={{ fontSize: 9, color: C.muted, letterSpacing: "0.1em", textTransform: "uppercase", marginTop: 6, lineHeight: 1.4 }}>{l}</p>
@@ -1055,7 +1067,7 @@ export default function SheenaPortfolio() {
     return () => document.head.removeChild(s);
   }, []);
 
-  // When user clicks "Ask me" from classic mode — switch to AI, fire question
+  // When user clicks "Ask Sheena" from classic mode — switch to AI, fire question
   const handleAskAbout = (prompt) => {
     setMode("ai");
     setTimeout(() => {
