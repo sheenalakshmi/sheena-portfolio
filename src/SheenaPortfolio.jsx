@@ -12,7 +12,6 @@ Previously: Content Design Lead & Strategist at Intuit/QuickBooks (Sep 2022–20
 Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-lakshmi-232a425/
 
 IMPACT AT A GLANCE:
-$936M+ combined revenue contributed to across Payments ($213M) and Payroll ($723M) — by way of migration
 37% YoY growth in budgets created by companies
 22% lift in first-time feature adoption
 CES improvement: 13% → 52% (FP&A budgeting)
@@ -568,7 +567,7 @@ function ModeToggle({ mode, setMode }) {
   return (
     <div style={{
       display: "flex", gap: 4,
-      background: C.surface, border: `1px solid ${C.border}`,
+      background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)",
       padding: 4, borderRadius: 12,
     }}>
       {[
@@ -580,9 +579,9 @@ function ModeToggle({ mode, setMode }) {
           className="sl-mode-btn"
           onClick={() => setMode(m.id)}
           style={{
-            background: mode === m.id ? C.accent : "transparent",
-            color: mode === m.id ? C.bg : C.muted,
-            borderColor: mode === m.id ? C.accent : "transparent",
+            background: mode === m.id ? "rgba(255,255,255,0.18)" : "transparent",
+            color: mode === m.id ? "#fff" : "rgba(200,208,224,0.72)",
+            borderColor: mode === m.id ? "rgba(255,255,255,0.3)" : "transparent",
           }}
         >
           <span style={{ fontSize: 13 }}>{m.icon}</span>
@@ -596,9 +595,119 @@ function ModeToggle({ mode, setMode }) {
 // ═══════════════════════════════════════════════════════════════════
 // AI CHAT MODE
 // ═══════════════════════════════════════════════════════════════════
+
+const LARGE_THRESHOLD = 380; // chars — responses above this get fronting + disclosure
+
+function getFront(content) {
+  // Return the first meaningful sentence as the "front"
+  const first = content.split(/\n\n/)[0].trim();
+  // Hard cap at ~160 chars, ending at a sentence boundary
+  if (first.length <= 160) return first;
+  const cut = first.slice(0, 165);
+  const lastDot = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf(".\n"));
+  return lastDot > 60 ? cut.slice(0, lastDot + 1) : cut + "…";
+}
+
+function getDetail(content) {
+  // Everything after the first paragraph
+  const parts = content.split(/\n\n/);
+  return parts.slice(1).join("\n\n").trim();
+}
+
+function AssistantMessage({ content, idx, expanded, onToggle }) {
+  const isLarge = content.length > LARGE_THRESHOLD;
+  const front   = isLarge ? getFront(content) : content;
+  const detail  = isLarge ? getDetail(content) : "";
+  const hasDetail = detail.length > 0;
+
+  return (
+    <div style={{
+      maxWidth: "86%",
+      background: C.card,
+      border: `1px solid ${C.border}`,
+      borderRadius: "4px 16px 16px 16px",
+      overflow: "hidden",
+    }}>
+      {/* ── Front / Visual Summary ── */}
+      {isLarge ? (
+        <div style={{
+          padding: "12px 16px 10px",
+          borderBottom: expanded && hasDetail ? `1px solid ${C.border}` : "none",
+          background: C.aLo,
+        }}>
+          <div style={{
+            display: "flex", alignItems: "center", gap: 6, marginBottom: 7,
+          }}>
+            <div style={{
+              width: 4, height: 4, borderRadius: "50%", background: C.accent, flexShrink: 0,
+            }}/>
+            <span style={{
+              fontSize: 9, letterSpacing: "0.14em", textTransform: "uppercase",
+              color: C.accent, fontFamily: SANS, fontWeight: 500,
+            }}>Key takeaway</span>
+          </div>
+          <p style={{
+            fontSize: 13, lineHeight: 1.75, color: C.text,
+            whiteSpace: "pre-wrap", wordBreak: "break-word",
+          }}>{front}</p>
+        </div>
+      ) : (
+        <div style={{ padding: "11px 14px" }}>
+          <p style={{
+            fontSize: 13, lineHeight: 1.75, color: C.text,
+            whiteSpace: "pre-wrap", wordBreak: "break-word", margin: 0,
+          }}>{content}</p>
+        </div>
+      )}
+
+      {/* ── Detail / Deep dive ── */}
+      {isLarge && hasDetail && expanded && (
+        <div style={{ padding: "12px 16px 10px" }}>
+          <p style={{
+            fontSize: 13, lineHeight: 1.75, color: C.text,
+            whiteSpace: "pre-wrap", wordBreak: "break-word", margin: 0,
+          }}>{detail}</p>
+        </div>
+      )}
+
+      {/* ── Toggle ── */}
+      {isLarge && hasDetail && (
+        <button
+          onClick={() => onToggle(idx)}
+          style={{
+            display: "flex", alignItems: "center", gap: 6,
+            width: "100%", padding: "8px 16px",
+            background: "transparent",
+            borderTop: `1px solid ${C.border}`,
+            border: "none", borderTop: `1px solid ${C.border}`,
+            cursor: "pointer", color: C.accent,
+            fontSize: 11, fontFamily: SANS, fontWeight: 500,
+            letterSpacing: "0.04em", textAlign: "left",
+            transition: "background 0.15s",
+          }}
+          onMouseEnter={e => e.currentTarget.style.background = C.aLo}
+          onMouseLeave={e => e.currentTarget.style.background = "transparent"}
+        >
+          <span style={{ fontSize: 13, lineHeight: 1 }}>{expanded ? "↑" : "↓"}</span>
+          {expanded ? "Collapse" : "Deep dive →"}
+        </button>
+      )}
+    </div>
+  );
+}
+
 function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
-  const endRef  = useRef(null);
+  const endRef   = useRef(null);
   const inputRef = useRef(null);
+  const [expandedMsgs, setExpandedMsgs] = useState(new Set());
+
+  const toggleExpand = (idx) => {
+    setExpandedMsgs(prev => {
+      const next = new Set(prev);
+      next.has(idx) ? next.delete(idx) : next.add(idx);
+      return next;
+    });
+  };
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -676,14 +785,23 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput }) {
           {msgs.map((m, i) => (
             <div key={i} className="sl-msg" style={{ display: "flex", justifyContent: m.role === "user" ? "flex-end" : "flex-start", gap: 9, alignItems: "flex-start" }}>
               {m.role === "assistant" && <Avatar size={26} />}
-              <div style={{
-                maxWidth: "82%",
-                background: m.role === "user" ? C.accent : C.card,
-                color: m.role === "user" ? "#0F1117" : C.text,
-                padding: "11px 14px",
-                borderRadius: m.role === "user" ? "16px 4px 16px 16px" : "4px 16px 16px 16px",
-                fontSize: 13, lineHeight: 1.75, whiteSpace: "pre-wrap", wordBreak: "break-word",
-              }}>{m.content}</div>
+              {m.role === "user" ? (
+                <div style={{
+                  maxWidth: "82%",
+                  background: C.accent,
+                  color: C.bg,
+                  padding: "11px 14px",
+                  borderRadius: "16px 4px 16px 16px",
+                  fontSize: 13, lineHeight: 1.75, whiteSpace: "pre-wrap", wordBreak: "break-word",
+                }}>{m.content}</div>
+              ) : (
+                <AssistantMessage
+                  content={m.content}
+                  idx={i}
+                  expanded={expandedMsgs.has(i)}
+                  onToggle={toggleExpand}
+                />
+              )}
             </div>
           ))}
           {busy && (
@@ -734,17 +852,6 @@ function ClassicMode({ onAskAbout }) {
 
   return (
     <div style={{ position: "relative" }}>
-
-      {/* ── DRAWER OVERLAY ── */}
-      {drawer && (
-        <div
-          onClick={closeDrawer}
-          style={{
-            position: "fixed", inset: 0, background: "rgba(0,0,0,0.55)",
-            zIndex: 50, backdropFilter: "blur(4px)",
-          }}
-        />
-      )}
 
       {/* ── DRAWER PANEL ── */}
       <div style={{
@@ -1015,8 +1122,21 @@ function ClassicMode({ onAskAbout }) {
             Click <strong style={{ color: C.text, fontWeight: 500 }}>View case study</strong> on any project to see the full challenge, process, results, and artifacts.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-            {PROJECTS.map(p => (
-              <div key={p.id} className="sl-proj-card">
+            {PROJECTS.map(p => {
+              const isActive   = drawer?.id === p.id;
+              const isInactive = drawer && !isActive;
+              return (
+              <div
+                key={p.id}
+                className="sl-proj-card"
+                style={{
+                  transition: "opacity 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease",
+                  opacity:     isInactive ? 0.45 : 1,
+                  border:      isActive ? `1.5px solid ${C.accent}` : `1px solid ${C.border}`,
+                  background:  isActive ? C.aLo : C.card,
+                  boxShadow:   isActive ? `0 0 0 3px ${C.aMid}, 0 8px 32px ${C.shadow}` : "none",
+                }}
+              >
                 <div style={{ padding: "18px 22px", display: "flex", alignItems: "center", gap: 16 }}>
                   <span style={{ fontFamily: SANS, fontSize: 11, color: C.muted, letterSpacing: "0.1em", flexShrink: 0 }}>{p.id}</span>
                   <div style={{ flex: 1, minWidth: 0 }}>
@@ -1045,7 +1165,8 @@ function ClassicMode({ onAskAbout }) {
                   </div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
