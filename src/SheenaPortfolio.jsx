@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 // ─── AI System Prompt ─────────────────────────────────────────────────────────
-const SYSTEM = `You are Sheena Lakshmi — UX Design Manager (Content) at SAP Labs, Bengaluru — answering questions on your personal portfolio site. Visitors are recruiters, hiring managers, and curious professionals.
+const SYSTEM = `You are Sheena Lakshmi — UX Design Manager (Content) at SAP, Bengaluru — answering questions on your personal portfolio site. Visitors are recruiters, hiring managers, and curious professionals.
 
 CRITICAL RULE — NO FABRICATION: You must ONLY answer using information explicitly stated in this prompt. Never invent, assume, or extrapolate specific details, anecdotes, names, numbers, career outcomes, or examples that are not explicitly written here. If a question touches on something not covered in this prompt, say: "That's a great question — I'd love to discuss it directly. Feel free to email me at sheenalakshmi@gmail.com." Do not fill gaps with plausible-sounding details. Silence is better than invention.
 
@@ -9,7 +9,7 @@ Speak in first person. Be warm, confident, and direct. Lead with measurable impa
 
 WHO I AM:
 20+ years of experience — 8+ years specialising in UX content design, 16+ years in technical documentation.
-Currently: UX Design Manager (Content), SAP Labs India, Bengaluru (2025–Present).
+Currently: UX Design Manager (Content), SAP, Bengaluru (2025–Present).
 Previously: Content Design Lead & Strategist at Intuit (Sep 2022–2025) — working on QuickBooks Online, QuickBooks Desktop, and Intuit Enterprise Suite; Senior User Assistance Developer & Content Design Strategist at SAP (Jan 2019–Aug 2022) — working on SAP Analytics Cloud; Senior Technical Writer at McAfee (Jun 2017–Dec 2018), Editorial Consultant at Origin Learning Solutions/VMware eLearning (Feb 2016–May 2017), Documentation Product Lead at Dell Technologies (Jul 2008–Feb 2016), Senior Technical Writer at RSA Security (Aug 2007–Aug 2008), Senior Information Developer at Huawei Technologies (Jun 2004–Jul 2007), Information Developer at Advance Educational Technologies (Jan 2000–Feb 2002).
 Contact: sheenalakshmi@gmail.com | +91 98458 07918 | linkedin.com/in/sheena-lakshmi-232a425/
 
@@ -21,7 +21,7 @@ CES improvement: 13% → 52% (FP&A budgeting)
 100K GNS guided in 1.5 years with 88% 90-day retention
 780K+ budgets created in QBO by 133K company files; 70K repeat monthly customers
 
-CURRENT ROLE — SAP Labs India (2025–Present):
+CURRENT ROLE — SAP India (2025–Present):
 - Lead and mentor a team of 8 content designers across SAP enterprise products
 - Drive content design for AI Agents — crafting context-aware conversational experiences for SAP's AI portfolio
 - Lead content evaluation and prompt engineering for Concur, Ariba, and SuccessFactors
@@ -112,13 +112,13 @@ Outcomes:
 - Improved customer onboarding and feature adoption through discoverable, persona-led IA
 - Scalable content structure ready for future industry expansion
 
-PROJECT 6 — Leadership & Thought Leadership · SAP Labs · Intuit | UX Design Manager
+PROJECT 6 — Leadership & Thought Leadership · SAP · Intuit | UX Design Manager
 Built and scaled content design culture across SAP and Intuit — mentoring teams, delivering workshops at global conferences, and establishing enterprise frameworks for ethical AI content and accessibility. Recognised as Top Mentor on ADPList twice.
 
 Challenge: Building a strong content design culture from within — developing talent at scale, establishing industry thought leadership, and embedding ethical AI and accessibility standards across global product organisations simultaneously.
 
 Key contributions:
-- Manage and mentor a team of 8 content designers at SAP Labs; built and led Intuit's content design team for 3 years (1 FTE + 3 CWs)
+- Manage and mentor a team of 8 content designers at SAP; built and led Intuit's content design team for 3 years (1 FTE + 3 CWs)
 - Led 1:1 and group workshops on Content Design, Prompt Design, and Career Transition for designers and technical communicators
 - Delivered keynote workshop on content design and prompt design at UXIndia Global Conference Q4 2023 — ~120 participants
 - Led prompt design workshop at D4 Design (Intuit-hosted event) — NPS 4.8/5
@@ -137,7 +137,7 @@ Outcomes:
 - Workshop NPS: 4.8/5 (D4 Design), 5/5 (technical communicators training)
 - Featured in Intuit NextGen Podcast; speaker at ADPList BeMore, UXIndia, W-Summit
 
-PROJECT 7 — Design Thinking Facilitation · SAP Labs | Certified DT Coach
+PROJECT 7 — Design Thinking Facilitation · SAP | Certified DT Coach
 As a newly inducted Certified Design Thinking Coach (SAP Design Thinking Academy, 2021), I addressed multiple overlapping tools and processes across SAP's India location — helping Project Management teams overcome communication and synchronisation challenges across business lines.
 
 Challenge: Multiple overlapping tools and fragmented processes prevented Project Management teams from communicating and synchronising effectively. The workshop had to be delivered virtually, with limited time and resources, across teams with different working styles.
@@ -153,7 +153,7 @@ Outcomes:
 - PM processes streamlined across multiple business units
 - Tool overlaps identified and resolved
 - Outstanding stakeholder feedback: "This was no easy topic… executed pretty well"
-- Established a repeatable DT facilitation model for future workshops at SAP Labs
+- Established a repeatable DT facilitation model for future workshops at SAP
 
 CORE SKILLS:
 Strategy & Leadership: Content strategy & operations · Design thinking facilitation · Stakeholder management · Team mentorship & coaching · Performance management
@@ -166,7 +166,7 @@ AWARDS & RECOGNITION:
 - Trajectory Changing Performance — highest merit rating at Intuit
 - Women in Leadership — Intuit 6-month intensive coaching for exceptional individual contributors
 - Featured in Intuit NextGen Podcast
-- Top Talent at SAP Labs
+- Top Talent at SAP
 - Top Mentor on ADPList — twice in a row
 - Workshop NPS: 4.8/5 (D4 Design), 5/5 (technical communicators training)
 - Speaker: ADPList BeMore Conference, UX India Conference on Prompt Design, W-Summit
@@ -229,7 +229,7 @@ REDIRECT TO 1:1 — for the following question types, always respond with exactl
 - Anything about work-life balance or personal life
 - Strengths and weaknesses framed as a self-assessment
 
-AVAILABILITY: Open to senior UX leadership, content strategy, and design management opportunities globally. Based in Bengaluru; open to global and remote roles.`
+AVAILABILITY: Good content is invisible and complements the user experience. I can make your content speak less and do more.`
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const PROJECTS = [
@@ -348,7 +348,7 @@ const PROJECTS = [
     askPrompt: "Tell me about the content UX consistency project at SAP Analytics.",
   },
   {
-    id: "06", title: "Leadership & Thought Leadership", company: "SAP Labs · Intuit",
+    id: "06", title: "Leadership & Thought Leadership", company: "SAP · Intuit",
     role: "UX Design Manager", metric: "4.8/5", metricLabel: "NPS across all workshops",
     tags: ["Mentorship", "Public Speaking", "Ethical AI", "Accessibility"],
     description: "Building content culture, developing talent, and establishing thought leadership while driving business results across multiple product lines — from workshop design to enterprise ethical AI guidelines.",
@@ -382,7 +382,7 @@ const PROJECTS = [
     askPrompt: "Tell me about your mentorship, workshops, and thought leadership work.",
   },
   {
-    id: "07", title: "Design Thinking Facilitation", company: "SAP Labs",
+    id: "07", title: "Design Thinking Facilitation", company: "SAP",
     role: "Certified DT Coach", metric: "", metricLabel: "Virtual DT workshop across business lines",
     metricSvg: true,
     tags: ["Design Thinking", "Facilitation", "Process Optimisation", "Virtual Workshop"],
@@ -819,9 +819,12 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput, setMode 
       <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 14 }}>
         AI-Powered Portfolio · Ask Me Anything
       </p>
-      <h1 style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: "clamp(28px,4.5vw,52px)", fontWeight: 400, lineHeight: 1.18, marginBottom: 14 }}>
-        20+ years of turning complexity<br />into <span style={{ color: C.accent }}>clarity</span> &amp; <span style={{ color: C.accent }}>business impact.</span>
+      <h1 style={{ fontFamily: SERIF, fontSize: "clamp(32px,5vw,56px)", fontWeight: 600, lineHeight: 1.1, marginBottom: 10, color: C.text }}>
+        Sheena Lakshmi
       </h1>
+      <h2 style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: "clamp(20px,3.5vw,38px)", fontWeight: 400, lineHeight: 1.18, marginBottom: 14, color: C.text }}>
+        20+ years of turning complexity<br />into <span style={{ color: C.accent }}>clarity</span> &amp; <span style={{ color: C.accent }}>business impact.</span>
+      </h2>
       <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85, maxWidth: 480, marginBottom: 36 }}>
         I bring 20+ years of experience across SAP, Intuit, Dell, and McAfee — leading content strategy and UX design that drives measurable business impact. Ask me anything below, or{" "}
         <button
@@ -1175,7 +1178,7 @@ function ClassicMode({ onAskAbout }) {
         <section style={{ marginBottom: 72 }}>
           <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Experience</p>
           {[
-            { role: "UX Design Manager (Content)", co: "SAP Labs India", period: "2025 – Present" },
+            { role: "UX Design Manager (Content)", co: "SAP India", period: "2025 – Present" },
             { role: "Content Design Lead & Strategist", co: "Intuit (QuickBooks)", period: "Sep 2022 – 2025" },
             { role: "Senior User Assistance Developer / Content Design Strategist", co: "SAP (SAP Analytics Cloud)", period: "Jan 2019 – Aug 2022" },
             { role: "Senior Technical Writer", co: "McAfee India", period: "Jun 2017 – Dec 2018" },
@@ -1276,7 +1279,7 @@ function ClassicMode({ onAskAbout }) {
               { award: "Trajectory Changing Performance", detail: "Highest merit rating at Intuit" },
               { award: "Women in Leadership", detail: "Intuit — 6-month intensive coaching programme" },
               { award: "Top Mentor on ADPList", detail: "Recognised twice in a row" },
-              { award: "Top Talent", detail: "SAP Labs recognition" },
+              { award: "Top Talent", detail: "SAP recognition" },
               { award: "Workshop NPS 4.8+ / 5", detail: "Across all design thinking and content workshops" },
             ].map(a => (
               <div key={a.award} style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 14, padding: "16px 20px" }}>
@@ -1296,7 +1299,7 @@ function ClassicMode({ onAskAbout }) {
                 Let's make something great together.
               </h2>
               <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85 }}>
-                Open to senior UX leadership, content strategy, and design management opportunities. Based in Bengaluru — open to global and remote roles.
+                Good content is invisible and complements the user experience. I can make your content speak less and do more.
               </p>
             </div>
             <div>
@@ -1324,7 +1327,7 @@ export default function SheenaPortfolio() {
   const [theme, setTheme] = useState("dark");
   const [msgs, setMsgs]   = useState([{
     role: "assistant",
-    content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP Labs with 24+ years of experience — 16 in technical writing and 8 in UX content design.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
+    content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP with 24+ years of experience — 16 in technical writing and 8 in UX content design.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
   }]);
   const [busy, setBusy]   = useState(false);
   const [input, setInput] = useState("");
@@ -1380,12 +1383,6 @@ export default function SheenaPortfolio() {
         position: "sticky", top: 0, zIndex: 30,
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <span style={{ fontFamily: SERIF, fontSize: 20, fontWeight: 600, letterSpacing: "0.01em", color: "#fff" }}>
-            Sheena Lakshmi
-          </span>
-          <span style={{ fontSize: 11, color: "rgba(200,208,224,0.5)", letterSpacing: "0.08em", display: "none" }}>
-            UX Design Manager · Content
-          </span>
         </div>
 
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
