@@ -619,9 +619,9 @@ const FPA_IMAGES = {
 
 // ─── FP&A Case Study Overlay ─────────────────────────────────────────────────
 function CaseStudyFPA({ onBack, onHome }) {
-  const scrollRef = React.useRef(null);
+  const scrollRef = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Lock body scroll while overlay is open
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = ""; };
@@ -969,7 +969,7 @@ const FTU_SCREEN = "/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsL
 // ─── First-Time User Onboarding Case Study Overlay ───────────────────────────
 function CaseStudyOnboarding({ onBack, onHome }) {
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = ""; };
   }, []);
@@ -1334,7 +1334,7 @@ function CaseStudyOnboarding({ onBack, onHome }) {
 // ─── Feature Nomenclature Case Study Overlay ────────────────────────────────
 function CaseStudyNaming({ onBack, onHome }) {
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => { document.body.style.overflow = ""; };
   }, []);
@@ -1710,6 +1710,856 @@ function CaseStudyNaming({ onBack, onHome }) {
   );
 }
 
+
+// ─── Content UX & IA Case Study Overlay ─────────────────────────────────────
+function CaseStudyIA({ onBack, onHome }) {
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = ""; };
+  }, []);
+
+  const CS = {
+    bg:"#FAFAF8",card:"#FFFFFF",surface:"#F0EDE6",border:"rgba(0,0,0,0.09)",
+    accent:"#1A4B8C",text:"#0F172A",muted:"#1F2937",label:"#374151",navy:"#0F1A2E",
+  };
+  const SB = "'Cormorant Garant', Georgia, serif";
+  const SN = "'DM Sans', system-ui, sans-serif";
+  const SM = "'DM Mono', monospace";
+
+  const SectionLabel = ({ children }) => (
+    <p style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.28em", textTransform:"uppercase", color:CS.accent, marginBottom:8, display:"flex", alignItems:"center", gap:12 }} role="heading" aria-level="3">
+      {children}<span style={{ flex:1, height:1, background:CS.border, maxWidth:48, display:"inline-block" }} aria-hidden="true"/>
+    </p>
+  );
+  const HR = () => <hr style={{ border:"none", borderTop:`1px solid ${CS.border}`, margin:"44px 0" }} aria-hidden="true"/>;
+  const NavBtn = ({ onClick, children, primary }) => (
+    <button onClick={onClick}
+      style={{ display:"flex", alignItems:"center", gap:7, background:primary?CS.accent:"transparent", border:primary?"none":`1px solid ${CS.border}`, color:primary?"#fff":CS.accent, fontFamily:SN, fontSize:12, fontWeight:500, letterSpacing:"0.04em", padding:"7px 16px", borderRadius:8, cursor:"pointer", transition:"all 0.2s" }}
+      onMouseEnter={e=>{ if(primary) e.currentTarget.style.opacity="0.88"; else { e.currentTarget.style.background="rgba(26,75,140,0.06)"; e.currentTarget.style.borderColor=CS.accent; }}}
+      onMouseLeave={e=>{ if(primary) e.currentTarget.style.opacity="1"; else { e.currentTarget.style.background="transparent"; e.currentTarget.style.borderColor=CS.border; }}}
+    >{children}</button>
+  );
+  const ImpactStat = ({ value, label }) => (
+    <div style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:12, padding:"22px 18px", textAlign:"center" }}>
+      <span style={{ fontFamily:SB, fontSize:34, fontWeight:700, color:CS.accent, lineHeight:1, display:"block", marginBottom:8 }} aria-label={value+" — "+label}>{value}</span>
+      <span style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.12em", textTransform:"uppercase", color:CS.label, lineHeight:1.5, display:"block" }}>{label}</span>
+    </div>
+  );
+
+  // ── SVG: IA Tree ─────────────────────────────────────────────────────────
+  const IATree = () => (
+    <figure aria-label="Information architecture hierarchy showing SAP Help Portal branching into Banking, Insurance, and Oil and Gas, each with sub-categories">
+      <svg viewBox="0 0 760 260" width="100%" role="img" aria-labelledby="ia-tree-title" style={{ display:"block" }}>
+        <title id="ia-tree-title">Information Architecture: SAP Help Portal root with Banking, Insurance, Oil and Gas industry branches each containing Finance, Operations, and Expense Management leaves</title>
+        {/* Root */}
+        <rect x="255" y="10" width="250" height="44" rx="8" fill="rgba(26,75,140,0.12)" stroke={CS.accent} strokeWidth="1.5"/>
+        <text x="380" y="28" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="10" fill="#6B7280" letterSpacing="2">UNIFIED HELP PORTAL</text>
+        <text x="380" y="46" textAnchor="middle" fontFamily="DM Sans,sans-serif" fontSize="13" fontWeight="600" fill="#0F172A">SAP Analytics Cloud</text>
+        {/* Trunk lines */}
+        {[120,380,640].map(x => <line key={x} x1="380" y1="54" x2={x} y2="108" stroke="rgba(26,75,140,0.25)" strokeWidth="1.5" strokeDasharray="4 3"/>)}
+        {/* L2 nodes */}
+        {[
+          [20,108,220,"Banking"],
+          [270,108,220,"Insurance"],
+          [520,108,220,"Oil & Gas"],
+        ].map(([x,y,w,label]) => (
+          <g key={label}>
+            <rect x={x} y={y} width={w} height="40" rx="7" fill="rgba(26,75,140,0.08)" stroke="rgba(26,75,140,0.2)" strokeWidth="1"/>
+            <text x={x+w/2} y={y+25} textAnchor="middle" fontFamily="DM Sans,sans-serif" fontSize="13" fontWeight="600" fill="#0F172A">{label}</text>
+          </g>
+        ))}
+        {/* L3 lines + nodes */}
+        {[
+          // Banking children
+          [130,148,40,198,"Finance"],[130,148,130,198,"Operations"],[130,148,220,198,"Expense Mgmt"],
+          // Insurance children
+          [380,148,290,198,"Finance"],[380,148,380,198,"Operations"],[380,148,470,198,"Risk Mgmt"],
+          // O&G children
+          [630,148,540,198,"Finance"],[630,148,630,198,"Operations"],[630,148,720,198,"HSE"],
+        ].map(([x1,y1,x2,y2,label],i) => (
+          <g key={i}>
+            <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(0,0,0,0.1)" strokeWidth="1" strokeDasharray="3 2"/>
+            <rect x={x2-40} y={y2} width="80" height="28" rx="5" fill={CS.card} stroke={CS.border} strokeWidth="0.8"/>
+            <text x={x2} y={y2+18} textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="9" fill={CS.label} letterSpacing="0.5">{label}</text>
+          </g>
+        ))}
+        {/* Count badge */}
+        <rect x="306" y="234" width="148" height="22" rx="5" fill="rgba(26,75,140,0.08)" stroke="rgba(26,75,140,0.15)" strokeWidth="1"/>
+        <text x="380" y="249" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="10" fill={CS.accent} letterSpacing="1">~750 TOPICS CENTRALISED</text>
+      </svg>
+      <figcaption style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.1em", color:CS.label, textAlign:"center", marginTop:8 }}>Unified IA across three industries — single source of truth replacing scattered, outdated PDFs</figcaption>
+    </figure>
+  );
+
+  // ── SVG: Before/After ────────────────────────────────────────────────────
+  const BeforeAfter = () => (
+    <figure aria-label="Before and after comparison: scattered PDFs versus unified XML portal">
+      <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:16 }}>
+        <div style={{ background:"rgba(185,28,28,0.04)", border:"1px solid rgba(185,28,28,0.14)", borderRadius:12, padding:"22px 20px" }}>
+          <p style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.2em", textTransform:"uppercase", color:"#991B1B", marginBottom:16, fontWeight:600 }}>Before</p>
+          {["~750 topics scattered across multiple PDF documents","Different owners, no consistent taxonomy","Customers searching across disconnected sources","Maintenance required updating each document separately","No persona-led design or discoverability strategy","Critical analytics content effectively invisible to new users"].map((t,i) => (
+            <div key={i} style={{ display:"flex", gap:10, alignItems:"flex-start", marginBottom:10 }}>
+              <span style={{ color:"#DC2626", fontWeight:700, flexShrink:0, fontSize:13 }} aria-hidden="true">✗</span>
+              <p style={{ fontSize:13, color:CS.muted, margin:0, lineHeight:1.7 }}>{t}</p>
+            </div>
+          ))}
+        </div>
+        <div style={{ background:"rgba(22,101,52,0.05)", border:"1px solid rgba(22,101,52,0.16)", borderRadius:12, padding:"22px 20px" }}>
+          <p style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.2em", textTransform:"uppercase", color:"#166534", marginBottom:16, fontWeight:600 }}>After</p>
+          {["Single unified XML help portal — one source of truth","Persona-led IA across Finance, Operations, Expense Mgmt","Industry-specific navigation: Banking, Insurance, O&G","Content taxonomy and templates for ongoing scalability","Information survey validated gaps and persona assumptions","Significantly reduced maintenance overhead"].map((t,i) => (
+            <div key={i} style={{ display:"flex", gap:10, alignItems:"flex-start", marginBottom:10 }}>
+              <span style={{ color:"#166534", fontWeight:700, flexShrink:0, fontSize:13 }} aria-hidden="true">✓</span>
+              <p style={{ fontSize:13, color:CS.muted, margin:0, lineHeight:1.7 }}>{t}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <figcaption style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.1em", color:CS.label, marginTop:10 }}>The transformation from fragmented PDFs to a unified, persona-led help portal</figcaption>
+    </figure>
+  );
+
+  const industries = [
+    { name:"Banking", lobs:["Finance","Operations","Expense Management"], topics:"~250 topics", desc:"Balance sheet reporting, financial planning, expense tracking for mid-to-large banking institutions." },
+    { name:"Insurance", lobs:["Finance","Operations","Risk Management"], topics:"~280 topics", desc:"Actuarial analysis, policy management, operational reporting across general and life insurance." },
+    { name:"Oil & Gas", lobs:["Finance","Operations","HSE"], topics:"~220 topics", desc:"Project cost management, operational analytics, health safety and environment reporting." },
+  ];
+
+  const processSteps = [
+    { num:"01", phase:"Audit", title:"Detailed audit of ~750 topics across multiple sources", body:"Catalogued, categorised, and assessed all relevant business content across multiple document sources. Tagged each topic by industry, line of business, content type, and audience — building the foundation for persona-led IA." },
+    { num:"02", phase:"Personas", title:"Defined and refined key personas across three industries", body:"Identified core personas spanning Banking, Insurance, and Oil & Gas — across Finance, Operations, and Expense Management lines of business. Personas were grounded in real customer use cases and SAP's customer advocate network." },
+    { num:"03", phase:"Survey", title:"Information survey — validate gaps and surface needs", body:"Created and administered an information survey to identify content gaps, validate persona assumptions, and surface unmet user needs. Survey responses directly shaped taxonomy decisions and content prioritisation." },
+    { num:"04", phase:"Design", title:"Comprehensive information architecture design", body:"Developed a full IA — centralising and categorising content for intuitive navigation across all three industries. Established content taxonomy, topic naming conventions, and navigation hierarchy. Designed for discoverability across both new and experienced users." },
+    { num:"05", phase:"Migration", title:"Migrated all content to unified XML help portal", body:"Migrated all business content into SAP's unified XML-based authoring environment within the main product help portal. Set up content templates and taxonomy standards to ensure ongoing maintenance was fast, consistent, and low-overhead." },
+  ];
+
+  const outcomes = [
+    { value:"~750", label:"Topics centralised across 3 industries" },
+    { value:"3", label:"Industries: Banking, Insurance, O&G" },
+    { value:"9", label:"Lines of business covered" },
+    { value:"1", label:"Unified source of truth" },
+  ];
+
+  return (
+    <div style={{ position:"fixed", inset:0, zIndex:200, background:CS.bg, color:CS.text, fontFamily:SN, overflowY:"auto", display:"flex", flexDirection:"column" }}
+      role="dialog" aria-modal="true" aria-label="Content UX and Information Architecture Case Study">
+      {/* NAV */}
+      <div style={{ position:"sticky", top:0, zIndex:10, background:"rgba(250,250,248,0.95)", backdropFilter:"blur(12px)", borderBottom:`1px solid ${CS.border}`, padding:"12px 40px", display:"flex", justifyContent:"space-between", alignItems:"center", flexShrink:0 }} role="navigation" aria-label="Case study navigation">
+        <NavBtn onClick={onBack}>← Back to case studies</NavBtn>
+        <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+          <NavBtn onClick={() => window.print()}>↓ Save as PDF</NavBtn>
+          <NavBtn onClick={onHome} primary>⌂ Portfolio home</NavBtn>
+        </div>
+      </div>
+
+      {/* COVER */}
+      <div style={{ background:"linear-gradient(160deg,#0F1A2E 0%,#1A3A6C 60%,#1A4B8C 100%)", color:"#fff", padding:"72px 0 64px", position:"relative", overflow:"hidden", flexShrink:0 }} role="banner">
+        <div style={{ position:"absolute", top:-40, right:-60, width:360, height:360, borderRadius:"50%", background:"rgba(123,159,191,0.12)", pointerEvents:"none" }} aria-hidden="true"/>
+        <div style={{ maxWidth:820, margin:"0 auto", padding:"0 40px", position:"relative", zIndex:1 }}>
+          <p style={{ fontFamily:SM, fontSize:11, letterSpacing:"0.24em", textTransform:"uppercase", color:"rgba(180,215,245,0.9)", marginBottom:18, display:"flex", alignItems:"center", gap:12 }}>
+            <span style={{ width:32, height:1, background:"rgba(123,159,191,0.6)", display:"inline-block" }} aria-hidden="true"/>
+            Case Study · SAP Analytics Cloud
+          </p>
+          <h1 style={{ fontFamily:SB, fontSize:"clamp(34px,5vw,56px)", fontWeight:600, lineHeight:1.08, letterSpacing:"-0.01em", marginBottom:10, color:"#fff" }}>
+            Content UX &amp;<br/>Information Architecture<br/>
+            <em style={{ fontStyle:"italic", fontWeight:400, color:"rgba(200,220,240,0.82)" }}>From scattered PDFs to a unified help portal</em>
+          </h1>
+          <p style={{ fontSize:14, color:"rgba(220,235,250,0.8)", marginBottom:44, maxWidth:560 }}>Centralising ~750 scattered topics across Banking, Insurance, and Oil &amp; Gas into a unified, persona-led information architecture — reducing maintenance overhead and improving customer onboarding across enterprise analytics.</p>
+          <div style={{ display:"flex", flexWrap:"wrap" }}>
+            {[["Product","SAP Analytics Cloud"],["Role","Content Design Strategist"],["Outcome","~750 topics centralised"],["Method","Content audit · Persona design · IA · Migration"]].map(([label,val],i) => (
+              <div key={label} style={{ padding:"12px 28px", borderLeft:i===0?"none":"1px solid rgba(255,255,255,0.12)" }}>
+                <span style={{ fontFamily:SM, fontSize:9, letterSpacing:"0.18em", textTransform:"uppercase", color:"rgba(180,215,245,0.85)", display:"block", marginBottom:4 }}>{label}</span>
+                <span style={{ fontSize:13, color:"rgba(255,255,255,0.92)", fontWeight:500 }}>{val}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* BODY */}
+      <main style={{ maxWidth:820, margin:"0 auto", padding:"64px 40px 80px", width:"100%" }}>
+
+        <section aria-labelledby="h-bg05">
+          <SectionLabel>01 · Background &amp; Challenge</SectionLabel>
+          <h2 id="h-bg05" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Critical analytics content, <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>effectively invisible</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:12 }}>SAP Analytics Cloud offered industry-specific analytics capabilities for Banking, Insurance, and Oil &amp; Gas customers — but the help content supporting these capabilities was scattered across large, outdated PDF documents maintained by different owners with no consistent structure.</p>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:24 }}>Customers onboarding to these enterprise analytics offerings faced friction at every stage. Updating a single topic required touching multiple documents. There was no unified taxonomy, no persona-led design, and no discoverability strategy.</p>
+          <BeforeAfter/>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-industries">
+          <SectionLabel>02 · Industries &amp; Lines of Business</SectionLabel>
+          <h2 id="h-industries" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Three industries, <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>nine lines of business</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:20 }}>The IA had to serve genuinely different users across industries — a Finance analyst in Banking has fundamentally different needs to an HSE manager in Oil &amp; Gas. Each industry required its own persona research before IA design could begin.</p>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:14 }}>
+            {industries.map(ind => (
+              <div key={ind.name} style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:12, padding:"22px 18px", position:"relative", overflow:"hidden" }}>
+                <div style={{ position:"absolute", top:0, left:0, right:0, height:3, background:CS.accent }}/>
+                <p style={{ fontFamily:SB, fontSize:22, fontWeight:700, color:CS.text, marginBottom:6 }}>{ind.name}</p>
+                <p style={{ fontFamily:SM, fontSize:9, letterSpacing:"0.12em", textTransform:"uppercase", color:CS.accent, marginBottom:10 }}>{ind.topics}</p>
+                <div style={{ display:"flex", flexWrap:"wrap", gap:5, marginBottom:12 }}>
+                  {ind.lobs.map(l => <span key={l} style={{ fontFamily:SM, fontSize:9, letterSpacing:"0.08em", textTransform:"uppercase", border:`1px solid ${CS.border}`, padding:"3px 8px", borderRadius:4, color:CS.label }}>{l}</span>)}
+                </div>
+                <p style={{ fontSize:12, color:CS.muted, margin:0, lineHeight:1.75 }}>{ind.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-process05">
+          <SectionLabel>03 · Process</SectionLabel>
+          <h2 id="h-process05" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Five steps from <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>audit to migration</em>
+          </h2>
+          <div style={{ border:`1px solid ${CS.border}`, borderRadius:12, overflow:"hidden" }}>
+            {processSteps.map((s,i) => (
+              <div key={s.num} style={{ display:"flex", borderBottom:i<processSteps.length-1?`1px solid ${CS.border}`:"none", background:CS.card }}>
+                <div style={{ width:80, flexShrink:0, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"flex-start", padding:"18px 0", borderRight:`1px solid ${CS.border}` }}>
+                  <span style={{ fontFamily:SM, fontSize:11, color:CS.accent, fontWeight:500, letterSpacing:"0.06em" }}>{s.num}</span>
+                  <span style={{ fontFamily:SM, fontSize:9, color:CS.label, letterSpacing:"0.08em", textTransform:"uppercase", marginTop:4, textAlign:"center", padding:"0 8px", lineHeight:1.4 }}>{s.phase}</span>
+                </div>
+                <div style={{ padding:"18px 22px", flex:1 }}>
+                  <h4 style={{ fontSize:13, fontWeight:600, color:CS.text, marginBottom:6 }}>{s.title}</h4>
+                  <p style={{ fontSize:13, color:CS.muted, margin:0, lineHeight:1.8 }}>{s.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-ia-tree">
+          <SectionLabel>04 · Information Architecture</SectionLabel>
+          <h2 id="h-ia-tree" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            The IA — <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>designed for discoverability</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:20 }}>A three-level hierarchy placing the unified SAP Help Portal at root, with industry branches and line-of-business leaves — built on validated personas and information survey findings.</p>
+          <IATree/>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-artifact05">
+          <SectionLabel>05 · Proof &amp; Artefacts</SectionLabel>
+          <h2 id="h-artifact05" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Deliverables &amp; <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>live artefact</em>
+          </h2>
+          <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
+            {[
+              { icon:"IA", label:"Information Architecture Document", desc:"Full IA design and content taxonomy — industry hierarchy, LOB breakdown, content templates, and taxonomy standards. Includes persona mapping and navigation logic.", href:"https://drive.google.com/file/d/1pN2cLA5hFaMk6VCmk_7mJDDByoFFK1io/view?usp=drive_link" },
+            ].map(a => (
+              <div key={a.label} onClick={() => window.open(a.href,"_blank")} style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:10, padding:"16px 20px", display:"flex", alignItems:"center", gap:16, cursor:"pointer", transition:"all 0.2s" }}
+                onMouseEnter={e=>{ e.currentTarget.style.borderColor=CS.accent; e.currentTarget.style.background="rgba(26,75,140,0.03)"; }}
+                onMouseLeave={e=>{ e.currentTarget.style.borderColor=CS.border; e.currentTarget.style.background=CS.card; }}>
+                <div style={{ width:40, height:40, borderRadius:8, background:"rgba(26,75,140,0.08)", border:`1px solid rgba(26,75,140,0.15)`, display:"flex", alignItems:"center", justifyContent:"center", fontFamily:SM, fontSize:11, fontWeight:600, color:CS.accent, flexShrink:0 }}>{a.icon}</div>
+                <div style={{ flex:1 }}>
+                  <strong style={{ display:"block", fontSize:13, fontWeight:600, color:CS.text, marginBottom:3 }}>{a.label}</strong>
+                  <p style={{ fontSize:12, color:CS.muted, margin:0, lineHeight:1.6 }}>{a.desc}</p>
+                </div>
+                <span style={{ fontSize:16, color:CS.accent, flexShrink:0 }}>↗</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-outcomes05">
+          <SectionLabel>06 · Outcomes</SectionLabel>
+          <h2 id="h-outcomes05" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            A scalable foundation for <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>enterprise analytics content</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:24 }}>The migration delivered a single, maintainable source of truth for all industry analytics content — with improved customer onboarding across Banking, Insurance, and Oil &amp; Gas, and a scalable structure ready for future industry expansion.</p>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:12 }}>
+            {outcomes.map(o => <ImpactStat key={o.label} value={o.value} label={o.label}/>)}
+          </div>
+        </section>
+
+        <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", paddingTop:32, borderTop:`1px solid ${CS.border}`, marginTop:44 }} role="navigation" aria-label="Page navigation">
+          <NavBtn onClick={onBack}>← Back to case studies</NavBtn>
+          <NavBtn onClick={onHome} primary>⌂ Portfolio home</NavBtn>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+// ─── Leadership & Thought Leadership Case Study Overlay ─────────────────────
+function CaseStudyLeadership({ onBack, onHome }) {
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = ""; };
+  }, []);
+
+  const CS = {
+    bg:"#FAFAF8",card:"#FFFFFF",surface:"#F0EDE6",border:"rgba(0,0,0,0.09)",
+    accent:"#1A4B8C",text:"#0F172A",muted:"#1F2937",label:"#374151",navy:"#0F1A2E",
+  };
+  const SB = "'Cormorant Garant', Georgia, serif";
+  const SN = "'DM Sans', system-ui, sans-serif";
+  const SM = "'DM Mono', monospace";
+
+  const SectionLabel = ({ children }) => (
+    <p style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.28em", textTransform:"uppercase", color:CS.accent, marginBottom:8, display:"flex", alignItems:"center", gap:12 }} role="heading" aria-level="3">
+      {children}<span style={{ flex:1, height:1, background:CS.border, maxWidth:48, display:"inline-block" }} aria-hidden="true"/>
+    </p>
+  );
+  const HR = () => <hr style={{ border:"none", borderTop:`1px solid ${CS.border}`, margin:"44px 0" }} aria-hidden="true"/>;
+  const NavBtn = ({ onClick, children, primary }) => (
+    <button onClick={onClick}
+      style={{ display:"flex", alignItems:"center", gap:7, background:primary?CS.accent:"transparent", border:primary?"none":`1px solid ${CS.border}`, color:primary?"#fff":CS.accent, fontFamily:SN, fontSize:12, fontWeight:500, letterSpacing:"0.04em", padding:"7px 16px", borderRadius:8, cursor:"pointer", transition:"all 0.2s" }}
+      onMouseEnter={e=>{ if(primary) e.currentTarget.style.opacity="0.88"; else { e.currentTarget.style.background="rgba(26,75,140,0.06)"; e.currentTarget.style.borderColor=CS.accent; }}}
+      onMouseLeave={e=>{ if(primary) e.currentTarget.style.opacity="1"; else { e.currentTarget.style.background="transparent"; e.currentTarget.style.borderColor=CS.border; }}}
+    >{children}</button>
+  );
+  const ImpactStat = ({ value, label }) => (
+    <div style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:12, padding:"20px 16px", textAlign:"center" }}>
+      <span style={{ fontFamily:SB, fontSize:32, fontWeight:700, color:CS.accent, lineHeight:1, display:"block", marginBottom:8 }} aria-label={value+" — "+label}>{value}</span>
+      <span style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.12em", textTransform:"uppercase", color:CS.label, lineHeight:1.5, display:"block" }}>{label}</span>
+    </div>
+  );
+
+  // ── SVG: Network hub ──────────────────────────────────────────────────────
+  const LeadershipNetwork = () => {
+    const inner = [
+      {angle:0,   label:"Team A"},  {angle:45,  label:"Team B"},
+      {angle:90,  label:"Team C"},  {angle:135, label:"Team D"},
+      {angle:180, label:"Team E"},  {angle:225, label:"Team F"},
+      {angle:270, label:"Team G"},  {angle:315, label:"Team H"},
+    ];
+    const outer = [
+      {angle:0,   label:"UXIndia",  sub:"~120 participants"},
+      {angle:72,  label:"ADPList",  sub:"200+ globally"},
+      {angle:144, label:"D4 Design",sub:"NPS 4.8/5"},
+      {angle:216, label:"W-Summit", sub:"Career talks"},
+      {angle:288, label:"NextGen",  sub:"Podcast"},
+    ];
+    const cx=380, cy=130, r1=65, r2=120;
+    const toRad = d => (d-90)*Math.PI/180;
+    return (
+      <figure aria-label="Network diagram showing Sheena at centre connected to 8 direct reports and 5 external conference platforms">
+        <svg viewBox="0 0 760 260" width="100%" role="img" aria-labelledby="leadership-net-title" style={{ display:"block" }}>
+          <title id="leadership-net-title">Leadership network: central hub connected to 8 content designers at SAP and 5 external thought leadership platforms</title>
+          {/* outer orbit ring */}
+          <circle cx={cx} cy={cy} r={r2+18} fill="none" stroke="rgba(26,75,140,0.06)" strokeWidth="1" strokeDasharray="4 4"/>
+          {/* inner orbit ring */}
+          <circle cx={cx} cy={cy} r={r1+10} fill="none" stroke="rgba(26,75,140,0.1)" strokeWidth="1" strokeDasharray="3 3"/>
+          {/* spokes to inner */}
+          {inner.map(n => {
+            const a=toRad(n.angle), x=cx+r1*Math.cos(a), y=cy+r1*Math.sin(a);
+            return <line key={n.label} x1={cx} y1={cy} x2={x} y2={y} stroke="rgba(26,75,140,0.2)" strokeWidth="1"/>;
+          })}
+          {/* inner nodes — direct reports */}
+          {inner.map(n => {
+            const a=toRad(n.angle), x=cx+r1*Math.cos(a), y=cy+r1*Math.sin(a);
+            return <g key={n.label}><circle cx={x} cy={y} r="10" fill="rgba(26,75,140,0.15)" stroke="rgba(26,75,140,0.4)" strokeWidth="1"/></g>;
+          })}
+          {/* spokes to outer */}
+          {outer.map(n => {
+            const a=toRad(n.angle), x1=cx+r1*Math.cos(a), y1=cy+r1*Math.sin(a), x2=cx+r2*Math.cos(a), y2=cy+r2*Math.sin(a);
+            return <line key={n.label} x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(78,150,100,0.3)" strokeWidth="1" strokeDasharray="3 2"/>;
+          })}
+          {/* outer nodes — conferences */}
+          {outer.map(n => {
+            const a=toRad(n.angle), x=cx+r2*Math.cos(a), y=cy+r2*Math.sin(a);
+            const tx=cx+(r2+32)*Math.cos(a), ty=cy+(r2+32)*Math.sin(a);
+            return (
+              <g key={n.label}>
+                <circle cx={x} cy={y} r="7" fill="rgba(22,101,52,0.15)" stroke="rgba(22,101,52,0.4)" strokeWidth="1"/>
+                <text x={tx} y={ty-4} textAnchor="middle" fontFamily="DM Sans,sans-serif" fontSize="10" fontWeight="600" fill="#0F172A">{n.label}</text>
+                <text x={tx} y={ty+8} textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#6B7280">{n.sub}</text>
+              </g>
+            );
+          })}
+          {/* Centre */}
+          <circle cx={cx} cy={cy} r="28" fill="rgba(26,75,140,0.12)" stroke="rgba(26,75,140,0.4)" strokeWidth="1.5"/>
+          <text x={cx} y={cy-6} textAnchor="middle" fontFamily="Cormorant Garant,serif" fontSize="13" fontWeight="700" fill="#0F172A">Sheena</text>
+          <text x={cx} y={cy+8} textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#6B7280" letterSpacing="0.5">UX MGR</text>
+          {/* Legend */}
+          <circle cx="30" cy="240" r="7" fill="rgba(26,75,140,0.15)" stroke="rgba(26,75,140,0.4)" strokeWidth="1"/>
+          <text x="44" y="244" fontFamily="DM Sans,sans-serif" fontSize="10" fill="#374151">8 content designers (SAP + Intuit)</text>
+          <circle cx="240" cy="240" r="7" fill="rgba(22,101,52,0.15)" stroke="rgba(22,101,52,0.4)" strokeWidth="1"/>
+          <text x="254" y="244" fontFamily="DM Sans,sans-serif" fontSize="10" fill="#374151">External thought leadership platforms</text>
+        </svg>
+        <figcaption style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.1em", color:CS.label, textAlign:"center", marginTop:8 }}>Leadership reach — managing 8 designers while building external thought leadership across 5 platforms</figcaption>
+      </figure>
+    );
+  };
+
+  const principles = [
+    { title:"Foster excellence", body:"Through structured coaching, peer review, and creating opportunities for the team to thrive and present their work publicly." },
+    { title:"Never stop learning", body:"Staying current in AI, content design, and evolving user needs. Learning is a continuous habit, not a periodic exercise." },
+    { title:"Think systems", body:"Building frameworks and content systems that don't depend on any single person — scalable quality that outlasts the individual." },
+    { title:"Deep customer empathy", body:"Every team and product decision grounded in real user research. No assumptions. No fabrication." },
+    { title:"Stakeholder management", body:"Building subject matter expertise and user advocacy, thereby earning trust rather than demanding it." },
+    { title:"Equip, empower, accountable", body:"Setting clear expectations, providing resources, then stepping back. Accountability without micromanagement." },
+  ];
+
+  const teamWork = [
+    { icon:"🎯", title:"Skills gap analysis", body:"Ran a structured skills gap analysis across the team, identified individual growth areas, and created personalised development plans with resources and timelines." },
+    { icon:"📝", title:"Peer review programme", body:"Led 24+ peer review sessions at Intuit — FY23 to FY24 — setting rigorous content hygiene standards and building a culture of craft within the team." },
+    { icon:"🤝", title:"Coaching office hours", body:"Introduced twice-weekly content coaching office hours for product designers — raising the bar on content quality across teams beyond my direct remit." },
+    { icon:"📊", title:"Benchmarking & voice standards", body:"Completed a benchmarking study to assess team expertise on Intuit's Voice and Tone standard — used findings to focus upskilling where it mattered most." },
+    { icon:"🤖", title:"AI tools training", body:"Conducted Writer.AI training for product designers across QBDT and FP&A — embedding AI-assisted content design into the team's daily workflow." },
+    { icon:"♿", title:"Accessibility standards", body:"Collaborated with accessibility leaders to enforce ARIA labels, Alt+Text, and keyboard accessibility as developer checklist items across the organisation." },
+  ];
+
+  const artifacts = [
+    { icon:"▶", label:"Intuit NextGen Network Interview", desc:"Featured podcast interview on content design career growth, leadership philosophy, and the transition from technical writing to UX content design.", href:"https://www.youtube.com/watch?v=SQcGF5OinFs", tag:"YouTube" },
+    { icon:"▶", label:"ADPList BeMore Conference", desc:"Co-hosted panel with 200+ content designers, UX designers, and researchers globally. Topics: content design career growth, mentorship, and building design culture.", href:"https://drive.google.com/file/d/1td8NBDKhQpO3TRvM87p-mxb4nAs28i4L/view", tag:"Recording" },
+    { icon:"▶", label:"W-Summit Career Talk", desc:"Career guidance session on transitioning into content design, building a portfolio, and navigating the UX industry as a woman in tech.", href:"https://www.youtube.com/watch?v=i1EgVExCpj0", tag:"YouTube" },
+    { icon:"PDF", label:"Prompt Design — UXIndia Global Conference 2023", desc:"Keynote workshop slides from UXIndia Q4 2023 — content design and prompt design for AI products, delivered to ~120 participants globally.", href:"https://drive.google.com/file/d/13jmLxMgV4uvIEV4X7yiJrx_PUXJz4eQJ/view?usp=drive_link", tag:"Slides" },
+    { icon:"PDF", label:"Accessibility & Content Design Guidelines", desc:"ARIA labels, Alt+Text standards, and keyboard accessibility guidelines — developed collaboratively with accessibility leaders and adopted as developer checklist items.", href:"https://drive.google.com/file/d/1Ta3WAxtTtBClyt-8gcHAjrgS0Gi34lfF/view?usp=drive_link", tag:"Document" },
+  ];
+
+  const awards = [
+    { award:"Intuit India Superstar Award", year:"2023", detail:"Customer Obsession category — the highest company recognition for individual contributors. Recognises extraordinary impact on customer experience." },
+    { award:"Trajectory Changing Performance", year:"Intuit", detail:"Highest merit rating at Intuit — reserved for exceptional individual contributors who demonstrably move the business." },
+    { award:"Women in Leadership", year:"Intuit", detail:"Selected for Intuit's 6-month intensive leadership coaching programme for exceptional individual contributors." },
+    { award:"Top Mentor on ADPList", year:"Twice in a row", detail:"Recognised by the ADPList community as a top mentor in content design and UX — two consecutive recognition cycles." },
+    { award:"Top Talent", year:"SAP Labs", detail:"Recognised by SAP leadership for exceptional contribution to content design quality and team culture." },
+    { award:"Featured — NextGen Podcast", year:"Intuit", detail:"Selected by Intuit to represent the company's next generation of design leaders in a featured podcast interview." },
+  ];
+
+  const outcomes = [
+    { value:"4.8/5", label:"Workshop NPS — D4 Design" },
+    { value:"5/5", label:"Workshop NPS — Tech communicators" },
+    { value:"120+", label:"UXIndia keynote participants" },
+    { value:"200+", label:"ADPList BeMore participants" },
+  ];
+
+  return (
+    <div style={{ position:"fixed", inset:0, zIndex:200, background:CS.bg, color:CS.text, fontFamily:SN, overflowY:"auto", display:"flex", flexDirection:"column" }}
+      role="dialog" aria-modal="true" aria-label="Leadership and Thought Leadership Case Study">
+      {/* NAV */}
+      <div style={{ position:"sticky", top:0, zIndex:10, background:"rgba(250,250,248,0.95)", backdropFilter:"blur(12px)", borderBottom:`1px solid ${CS.border}`, padding:"12px 40px", display:"flex", justifyContent:"space-between", alignItems:"center", flexShrink:0 }} role="navigation" aria-label="Case study navigation">
+        <NavBtn onClick={onBack}>← Back to case studies</NavBtn>
+        <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+          <NavBtn onClick={() => window.print()}>↓ Save as PDF</NavBtn>
+          <NavBtn onClick={onHome} primary>⌂ Portfolio home</NavBtn>
+        </div>
+      </div>
+
+      {/* COVER */}
+      <div style={{ background:"linear-gradient(160deg,#0F1A2E 0%,#1A3A6C 60%,#1A4B8C 100%)", color:"#fff", padding:"72px 0 64px", position:"relative", overflow:"hidden", flexShrink:0 }} role="banner">
+        <div style={{ position:"absolute", top:-40, right:-60, width:360, height:360, borderRadius:"50%", background:"rgba(123,159,191,0.12)", pointerEvents:"none" }} aria-hidden="true"/>
+        <div style={{ maxWidth:820, margin:"0 auto", padding:"0 40px", position:"relative", zIndex:1 }}>
+          <p style={{ fontFamily:SM, fontSize:11, letterSpacing:"0.24em", textTransform:"uppercase", color:"rgba(180,215,245,0.9)", marginBottom:18, display:"flex", alignItems:"center", gap:12 }}>
+            <span style={{ width:32, height:1, background:"rgba(123,159,191,0.6)", display:"inline-block" }} aria-hidden="true"/>
+            Case Study · SAP Labs &amp; Intuit
+          </p>
+          <h1 style={{ fontFamily:SB, fontSize:"clamp(34px,5vw,56px)", fontWeight:600, lineHeight:1.08, letterSpacing:"-0.01em", marginBottom:10, color:"#fff" }}>
+            Leadership &amp;<br/>Thought Leadership<br/>
+            <em style={{ fontStyle:"italic", fontWeight:400, color:"rgba(200,220,240,0.82)" }}>Building content culture from within</em>
+          </h1>
+          <p style={{ fontSize:14, color:"rgba(220,235,250,0.8)", marginBottom:44, maxWidth:560 }}>Managing and mentoring content design teams at SAP and Intuit, establishing industry thought leadership, and embedding ethical AI and accessibility standards across global product organisations.</p>
+          <div style={{ display:"flex", flexWrap:"wrap" }}>
+            {[["Organisations","SAP Labs · Intuit"],["Role","UX Design Manager"],["Recognition","Intuit Superstar Award 2023"],["Reach","200+ at conferences · 8 designers led"]].map(([label,val],i) => (
+              <div key={label} style={{ padding:"12px 28px", borderLeft:i===0?"none":"1px solid rgba(255,255,255,0.12)" }}>
+                <span style={{ fontFamily:SM, fontSize:9, letterSpacing:"0.18em", textTransform:"uppercase", color:"rgba(180,215,245,0.85)", display:"block", marginBottom:4 }}>{label}</span>
+                <span style={{ fontSize:13, color:"rgba(255,255,255,0.92)", fontWeight:500 }}>{val}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* BODY */}
+      <main style={{ maxWidth:820, margin:"0 auto", padding:"64px 40px 80px", width:"100%" }}>
+
+        <section aria-labelledby="h-bg06">
+          <SectionLabel>01 · Overview</SectionLabel>
+          <h2 id="h-bg06" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Leading <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>beyond immediate boundaries</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:12 }}>Content design leadership is not just about what the team ships — it's about the culture, standards, and capabilities you build that outlast any individual project. At SAP and Intuit, I led content design teams while simultaneously establishing thought leadership in the industry and embedding organisation-wide standards for ethical AI, accessibility, and content quality.</p>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:24 }}>This work is not a single project — it is a body of practice built across years, organisations, and communities. The metrics are recognition, NPS scores, and the lasting influence on how teams think about and practice content design.</p>
+          <LeadershipNetwork/>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-team06">
+          <SectionLabel>02 · Team Leadership</SectionLabel>
+          <h2 id="h-team06" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Developing talent <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>at scale</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:20 }}>At SAP I manage a team of 8 content designers across enterprise products. At Intuit, I built and led the content design team for 3 years — 1 FTE and 3 contingent workers — raising standards and developing capability through structured mentorship, peer review, and coaching programmes.</p>
+          <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:12 }}>
+            {teamWork.map(tw => (
+              <div key={tw.title} style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:12, padding:"20px" }}>
+                <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:10 }}>
+                  <span style={{ fontSize:22 }} aria-hidden="true">{tw.icon}</span>
+                  <strong style={{ fontSize:13, color:CS.text, fontWeight:600 }}>{tw.title}</strong>
+                </div>
+                <p style={{ fontSize:13, color:CS.muted, margin:0, lineHeight:1.75 }}>{tw.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-principles06">
+          <SectionLabel>03 · Leadership Philosophy</SectionLabel>
+          <h2 id="h-principles06" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Six principles I <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>lead by</em>
+          </h2>
+          <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:10 }}>
+            {principles.map((p,i) => (
+              <div key={i} style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:10, padding:"18px 20px" }}>
+                <strong style={{ display:"block", fontSize:13, color:CS.accent, fontWeight:600, marginBottom:6 }}>{p.title}</strong>
+                <p style={{ fontSize:13, color:CS.muted, margin:0, lineHeight:1.75 }}>{p.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-talks06">
+          <SectionLabel>04 · Talks &amp; Conferences</SectionLabel>
+          <h2 id="h-talks06" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Sharing knowledge <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>beyond the org</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:20 }}>Represented Intuit and SAP at 4+ design conferences and summits — speaking on content design leadership, prompt design for AI, career growth, and accessibility. All talks and recordings are accessible below.</p>
+          <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
+            {artifacts.map(a => (
+              <div key={a.label} onClick={() => window.open(a.href,"_blank")}
+                style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:10, padding:"16px 20px", display:"flex", alignItems:"center", gap:16, cursor:"pointer", transition:"all 0.2s" }}
+                onMouseEnter={e=>{ e.currentTarget.style.borderColor=CS.accent; e.currentTarget.style.background="rgba(26,75,140,0.03)"; }}
+                onMouseLeave={e=>{ e.currentTarget.style.borderColor=CS.border; e.currentTarget.style.background=CS.card; }}>
+                <div style={{ width:40, height:40, borderRadius:8, background:"rgba(26,75,140,0.08)", border:`1px solid rgba(26,75,140,0.15)`, display:"flex", alignItems:"center", justifyContent:"center", fontFamily:SM, fontSize:10, fontWeight:600, color:CS.accent, flexShrink:0 }}>{a.icon}</div>
+                <div style={{ flex:1 }}>
+                  <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:4 }}>
+                    <strong style={{ fontSize:13, fontWeight:600, color:CS.text }}>{a.label}</strong>
+                    <span style={{ fontFamily:SM, fontSize:9, letterSpacing:"0.1em", textTransform:"uppercase", background:"rgba(26,75,140,0.08)", color:CS.accent, padding:"2px 7px", borderRadius:4 }}>{a.tag}</span>
+                  </div>
+                  <p style={{ fontSize:12, color:CS.muted, margin:0, lineHeight:1.6 }}>{a.desc}</p>
+                </div>
+                <span style={{ fontSize:16, color:CS.accent, flexShrink:0 }}>↗</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-awards06">
+          <SectionLabel>05 · Recognition</SectionLabel>
+          <h2 id="h-awards06" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Awards &amp; <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>recognition</em>
+          </h2>
+          <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:12, marginBottom:32 }}>
+            {awards.map(a => (
+              <div key={a.award} style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:12, padding:"20px" }}>
+                <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:8 }}>
+                  <strong style={{ fontFamily:SB, fontSize:17, color:CS.text, lineHeight:1.2 }}>{a.award}</strong>
+                  <span style={{ fontFamily:SM, fontSize:10, color:CS.accent, letterSpacing:"0.08em", flexShrink:0, marginLeft:8, whiteSpace:"nowrap" }}>{a.year}</span>
+                </div>
+                <p style={{ fontSize:12, color:CS.muted, margin:0, lineHeight:1.7 }}>{a.detail}</p>
+              </div>
+            ))}
+          </div>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:12 }}>
+            {outcomes.map(o => <ImpactStat key={o.label} value={o.value} label={o.label}/>)}
+          </div>
+        </section>
+
+        <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", paddingTop:32, borderTop:`1px solid ${CS.border}`, marginTop:44 }} role="navigation" aria-label="Page navigation">
+          <NavBtn onClick={onBack}>← Back to case studies</NavBtn>
+          <NavBtn onClick={onHome} primary>⌂ Portfolio home</NavBtn>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+// ─── Design Thinking Facilitation Case Study Overlay ────────────────────────
+function CaseStudyDT({ onBack, onHome }) {
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = ""; };
+  }, []);
+
+  const CS = {
+    bg:"#FAFAF8",card:"#FFFFFF",surface:"#F0EDE6",border:"rgba(0,0,0,0.09)",
+    accent:"#1A4B8C",text:"#0F172A",muted:"#1F2937",label:"#374151",navy:"#0F1A2E",
+  };
+  const SB = "'Cormorant Garant', Georgia, serif";
+  const SN = "'DM Sans', system-ui, sans-serif";
+  const SM = "'DM Mono', monospace";
+
+  const SectionLabel = ({ children }) => (
+    <p style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.28em", textTransform:"uppercase", color:CS.accent, marginBottom:8, display:"flex", alignItems:"center", gap:12 }} role="heading" aria-level="3">
+      {children}<span style={{ flex:1, height:1, background:CS.border, maxWidth:48, display:"inline-block" }} aria-hidden="true"/>
+    </p>
+  );
+  const HR = () => <hr style={{ border:"none", borderTop:`1px solid ${CS.border}`, margin:"44px 0" }} aria-hidden="true"/>;
+  const NavBtn = ({ onClick, children, primary }) => (
+    <button onClick={onClick}
+      style={{ display:"flex", alignItems:"center", gap:7, background:primary?CS.accent:"transparent", border:primary?"none":`1px solid ${CS.border}`, color:primary?"#fff":CS.accent, fontFamily:SN, fontSize:12, fontWeight:500, letterSpacing:"0.04em", padding:"7px 16px", borderRadius:8, cursor:"pointer", transition:"all 0.2s" }}
+      onMouseEnter={e=>{ if(primary) e.currentTarget.style.opacity="0.88"; else { e.currentTarget.style.background="rgba(26,75,140,0.06)"; e.currentTarget.style.borderColor=CS.accent; }}}
+      onMouseLeave={e=>{ if(primary) e.currentTarget.style.opacity="1"; else { e.currentTarget.style.background="transparent"; e.currentTarget.style.borderColor=CS.border; }}}
+    >{children}</button>
+  );
+
+  // ── SVG: Double Diamond ───────────────────────────────────────────────────
+  const DoubleDiamond = () => (
+    <figure aria-label="Double diamond design thinking process diagram showing two phases: Discover and Define on the left, Develop and Deliver on the right, with a convergence point in the centre">
+      <svg viewBox="0 0 760 200" width="100%" role="img" aria-labelledby="dd-title" style={{ display:"block" }}>
+        <title id="dd-title">Double diamond process: Phase 1 Discover diverges then converges to Define; Phase 2 Develop diverges then converges to Deliver</title>
+        {/* Left diamond — Discover/Define */}
+        <path d="M 80 100 L 230 25 L 380 100 L 230 175 Z" fill="rgba(26,75,140,0.07)" stroke="rgba(26,75,140,0.3)" strokeWidth="1.5"/>
+        {/* Right diamond — Develop/Deliver */}
+        <path d="M 380 100 L 530 25 L 680 100 L 530 175 Z" fill="rgba(22,101,52,0.06)" stroke="rgba(22,101,52,0.3)" strokeWidth="1.5"/>
+        {/* Centre convergence dot */}
+        <circle cx="380" cy="100" r="8" fill={CS.accent}/>
+        <circle cx="380" cy="100" r="14" fill="none" stroke={CS.accent} strokeWidth="1" opacity="0.3"/>
+        {/* Phase labels — left */}
+        <text x="165" y="95" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="10" fill="#1A4B8C" letterSpacing="1">DISCOVER</text>
+        <text x="165" y="108" textAnchor="middle" fontFamily="DM Sans,sans-serif" fontSize="11" fill="#4B5563">User journeys · Tool audit</text>
+        {/* Phase labels — right */}
+        <text x="530" y="95" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="10" fill="#166534" letterSpacing="1">DEVELOP</text>
+        <text x="530" y="108" textAnchor="middle" fontFamily="DM Sans,sans-serif" fontSize="11" fill="#4B5563">Ideation · Prioritisation</text>
+        {/* Define label — convergence */}
+        <text x="310" y="40" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="9" fill="#6B7280" letterSpacing="1">DEFINE</text>
+        <line x1="310" y1="44" x2="355" y2="90" stroke="rgba(0,0,0,0.12)" strokeWidth="0.8"/>
+        {/* Deliver label */}
+        <text x="620" y="40" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="9" fill="#6B7280" letterSpacing="1">DELIVER</text>
+        <line x1="620" y1="44" x2="650" y2="90" stroke="rgba(0,0,0,0.12)" strokeWidth="0.8"/>
+        {/* Diverge labels */}
+        <text x="155" y="18" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#9CA3AF" letterSpacing="1">DIVERGE</text>
+        <text x="295" y="18" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#9CA3AF" letterSpacing="1">CONVERGE</text>
+        <text x="460" y="18" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#9CA3AF" letterSpacing="1">DIVERGE</text>
+        <text x="620" y="18" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#9CA3AF" letterSpacing="1">CONVERGE</text>
+        {/* Entry/exit points */}
+        <circle cx="80" cy="100" r="5" fill="rgba(26,75,140,0.3)"/>
+        <circle cx="680" cy="100" r="5" fill="rgba(22,101,52,0.5)"/>
+        <text x="40" y="104" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#9CA3AF">START</text>
+        <text x="720" y="104" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#166534">RESULT</text>
+      </svg>
+      <figcaption style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.1em", color:CS.label, textAlign:"center", marginTop:8 }}>The double diamond process applied across SAP India's Project Management business lines</figcaption>
+    </figure>
+  );
+
+  // ── SVG: Problem map ──────────────────────────────────────────────────────
+  const ProblemMap = () => (
+    <figure aria-label="Diagram showing multiple overlapping tools and fragmented processes preventing synchronous communication between Project Management teams across SAP India business lines">
+      <svg viewBox="0 0 760 180" width="100%" role="img" aria-labelledby="pm-title" style={{ display:"block" }}>
+        <title id="pm-title">Problem map: Multiple tools (Jira, Confluence, Teams, SharePoint, Email) and fragmented processes creating communication gaps between PM Team A, PM Team B, and PM Team C across business lines</title>
+        {/* Teams */}
+        {[["PM Team A",80],["PM Team B",380],["PM Team C",660]].map(([label,cx]) => (
+          <g key={label}>
+            <circle cx={cx} cy="90" r="38" fill="rgba(26,75,140,0.08)" stroke="rgba(26,75,140,0.2)" strokeWidth="1.5"/>
+            <text x={cx} y="86" textAnchor="middle" fontFamily="DM Sans,sans-serif" fontSize="12" fontWeight="600" fill="#0F172A">{label.split(" ")[0]+" "+label.split(" ")[1]}</text>
+            <text x={cx} y="100" textAnchor="middle" fontFamily="DM Sans,sans-serif" fontSize="11" fill="#4B5563">{label.split(" ")[2]}</text>
+          </g>
+        ))}
+        {/* Fragmented tools in middle */}
+        {[
+          [230,55,"Jira"],[290,40,"Confluence"],[340,70,"Teams"],[230,125,"SharePoint"],[300,110,"Email"],[355,130,"Docs"],
+        ].map(([x,y,label]) => (
+          <g key={label}>
+            <rect x={x-28} y={y-12} width={56} height={22} rx="5" fill={CS.card} stroke={CS.border} strokeWidth="0.8"/>
+            <text x={x} y={y+4} textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="9" fill={CS.label} letterSpacing="0.5">{label}</text>
+          </g>
+        ))}
+        {/* Conflict indicator */}
+        <circle cx="290" cy="90" r="22" fill="#FEF2F2" stroke="#FECACA" strokeWidth="1.5"/>
+        <text x="290" y="86" textAnchor="middle" fontFamily="DM Sans,sans-serif" fontSize="16" fill="#DC2626">⚡</text>
+        <text x="290" y="100" textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="7" fill="#DC2626" letterSpacing="0.5">OVERLAP</text>
+        {/* Connecting lines — dashed/fragmented */}
+        {[[118,90,248,90],[332,90,490,90]].map(([x1,y1,x2,y2],i) => (
+          <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(220,38,38,0.3)" strokeWidth="1.5" strokeDasharray="5 4"/>
+        ))}
+        <line x1="118" y1="90" x2="490" y2="90" stroke="rgba(0,0,0,0)" strokeWidth="0"/>
+        {/* Arrow from right team to centre */}
+        <line x1="622" y1="90" x2="500" y2="90" stroke="rgba(220,38,38,0.3)" strokeWidth="1.5" strokeDasharray="5 4"/>
+      </svg>
+      <figcaption style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.1em", color:CS.label, textAlign:"center", marginTop:8 }}>The root problem — multiple overlapping tools and fragmented processes preventing synchronous communication</figcaption>
+    </figure>
+  );
+
+  const processSteps = [
+    { num:"01", phase:"Map", title:"User journey mapping across all business lines", body:"Mapped user journeys of Project Management teams end-to-end — across different roles, tools, processes, and communication points. This surface-level mapping revealed where handoffs broke down and where duplication created overhead." },
+    { num:"02", phase:"Discover", title:"Tool and process audit", body:"Identified a diverse set of tools, process redundancies, and communication gaps preventing synchronous collaboration. Teams were using overlapping combinations of Jira, Confluence, Teams, SharePoint, and email — often for the same tasks with no agreed convention." },
+    { num:"03", phase:"Define", title:"Root cause identification and problem prioritisation", body:"Methodically helped teams articulate root problem areas rather than surface symptoms. Used design thinking facilitation to separate 'this is painful' from 'this is the root cause' — ensuring solutions addressed real issues, not workarounds." },
+    { num:"04", phase:"Develop", title:"Ideation — scalable solutions for prioritised pain points", body:"Facilitated structured ideation sessions. Teams brainstormed solutions for each prioritised problem area, using How Might We prompting to open up possibility space before narrowing. Solutions were evaluated against scalability and cross-team adoption potential." },
+    { num:"05", phase:"Deliver", title:"Virtual facilitation — limited time, significant constraints", body:"Delivered the entire workshop virtually — across teams with different working styles, time zones, and tool familiarity — with limited preparation time and resources. Established a repeatable DT facilitation model that could be replicated for future workshops at SAP India." },
+  ];
+
+  const artifacts = [
+    { icon:"PDF", label:"DT Workshop Summary", desc:"Session summary, outcomes, key findings, and recommended next steps from the Project Management design thinking workshop. Password protected.", href:"https://drive.google.com/file/d/1A8KvWoRUVi_gqtNi_H90KnzsMkQYEHQ_/view?usp=sharing", pw:true },
+    { icon:"▤",   label:"Facilitation Deck", desc:"Full workshop facilitation deck — all slides, exercises, How Might We prompts, and facilitation notes used in the virtual session. Password protected.", href:"https://drive.google.com/file/d/1L3QZCszZJ3Y-vnk9UBcvK5i3eVZ2bnHZ/view?usp=sharing", pw:true },
+    { icon:"⊡",   label:"User Journey Process Maps", desc:"End-to-end user journey maps across Project Management business lines — showing current-state workflows, pain points, tool touchpoints, and communication gaps identified during the workshop. Password protected.", href:"https://drive.google.com/file/d/1rK2-ov-SJtiTmCPxTBGVhVtdk25uYXiQ/view?usp=sharing", pw:true },
+  ];
+
+  const outcomes = [
+    { value:"5", label:"PM teams across business lines" },
+    { value:"Multi-BU", label:"Processes streamlined" },
+    { value:"100%", label:"Virtual facilitation" },
+    { value:"Outstanding", label:"Stakeholder feedback" },
+  ];
+
+  return (
+    <div style={{ position:"fixed", inset:0, zIndex:200, background:CS.bg, color:CS.text, fontFamily:SN, overflowY:"auto", display:"flex", flexDirection:"column" }}
+      role="dialog" aria-modal="true" aria-label="Design Thinking Facilitation Case Study">
+      {/* NAV */}
+      <div style={{ position:"sticky", top:0, zIndex:10, background:"rgba(250,250,248,0.95)", backdropFilter:"blur(12px)", borderBottom:`1px solid ${CS.border}`, padding:"12px 40px", display:"flex", justifyContent:"space-between", alignItems:"center", flexShrink:0 }} role="navigation" aria-label="Case study navigation">
+        <NavBtn onClick={onBack}>← Back to case studies</NavBtn>
+        <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+          <NavBtn onClick={() => window.print()}>↓ Save as PDF</NavBtn>
+          <NavBtn onClick={onHome} primary>⌂ Portfolio home</NavBtn>
+        </div>
+      </div>
+
+      {/* COVER */}
+      <div style={{ background:"linear-gradient(160deg,#0F1A2E 0%,#1A3A6C 60%,#1A4B8C 100%)", color:"#fff", padding:"72px 0 64px", position:"relative", overflow:"hidden", flexShrink:0 }} role="banner">
+        <div style={{ position:"absolute", top:-40, right:-60, width:360, height:360, borderRadius:"50%", background:"rgba(123,159,191,0.12)", pointerEvents:"none" }} aria-hidden="true"/>
+        <div style={{ maxWidth:820, margin:"0 auto", padding:"0 40px", position:"relative", zIndex:1 }}>
+          <p style={{ fontFamily:SM, fontSize:11, letterSpacing:"0.24em", textTransform:"uppercase", color:"rgba(180,215,245,0.9)", marginBottom:18, display:"flex", alignItems:"center", gap:12 }}>
+            <span style={{ width:32, height:1, background:"rgba(123,159,191,0.6)", display:"inline-block" }} aria-hidden="true"/>
+            Case Study · SAP Labs India
+          </p>
+          <h1 style={{ fontFamily:SB, fontSize:"clamp(34px,5vw,56px)", fontWeight:600, lineHeight:1.08, letterSpacing:"-0.01em", marginBottom:10, color:"#fff" }}>
+            Design Thinking<br/>Facilitation<br/>
+            <em style={{ fontStyle:"italic", fontWeight:400, color:"rgba(200,220,240,0.82)" }}>From fragmented tools to synchronised teams</em>
+          </h1>
+          <p style={{ fontSize:14, color:"rgba(220,235,250,0.8)", marginBottom:44, maxWidth:560 }}>As a newly certified Design Thinking Coach, I led a virtual DT workshop across SAP India's Project Management business lines — mapping user journeys, identifying tool overlaps, and facilitating scalable solutions across teams with different working styles.</p>
+          <div style={{ display:"flex", flexWrap:"wrap" }}>
+            {[["Organisation","SAP Labs India"],["Role","Certified DT Coach"],["Certification","SAP Design Thinking Academy 2021"],["Format","Virtual · Multi-team · Cross-BU"]].map(([label,val],i) => (
+              <div key={label} style={{ padding:"12px 28px", borderLeft:i===0?"none":"1px solid rgba(255,255,255,0.12)" }}>
+                <span style={{ fontFamily:SM, fontSize:9, letterSpacing:"0.18em", textTransform:"uppercase", color:"rgba(180,215,245,0.85)", display:"block", marginBottom:4 }}>{label}</span>
+                <span style={{ fontSize:13, color:"rgba(255,255,255,0.92)", fontWeight:500 }}>{val}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* BODY */}
+      <main style={{ maxWidth:820, margin:"0 auto", padding:"64px 40px 80px", width:"100%" }}>
+
+        <section aria-labelledby="h-bg07">
+          <SectionLabel>01 · Background &amp; Challenge</SectionLabel>
+          <h2 id="h-bg07" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Multiple tools, <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>no synchronisation</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:12 }}>Project Management teams across SAP India's various business lines were working in silos — using overlapping combinations of tools and processes with no agreed conventions or communication standards. The result was duplicated work, missed handoffs, and significant friction in cross-team collaboration.</p>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:24 }}>As a newly inducted Certified Design Thinking Coach (SAP Design Thinking Academy, 2021), I was tasked with facilitating a virtual DT workshop to surface root causes and co-create scalable solutions — with limited preparation time and significant logistical constraints.</p>
+          <ProblemMap/>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-framework07">
+          <SectionLabel>02 · Framework</SectionLabel>
+          <h2 id="h-framework07" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            The double diamond, <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>applied virtually</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:20 }}>The SAP Design Thinking framework — based on the double diamond model — guided the workshop structure. Two diverge-converge cycles: first to discover and define the real problem, then to develop and deliver scalable solutions.</p>
+          <DoubleDiamond/>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-process07">
+          <SectionLabel>03 · Process</SectionLabel>
+          <h2 id="h-process07" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Five-step facilitation <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>across business lines</em>
+          </h2>
+          <div style={{ border:`1px solid ${CS.border}`, borderRadius:12, overflow:"hidden" }}>
+            {processSteps.map((s,i) => (
+              <div key={s.num} style={{ display:"flex", borderBottom:i<processSteps.length-1?`1px solid ${CS.border}`:"none", background:CS.card }}>
+                <div style={{ width:80, flexShrink:0, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"flex-start", padding:"18px 0", borderRight:`1px solid ${CS.border}` }}>
+                  <span style={{ fontFamily:SM, fontSize:11, color:CS.accent, fontWeight:500, letterSpacing:"0.06em" }}>{s.num}</span>
+                  <span style={{ fontFamily:SM, fontSize:9, color:CS.label, letterSpacing:"0.08em", textTransform:"uppercase", marginTop:4, textAlign:"center", padding:"0 8px", lineHeight:1.4 }}>{s.phase}</span>
+                </div>
+                <div style={{ padding:"18px 22px", flex:1 }}>
+                  <h4 style={{ fontSize:13, fontWeight:600, color:CS.text, marginBottom:6 }}>{s.title}</h4>
+                  <p style={{ fontSize:13, color:CS.muted, margin:0, lineHeight:1.8 }}>{s.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-artifacts07">
+          <SectionLabel>04 · Proof &amp; Artefacts</SectionLabel>
+          <h2 id="h-artifacts07" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            Workshop <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>deliverables</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:20 }}>All artefacts are available on request. Files are password protected to safeguard internal SAP content — please email <a href="mailto:sheenalakshmi@gmail.com" style={{ color:CS.accent }}>sheenalakshmi@gmail.com</a> for access.</p>
+          <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
+            {artifacts.map(a => (
+              <div key={a.label} onClick={() => window.open(a.href,"_blank")}
+                style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:10, padding:"16px 20px", display:"flex", alignItems:"center", gap:16, cursor:"pointer", transition:"all 0.2s" }}
+                onMouseEnter={e=>{ e.currentTarget.style.borderColor=CS.accent; e.currentTarget.style.background="rgba(26,75,140,0.03)"; }}
+                onMouseLeave={e=>{ e.currentTarget.style.borderColor=CS.border; e.currentTarget.style.background=CS.card; }}>
+                <div style={{ width:40, height:40, borderRadius:8, background:"rgba(26,75,140,0.08)", border:`1px solid rgba(26,75,140,0.15)`, display:"flex", alignItems:"center", justifyContent:"center", fontFamily:SM, fontSize:11, fontWeight:600, color:CS.accent, flexShrink:0 }}>{a.icon}</div>
+                <div style={{ flex:1 }}>
+                  <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:4 }}>
+                    <strong style={{ fontSize:13, fontWeight:600, color:CS.text }}>{a.label}</strong>
+                    {a.pw && <span style={{ fontFamily:SM, fontSize:9, letterSpacing:"0.1em", textTransform:"uppercase", background:"rgba(146,64,14,0.08)", color:"#92400E", padding:"2px 7px", borderRadius:4 }}>🔒 Password protected</span>}
+                  </div>
+                  <p style={{ fontSize:12, color:CS.muted, margin:0, lineHeight:1.6 }}>{a.desc}</p>
+                </div>
+                <span style={{ fontSize:16, color:CS.accent, flexShrink:0 }}>↗</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <HR/>
+
+        <section aria-labelledby="h-outcomes07">
+          <SectionLabel>05 · Outcomes</SectionLabel>
+          <h2 id="h-outcomes07" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
+            From overlap to <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>alignment</em>
+          </h2>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:24 }}>Tool overlaps were identified and resolved. PM processes were streamlined across multiple business units. The workshop established a repeatable DT facilitation model for future sessions at SAP India.</p>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:12, marginBottom:24 }}>
+            {outcomes.map(o => (
+              <div key={o.label} style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:12, padding:"20px 16px", textAlign:"center" }}>
+                <span style={{ fontFamily:SB, fontSize:o.value.length > 6 ? 22 : 32, fontWeight:700, color:CS.accent, lineHeight:1, display:"block", marginBottom:8 }}>{o.value}</span>
+                <span style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.12em", textTransform:"uppercase", color:CS.label, lineHeight:1.5, display:"block" }}>{o.label}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Testimonial */}
+          <blockquote style={{ background:CS.surface, borderLeft:`3px solid ${CS.accent}`, borderRadius:"0 10px 10px 0", padding:"20px 24px" }}>
+            <p style={{ fontFamily:SB, fontSize:19, fontStyle:"italic", color:CS.text, lineHeight:1.7, margin:0 }}>
+              "This was no easy topic… executed pretty well."
+            </p>
+            <p style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.12em", textTransform:"uppercase", color:CS.label, marginTop:12, margin:"12px 0 0" }}>
+              — Stakeholder feedback, SAP India DT Workshop
+            </p>
+          </blockquote>
+        </section>
+
+        <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", paddingTop:32, borderTop:`1px solid ${CS.border}`, marginTop:44 }} role="navigation" aria-label="Page navigation">
+          <NavBtn onClick={onBack}>← Back to case studies</NavBtn>
+          <NavBtn onClick={onHome} primary>⌂ Portfolio home</NavBtn>
+        </div>
+      </main>
+    </div>
+  );
+}
 function ClassicMode({ onAskAbout, onCaseStudy }) {
   const [drawer, setDrawer] = useState(null);
   const ARTIFACT_ICONS = { pdf: "PDF", deck: "▤", screenshot: "⊡", video: "▶", notion: "N" };
@@ -1885,7 +2735,7 @@ function ClassicMode({ onAskAbout, onCaseStudy }) {
                     <div style={{ textAlign: "right", flexShrink: 0, paddingLeft: 12 }}>
                       {p.metricSvg ? <div style={{ display: "flex", justifyContent: "flex-end" }}><DTIcon size={48}/></div> : <p style={{ fontFamily: SERIF, fontSize: 24, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{p.metric}</p>}
                       <p style={{ fontSize: 9, color: C.muted, maxWidth: 90, textAlign: "right", lineHeight: 1.4, marginTop: 3 }}>{p.metricLabel}</p>
-                      <button className="sl-cta-btn" style={{ marginTop: 10 }} onClick={() => p.id === "01" && onCaseStudy ? onCaseStudy("fpa") : p.id === "03" && onCaseStudy ? onCaseStudy("onboarding") : p.id === "04" && onCaseStudy ? onCaseStudy("naming") : openDrawer(p)}>View case study →</button>
+                      <button className="sl-cta-btn" style={{ marginTop: 10 }} onClick={() => p.id === "01" && onCaseStudy ? onCaseStudy("fpa") : p.id === "03" && onCaseStudy ? onCaseStudy("onboarding") : p.id === "04" && onCaseStudy ? onCaseStudy("naming") : p.id === "05" && onCaseStudy ? onCaseStudy("ia") : p.id === "06" && onCaseStudy ? onCaseStudy("leadership") : p.id === "07" && onCaseStudy ? onCaseStudy("dt") : openDrawer(p)}>View case study →</button>
                     </div>
                   </div>
                 </div>
@@ -2020,6 +2870,24 @@ export default function SheenaPortfolio() {
       )}
       {caseStudy === "naming" && (
         <CaseStudyNaming
+          onBack={() => { setCaseStudy(null); setMode("classic"); }}
+          onHome={() => { setCaseStudy(null); setMode("classic"); }}
+        />
+      )}
+      {caseStudy === "ia" && (
+        <CaseStudyIA
+          onBack={() => { setCaseStudy(null); setMode("classic"); }}
+          onHome={() => { setCaseStudy(null); setMode("classic"); }}
+        />
+      )}
+      {caseStudy === "leadership" && (
+        <CaseStudyLeadership
+          onBack={() => { setCaseStudy(null); setMode("classic"); }}
+          onHome={() => { setCaseStudy(null); setMode("classic"); }}
+        />
+      )}
+      {caseStudy === "dt" && (
+        <CaseStudyDT
           onBack={() => { setCaseStudy(null); setMode("classic"); }}
           onHome={() => { setCaseStudy(null); setMode("classic"); }}
         />
