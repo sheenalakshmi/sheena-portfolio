@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import { FPA_IMAGES, FTU_SCREEN } from "./portfolioImages.js";
 
 const SYSTEM = `You are Sheena Lakshmi — UX Design Manager (Content) at SAP, Bengaluru — answering questions on your personal portfolio site. Visitors are recruiters, hiring managers, and curious professionals.
 
@@ -865,7 +864,7 @@ function CaseStudyFPA({ onBack, onHome }) {
             {screens.map(s => (
               <div key={s.key} style={{ background: CS.card, border: `1px solid ${CS.border}`, borderRadius: 12, overflow: "hidden" }}>
                 <img
-                  src={`data:image/jpeg;base64,${FPA_IMAGES[s.key]}`}
+                  src={`/cs-${s.key}.jpg`}
                   alt={s.alt}
                   style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
                 />
@@ -892,7 +891,7 @@ function CaseStudyFPA({ onBack, onHome }) {
             {artifacts.map(a => (
               <div key={a.key} style={{ background: CS.card, border: `1px solid ${CS.border}`, borderRadius: 12, overflow: "hidden" }}>
                 <img
-                  src={`data:image/jpeg;base64,${FPA_IMAGES[a.key]}`}
+                  src={`/cs-${a.key}.jpg`}
                   alt={a.title}
                   style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
                 />
@@ -1262,7 +1261,7 @@ function CaseStudyOnboarding({ onBack, onHome }) {
           {/* Screen image */}
           <div style={{ background: CS.card, border: `1px solid ${CS.border}`, borderRadius: 12, overflow: "hidden", marginBottom: 16 }}>
             <img
-              src={`data:image/jpeg;base64,${FTU_SCREEN}`}
+              src="/cs-ftu-screen.jpg"
               alt="The shipped QuickBooks budgeting first-time user onboarding screen showing the headline 'Plan your finances and stay ahead', a one-sentence description, three benefit bullets, a primary Create Budget button and a secondary Import Budget link"
               style={{ width: "100%", height: "auto", display: "block" }}
             />
@@ -2578,7 +2577,7 @@ function ClassicMode({ onAskAbout, onCaseStudy }) {
               </div>
 
               <div>
-                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 10 }}>Challenge & Context</p>
+                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 10 }}>Challenge &amp; Context</p>
                 <p style={{ fontSize: 13, color: C.muted, lineHeight: 1.85 }}>{drawer.challenge}</p>
               </div>
 
@@ -2607,7 +2606,7 @@ function ClassicMode({ onAskAbout, onCaseStudy }) {
               </div>
 
               <div>
-                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 12 }}>Proof & Artifacts</p>
+                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 12 }}>Proof &amp; Artifacts</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   {drawer.artifacts.map(a => {
                     if (a.type === "nda") return (
@@ -2730,7 +2729,7 @@ function ClassicMode({ onAskAbout, onCaseStudy }) {
         </section>
 
         <section style={{ marginBottom: 72 }}>
-          <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Skills & Tools</p>
+          <p style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: C.accent, marginBottom: 28 }}>Skills &amp; Tools</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 24 }}>
             {SKILLS_LIST.map(sg => (
               <div key={sg.group}>
