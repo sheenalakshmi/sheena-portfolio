@@ -2013,72 +2013,6 @@ function CaseStudyLeadership({ onBack, onHome }) {
     </div>
   );
 
-  // ── SVG: Network hub ──────────────────────────────────────────────────────
-  const LeadershipNetwork = () => {
-    const inner = [
-      {angle:0,   label:"Team A"},  {angle:45,  label:"Team B"},
-      {angle:90,  label:"Team C"},  {angle:135, label:"Team D"},
-      {angle:180, label:"Team E"},  {angle:225, label:"Team F"},
-      {angle:270, label:"Team G"},  {angle:315, label:"Team H"},
-    ];
-    const outer = [
-      {angle:0,   label:"UXIndia",  sub:"~120 participants"},
-      {angle:72,  label:"ADPList",  sub:"200+ globally"},
-      {angle:144, label:"D4 Design",sub:"NPS 4.8/5"},
-      {angle:216, label:"W-Summit", sub:"Career talks"},
-      {angle:288, label:"NextGen",  sub:"Podcast"},
-    ];
-    const cx=380, cy=130, r1=65, r2=120;
-    const toRad = d => (d-90)*Math.PI/180;
-    return (
-      <figure aria-label="Network diagram showing Sheena at centre connected to 8 direct reports and 5 external conference platforms">
-        <svg viewBox="0 0 760 260" width="100%" role="img" aria-labelledby="leadership-net-title" style={{ display:"block" }}>
-          <title id="leadership-net-title">Leadership network: central hub connected to 8 content designers at SAP and 5 external thought leadership platforms</title>
-          {/* outer orbit ring */}
-          <circle cx={cx} cy={cy} r={r2+18} fill="none" stroke="rgba(26,75,140,0.06)" strokeWidth="1" strokeDasharray="4 4"/>
-          {/* inner orbit ring */}
-          <circle cx={cx} cy={cy} r={r1+10} fill="none" stroke="rgba(26,75,140,0.1)" strokeWidth="1" strokeDasharray="3 3"/>
-          {/* spokes to inner */}
-          {inner.map(n => {
-            const a=toRad(n.angle), x=cx+r1*Math.cos(a), y=cy+r1*Math.sin(a);
-            return <line key={n.label} x1={cx} y1={cy} x2={x} y2={y} stroke="rgba(26,75,140,0.2)" strokeWidth="1"/>;
-          })}
-          {/* inner nodes — direct reports */}
-          {inner.map(n => {
-            const a=toRad(n.angle), x=cx+r1*Math.cos(a), y=cy+r1*Math.sin(a);
-            return <g key={n.label}><circle cx={x} cy={y} r="10" fill="rgba(26,75,140,0.15)" stroke="rgba(26,75,140,0.4)" strokeWidth="1"/></g>;
-          })}
-          {/* spokes to outer */}
-          {outer.map(n => {
-            const a=toRad(n.angle), x1=cx+r1*Math.cos(a), y1=cy+r1*Math.sin(a), x2=cx+r2*Math.cos(a), y2=cy+r2*Math.sin(a);
-            return <line key={n.label} x1={x1} y1={y1} x2={x2} y2={y2} stroke="rgba(78,150,100,0.3)" strokeWidth="1" strokeDasharray="3 2"/>;
-          })}
-          {/* outer nodes — conferences */}
-          {outer.map(n => {
-            const a=toRad(n.angle), x=cx+r2*Math.cos(a), y=cy+r2*Math.sin(a);
-            const tx=cx+(r2+32)*Math.cos(a), ty=cy+(r2+32)*Math.sin(a);
-            return (
-              <g key={n.label}>
-                <circle cx={x} cy={y} r="7" fill="rgba(22,101,52,0.15)" stroke="rgba(22,101,52,0.4)" strokeWidth="1"/>
-                <text x={tx} y={ty-4} textAnchor="middle" fontFamily="DM Sans,sans-serif" fontSize="10" fontWeight="600" fill="#0F172A">{n.label}</text>
-                <text x={tx} y={ty+8} textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#6B7280">{n.sub}</text>
-              </g>
-            );
-          })}
-          {/* Centre */}
-          <circle cx={cx} cy={cy} r="28" fill="rgba(26,75,140,0.12)" stroke="rgba(26,75,140,0.4)" strokeWidth="1.5"/>
-          <text x={cx} y={cy-6} textAnchor="middle" fontFamily="Cormorant Garant,serif" fontSize="13" fontWeight="700" fill="#0F172A">Sheena</text>
-          <text x={cx} y={cy+8} textAnchor="middle" fontFamily="DM Mono,monospace" fontSize="8" fill="#6B7280" letterSpacing="0.5">UX MGR</text>
-          {/* Legend */}
-          <circle cx="30" cy="240" r="7" fill="rgba(26,75,140,0.15)" stroke="rgba(26,75,140,0.4)" strokeWidth="1"/>
-          <text x="44" y="244" fontFamily="DM Sans,sans-serif" fontSize="10" fill="#374151">8 content designers (SAP + Intuit)</text>
-          <circle cx="240" cy="240" r="7" fill="rgba(22,101,52,0.15)" stroke="rgba(22,101,52,0.4)" strokeWidth="1"/>
-          <text x="254" y="244" fontFamily="DM Sans,sans-serif" fontSize="10" fill="#374151">External thought leadership platforms</text>
-        </svg>
-        <figcaption style={{ fontFamily:SM, fontSize:10, letterSpacing:"0.1em", color:CS.label, textAlign:"center", marginTop:8 }}>Leadership reach — managing 8 designers while building external thought leadership across 5 platforms</figcaption>
-      </figure>
-    );
-  };
 
   const principles = [
     { title:"Foster excellence", body:"Through structured coaching, peer review, and creating opportunities for the team to thrive and present their work publicly." },
@@ -2168,7 +2102,6 @@ function CaseStudyLeadership({ onBack, onHome }) {
           </h2>
           <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:12 }}>Content design leadership is not just about what the team ships — it's about the culture, standards, and capabilities you build that outlast any individual project. At SAP and Intuit, I led content design teams while simultaneously establishing thought leadership in the industry and embedding organisation-wide standards for ethical AI, accessibility, and content quality.</p>
           <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:24 }}>This work is not a single project — it is a body of practice built across years, organisations, and communities. The metrics are recognition, NPS scores, and the lasting influence on how teams think about and practice content design.</p>
-          <LeadershipNetwork/>
         </section>
 
         <HR/>
