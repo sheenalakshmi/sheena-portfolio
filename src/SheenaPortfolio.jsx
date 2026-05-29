@@ -81,7 +81,7 @@ const PROJECTS = [
     metric: "37%",
     metricLabel: "YoY growth in budgets created by companies",
     tags: ["Content Strategy", "AI Adoption", "User Research", "Systems Design"],
-    description: "Content design lead for the full FP&A portfolio within Intuit Enterprise Suite and QuickBooks Online — budgeting, forecasting, cash flow — across global markets. FP&A is a strategic pillar for MM IES.",
+    description: "Content design lead for the full FP&A portfolio within Intuit Enterprise Suite and QuickBooks Online — budgeting, forecasting, cash flow — across global markets. FP&A is a strategic pillar for the Mid-Market Intuit Enterprise Suite (IES).",
     challenge: "Create a cohesive, discoverable, and scalable content experience for a rapidly evolving financial planning platform serving small and mid-market businesses globally — while advocating for ethical, AI-led solutions that help SMBs become profitable.",
     keyActions: [
       "Named and positioned 'Financial Planning and Analysis' within QBO left navigation — led card sorting to move from 'Budgets' to FP&A, directly impacting discoverability and engagement",
@@ -226,7 +226,7 @@ const PROJECTS = [
     role: "Certified DT Coach", metric: "", metricLabel: "Virtual DT workshop across business lines",
     metricSvg: true,
     tags: ["Design Thinking", "Facilitation", "Process Optimisation", "Virtual Workshop"],
-    description: "As a newly inducted Certified Design Thinking Coach (SAP Design Thinking Academy, 2021), addressed multiple overlapping tools and processes within the India location and helped Project Management teams overcome communication and synchronisation challenges.",
+    description: "As a newly certified Design Thinking Coach (SAP Design Thinking Academy, 2021), addressed multiple overlapping tools and processes within the India location and helped Project Management teams overcome communication and synchronisation challenges.",
     challenge: "Multiple overlapping tools and processes within the India location prevented Project Management teams from communicating and synchronising effectively across business lines.",
     keyActions: [
       "Mapped user journeys of various lines of businesses from start to end across different teams and processes",
@@ -499,9 +499,18 @@ function AIMode({ onAsk, msgs, setMsgs, busy, setBusy, input, setInput, setMode 
 
   useEffect(() => { endRef.current?.scrollIntoView({ behavior: "smooth" }); }, [msgs, busy]);
 
+  const SESSION_LIMIT = 10;
+
   const send = async (text) => {
     const q = text.trim();
     if (!q || busy) return;
+    if (msgs.filter(m => m.role === "user").length >= SESSION_LIMIT) {
+      setMsgs(prev => [...prev, {
+        role: "assistant",
+        content: "You've reached the message limit for this session. To continue the conversation, please reach out at sheenalakshmi@gmail.com or connect on LinkedIn.",
+      }]);
+      return;
+    }
     const history = [...msgs, { role: "user", content: q }];
     setMsgs(history);
     setInput("");
@@ -796,7 +805,7 @@ function CaseStudyFPA({ onBack, onHome }) {
             I joined the QuickBooks FP&A team as a senior content designer and took full ownership of content strategy for capabilities built out of the India Development Center. Over the engagement, the product evolved from a basic, data entry-based budgeting interface into a feature-rich financial planning platform — spanning budgeting, forecasting, cash flow, and reporting — serving small and mid-market businesses globally.
           </p>
           <p style={{ fontSize: 14, color: CS.muted, lineHeight: 1.85 }}>
-            FP&A became a strategic pillar for Intuit's Mid-Market suite (MM IES), and content design played a measurable role in its adoption and engagement outcomes across QBO Advanced, QBO Plus, and Intuit Enterprise Suite.
+            FP&A became a strategic pillar for Intuit's Mid-Market Intuit Enterprise Suite (IES), and content design played a measurable role in its adoption and engagement outcomes across QBO Advanced, QBO Plus, and Intuit Enterprise Suite.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 7, marginTop: 20 }}>
             {["Content Strategy","AI Adoption","User Research","Systems Design","Ethical AI","Accessibility"].map(t => (
@@ -1014,7 +1023,7 @@ function CaseStudyOnboarding({ onBack, onHome }) {
   const goals = [
     { icon: "⚡", title: "Convey speed to benefit", body: "Show users immediately what they gain from budgeting in QuickBooks — before they even interact." },
     { icon: "📖", title: "Support learnability", body: "Reduce cognitive load so users can absorb the value proposition without financial expertise." },
-    { icon: "🤝", title: "Engage and retain", body: "Build trust through personalisation and benefit-driven language that reflects real user goals." },
+    { icon: "🤝", title: "Build trust and retain", body: "Build trust through personalisation and benefit-driven language that reflects real user goals." },
     { icon: "🎯", title: "Personalise and build trust", body: "Speak to the specific pain of juggling QuickBooks and spreadsheets — make users feel understood." },
   ];
 
@@ -1880,7 +1889,7 @@ function CaseStudyIA({ onBack, onHome }) {
           <h2 id="h-industries" style={{ fontFamily:SB, fontSize:"clamp(24px,3.5vw,36px)", fontWeight:600, lineHeight:1.2, color:CS.text, marginBottom:14 }}>
             Three industries, <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>nine lines of business</em>
           </h2>
-          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:20 }}>The IA had to serve genuinely different users across industries — a Finance analyst in Banking has fundamentally different needs to an HSE manager in Oil &amp; Gas. Each industry required its own persona research before IA design could begin.</p>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:20 }}>The IA had to serve genuinely different users across industries — a Finance analyst in Banking has fundamentally different needs from an HSE manager in Oil &amp; Gas. Each industry required its own persona research before IA design could begin.</p>
           <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:14 }}>
             {industries.map(ind => (
               <div key={ind.name} style={{ background:CS.card, border:`1px solid ${CS.border}`, borderRadius:12, padding:"22px 18px", position:"relative", overflow:"hidden" }}>
@@ -2020,7 +2029,7 @@ function CaseStudyLeadership({ onBack, onHome }) {
     { title:"Think systems", body:"Building frameworks and content systems that don't depend on any single person — scalable quality that outlasts the individual." },
     { title:"Deep customer empathy", body:"Every team and product decision grounded in real user research. No assumptions. No fabrication." },
     { title:"Stakeholder management", body:"Building subject matter expertise and user advocacy, thereby earning trust rather than demanding it." },
-    { title:"Equip, empower, accountable", body:"Setting clear expectations, providing resources, then stepping back. Accountability without micromanagement." },
+    { title:"Equip, empower, be accountable", body:"Setting clear expectations, providing resources, then stepping back. Accountability without micromanagement." },
   ];
 
   const teamWork = [
@@ -2313,7 +2322,7 @@ function CaseStudyDT({ onBack, onHome }) {
     { num:"01", phase:"Map", title:"User journey mapping across all business lines", body:"Mapped user journeys of Project Management teams end-to-end — across different roles, tools, processes, and communication points. This surface-level mapping revealed where handoffs broke down and where duplication created overhead." },
     { num:"02", phase:"Discover", title:"Tool and process audit", body:"Identified a diverse set of tools, process redundancies, and communication gaps preventing synchronous collaboration. Teams were using overlapping combinations of Jira, Confluence, Teams, SharePoint, and email — often for the same tasks with no agreed convention." },
     { num:"03", phase:"Define", title:"Root cause identification and problem prioritisation", body:"Methodically helped teams articulate root problem areas rather than surface symptoms. Used design thinking facilitation to separate 'this is painful' from 'this is the root cause' — ensuring solutions addressed real issues, not workarounds." },
-    { num:"04", phase:"Develop", title:"Ideation — scalable solutions for prioritised pain points", body:"Facilitated structured ideation sessions. Teams brainstormed solutions for each prioritised problem area, using How Might We prompting to open up possibility space before narrowing. Solutions were evaluated against scalability and cross-team adoption potential." },
+    { num:"04", phase:"Develop", title:"Ideation — scalable solutions for prioritised pain points", body:"Facilitated structured ideation sessions. Teams brainstormed solutions for each prioritised problem area, using How Might We prompts to open up possibility space before narrowing. Solutions were evaluated against scalability and cross-team adoption potential." },
     { num:"05", phase:"Deliver", title:"Virtual facilitation — limited time, significant constraints", body:"Delivered the entire workshop virtually — across teams with different working styles, time zones, and tool familiarity — with limited preparation time and resources. Established a repeatable DT facilitation model that could be replicated for future workshops at SAP India." },
   ];
 
@@ -2375,7 +2384,7 @@ function CaseStudyDT({ onBack, onHome }) {
             Multiple tools, <em style={{ fontStyle:"italic", fontWeight:400, color:CS.accent }}>no synchronisation</em>
           </h2>
           <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:12 }}>Project Management teams across SAP India's various business lines were working in silos — using overlapping combinations of tools and processes with no agreed conventions or communication standards. The result was duplicated work, missed handoffs, and significant friction in cross-team collaboration.</p>
-          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:24 }}>As a newly inducted Certified Design Thinking Coach (SAP Design Thinking Academy, 2021), I was tasked with facilitating a virtual DT workshop to surface root causes and co-create scalable solutions — with limited preparation time and significant logistical constraints.</p>
+          <p style={{ fontSize:14, color:CS.muted, lineHeight:1.85, marginBottom:24 }}>As a newly certified Design Thinking Coach (SAP Design Thinking Academy, 2021), I was tasked with facilitating a virtual DT workshop to surface root causes and co-create scalable solutions — with limited preparation time and significant logistical constraints.</p>
           <ProblemMap/>
         </section>
 
@@ -2539,7 +2548,7 @@ function ClassicMode({ onAskAbout, onCaseStudy }) {
               </div>
 
               <div>
-                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 12 }}>Proof &amp; Artifacts</p>
+                <p style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: C.accent, marginBottom: 12 }}>Proof &amp; Artefacts</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   {drawer.artifacts.map(a => {
                     if (a.type === "nda") return (
@@ -2726,7 +2735,7 @@ export default function SheenaPortfolio() {
   const [theme, setTheme] = useState("light");
   const [msgs, setMsgs]   = useState([{
     role: "assistant",
-    content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP with 20+ years of experience — 16 in technical writing and 8 in UX content design.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
+    content: "Hi! I'm Sheena — a UX Design Manager (Content) at SAP with 20+ years of experience — 16 in technical documentation and 8 in UX content design.\n\nI've led content strategy at Intuit and SAP, mentored teams of 8+, and delivered measurable growth across global products.\n\nAsk me anything — or switch to Portfolio View to browse my work and samples. 👋",
   }]);
   const [busy, setBusy]   = useState(false);
   const [input, setInput] = useState("");
