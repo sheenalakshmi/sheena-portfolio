@@ -113,7 +113,7 @@ const PROJECTS = [
     askPrompt: "Tell me about your FP&A content design work at Intuit across QuickBooks Online and Intuit Enterprise Suite.",
   },
   {
-    id: "03", title: "First-Time User Onboarding", company: "Intuit · QuickBooks",
+    id: "02", title: "First-Time User Onboarding", company: "Intuit · QuickBooks",
     role: "Content Designer & Strategist", metric: "22%", metricLabel: "Lift in first-time feature adoption",
     tags: ["Onboarding", "UX Writing", "SMB", "Cognitive Load"],
     description: "Small and mid-market business owners faced frustration juggling multiple tools alongside QuickBooks. The onboarding experience needed to clearly convey value while reducing cognitive overload — without overwhelming or overpromising.",
@@ -138,7 +138,7 @@ const PROJECTS = [
     askPrompt: "Tell me about the first-time user onboarding project and how you approached it.",
   },
   {
-    id: "04", title: "Feature Nomenclature Design", company: "SAP · SAP Analytics Cloud",
+    id: "03", title: "Feature Nomenclature Design", company: "SAP · SAP Analytics Cloud",
     role: "Content Design Strategist", metric: "87%", metricLabel: "Card sort agreement rate",
     tags: ["Product Naming", "User Research", "Card Sorting", "Stakeholder Management"],
     description: "The on-premises SAP Analytics version used 'Publication' as a verb/process; the cloud version treated it as an object/noun. Users transitioning between versions faced significant confusion — requiring a research-led naming solution scalable across future features.",
@@ -163,7 +163,7 @@ const PROJECTS = [
     askPrompt: "Walk me through the product naming case study at SAP Analytics.",
   },
   {
-    id: "05", title: "Content UX & Information Architecture", company: "SAP · SAP Analytics Cloud",
+    id: "04", title: "Content UX & Information Architecture", company: "SAP · SAP Analytics Cloud",
     role: "Content Design Strategist", metric: "750", metricLabel: "Topics centralised & restructured",
     tags: ["Information Architecture", "Systems Thinking", "Content Audit", "Enterprise"],
     description: "Customers faced significant challenges accessing large, scattered, and outdated PDF help documents across Banking, Insurance, and Oil & Gas. Updating and maintaining was inefficient — making timely, relevant support for critical analytics offerings nearly impossible.",
@@ -188,7 +188,7 @@ const PROJECTS = [
     askPrompt: "Tell me about the content UX consistency project at SAP Analytics.",
   },
   {
-    id: "06", title: "Leadership & Thought Leadership", company: "SAP · Intuit",
+    id: "05", title: "Leadership & Thought Leadership", company: "SAP · Intuit",
     role: "UX Design Manager", metric: "4.8/5", metricLabel: "NPS across all workshops",
     tags: ["Mentorship", "Public Speaking", "Ethical AI", "Accessibility"],
     description: "Building content culture, developing talent, and establishing thought leadership while driving business results across multiple product lines — from workshop design to enterprise ethical AI guidelines.",
@@ -222,7 +222,7 @@ const PROJECTS = [
     askPrompt: "Tell me about your mentorship, workshops, and thought leadership work.",
   },
   {
-    id: "07", title: "Design Thinking Facilitation", company: "SAP",
+    id: "06", title: "Design Thinking Facilitation", company: "SAP",
     role: "Certified DT Coach", metric: "", metricLabel: "Virtual DT workshop across business lines",
     metricSvg: true,
     tags: ["Design Thinking", "Facilitation", "Process Optimisation", "Virtual Workshop"],
@@ -2661,7 +2661,7 @@ function ClassicMode({ onAskAbout, onCaseStudy }) {
                     <div style={{ textAlign: "right", flexShrink: 0, paddingLeft: 12 }}>
                       {p.metricSvg ? <div style={{ display: "flex", justifyContent: "flex-end" }}><DTIcon size={48}/></div> : <p style={{ fontFamily: SERIF, fontSize: 24, fontWeight: 600, color: C.accent, lineHeight: 1 }}>{p.metric}</p>}
                       <p style={{ fontSize: 9, color: C.muted, maxWidth: 90, textAlign: "right", lineHeight: 1.4, marginTop: 3 }}>{p.metricLabel}</p>
-                      <button className="sl-cta-btn" style={{ marginTop: 10 }} onClick={() => p.id === "01" && onCaseStudy ? onCaseStudy("fpa") : p.id === "03" && onCaseStudy ? onCaseStudy("onboarding") : p.id === "04" && onCaseStudy ? onCaseStudy("naming") : p.id === "05" && onCaseStudy ? onCaseStudy("ia") : p.id === "06" && onCaseStudy ? onCaseStudy("leadership") : p.id === "07" && onCaseStudy ? onCaseStudy("dt") : openDrawer(p)}>View case study →</button>
+                      <button className="sl-cta-btn" style={{ marginTop: 10 }} onClick={() => p.id === "01" && onCaseStudy ? onCaseStudy("fpa") : p.id === "02" && onCaseStudy ? onCaseStudy("onboarding") : p.id === "03" && onCaseStudy ? onCaseStudy("naming") : p.id === "04" && onCaseStudy ? onCaseStudy("ia") : p.id === "05" && onCaseStudy ? onCaseStudy("leadership") : p.id === "06" && onCaseStudy ? onCaseStudy("dt") : openDrawer(p)}>View case study →</button>
                     </div>
                   </div>
                 </div>
